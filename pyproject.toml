@@ -19,7 +19,7 @@ beautifulsoup4 = "^4.12.2"
 flake8 = "^6.1.0"
 
 [tool.poetry.scripts]
-rdo-daily-challenge-helper-bot = "engine.run:run_discord_bot"
+rdo-daily-challenges-helper-bot = "engine.run:run_discord_bot"
 
 [build-system]
 requires = ["poetry-core"]
