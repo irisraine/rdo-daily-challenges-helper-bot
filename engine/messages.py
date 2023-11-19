@@ -1,7 +1,7 @@
 import nextcord
 import time
-from api_handler import get_daily_challenges, get_madam_nazar_location
-import config
+from engine.api_handler import get_daily_challenges, get_madam_nazar_location
+import engine.config as config
 import os
 import json
 

@@ -1,6 +1,6 @@
 import nextcord
 from nextcord.ext import commands, tasks
-import messages
+import engine.messages as messages
 from datetime import datetime
 from dotenv import load_dotenv
 import os

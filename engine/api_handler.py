@@ -1,6 +1,6 @@
 import requests
 import json
-import config
+import engine.config as config
 from bs4 import BeautifulSoup
 
 RDO_DAILY_CHALLENGES_API_URL = 'https://api.rdo.gg/challenges/index.json'
