@@ -1,0 +1,38 @@
+{
+  "mprc_collector_antique_alcohol_drunk": "Antique Alcohol drunk",
+  "mprc_collector_antique_bottles_found": "Antique Alcohol Bottles found",
+  "mprc_collector_arrowheads_found": {
+    "description": "Наконечников стрел найдено",
+    "solution": "Информацию о местонахождении наконечников стрел вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
+  "mprc_collector_bird_eggs_found": "Bird Eggs found",
+  "mprc_collector_coins_found": "Coins found",
+  "mprc_collector_family_heirlooms_found": "Family Heirlooms found",
+  "mprc_collector_fossils_found": {
+    "description": "Окаменелостей найдено",
+    "solution": "Информацию о местонахождении окаменелостей вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
+  "mprc_collector_items_collected": "Collectibles collected",
+  "mprc_collector_items_looted_enemy": "Collectibles looted from non-player enemies",
+  "mprc_collector_items_sold": "Collectibles sold to Madam Nazar",
+  "mprc_collector_lost_jewelry_found": {
+    "description": "Потерянных украшений найдено",
+    "solution": "Информацию о местонахождении потерянных украшений вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
+  "mprc_collector_tarot_cards_found": {
+    "description": "Карт Таро найдено",
+    "solution": "Информацию о местонахождении карт Таро вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
+  "mprc_collector_used_map": "Collector Maps used",
+  "mprc_collector_used_metal_dectector": {
+    "description": "Коллекционных предметов с помощью металлоискателя найдено",
+    "solution": "С помощью металлоискателя и карты коллекционера находим нужное количество предметов. Информацию о местонахождении коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
+  "mprc_collector_used_shovel": "Collectibles found with a Shovel",
+  "mprc_collector_wild_flowers_found": "American Wild Flowers found"
+}

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "rdo-daily-challenges-helper"
+version = "0.1.0"
+description = ""
+authors = ["Iris-Raine <iris.raine.darkest.star@gmail.com>"]
+readme = "README.md"
+packages = [
+  {include = "engine"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nextcord = "^2.6.0"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+beautifulsoup4 = "^4.12.2"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+
+[tool.poetry.scripts]
+rdo-daily-challenge-helper-bot = "engine.run:run_discord_bot"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
