@@ -1,9 +1,10 @@
 import nextcord
 from nextcord.ext import commands, tasks
-import engine.messages as messages
+import os
 from datetime import datetime
 from dotenv import load_dotenv
-import os
+import logging
+import engine.messages as messages
 
 load_dotenv()
 
@@ -19,7 +20,7 @@ async def daily_challenges_guide():
 
     daily_challenges_messages = messages.get_daily_challenges_messages()
     if not daily_challenges_messages:
-        print(f"Данные о дейликах за {datetime.today().strftime('%d-%m-%Y')} не отображены из-за ошибки")
+        logging.warning(f"Данные о дейликах за {datetime.today().strftime('%d-%m-%Y')} не отображены из-за ошибки")
     else:
         await message_channel.send(embed=messages.get_initial_message())
         await message_channel.send(embed=messages.get_general_title_message())
@@ -29,13 +30,13 @@ async def daily_challenges_guide():
         try:
             await message_channel.send(embed=messages.get_madam_nazar_message())
         except nextcord.errors.HTTPException:
-            print('Невозможно получить данные о местонахождении мадам Назар')
-        print(f"Данные о дейликах за {datetime.today().strftime('%d-%m-%Y')} успешно отображены")
+            logging.warning(f"Невозможно получить данные о местонахождении мадам Назар")
+        logging.info(f"Данные о дейликах за {datetime.today().strftime('%d-%m-%Y')} успешно отображены")
 
 
 @client.event
 async def on_ready():
-    print(f'Logged in as: {client.user.name}')
+    logging.info(f'Залогинен под именем: {client.user.name}')
     daily_challenges_guide.start()
 
 

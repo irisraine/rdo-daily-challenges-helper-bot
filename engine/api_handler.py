@@ -1,16 +1,15 @@
 import requests
 import json
-import engine.config as config
+import logging
 from bs4 import BeautifulSoup
+import engine.config as config
 
-RDO_DAILY_CHALLENGES_API_URL = 'https://api.rdo.gg/challenges/index.json'
-RDO_MADAM_NAZAR_LOCATION_URL = 'https://rdocollector.com/madam-nazar'
 GENERAL_DAILY_CHALLENGES_COUNT = 7
 ROLE_DAILY_CHALLENGES_COUNT = 3
 
 
 def get_daily_challenges():
-    response = get_response(RDO_DAILY_CHALLENGES_API_URL)
+    response = get_response(config.RDO_DAILY_CHALLENGES_API_URL)
 
     daily_challenges = {}
     try:
@@ -27,13 +26,13 @@ def get_daily_challenges():
                     current_challenge = daily_challenges_raw['hard'][category][i]
                     daily_challenges[category].append(normalize(current_challenge))
     except (KeyError, TypeError):
-        print('Формат данных, полученных от RDO API, некорректен')
+        logging.warning('Формат данных, полученных от RDO API, некорректен!')
         return None
     return daily_challenges
 
 
 def get_madam_nazar_location():
-    response = get_response(RDO_MADAM_NAZAR_LOCATION_URL)
+    response = get_response(config.RDO_MADAM_NAZAR_LOCATION_URL)
     try:
         main_page_parsed = BeautifulSoup(response, 'html.parser')
         madam_nazar_location = main_page_parsed.find('main').find('img')['src']
@@ -55,5 +54,5 @@ def get_response(url):
         response = requests.get(url)
         return response.content
     except requests.RequestException:
-        print(f"Ошибка соединения с {url}")
+        logging.warning(f"Ошибка соединения с {url}")
         return None
