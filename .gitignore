@@ -1,6 +1,5 @@
 # Ignore directory in any project's directiories
 __pycache__
-images
 .venv
 .vscode
 .idea
