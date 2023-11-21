@@ -26,5 +26,3 @@ def init_logger():
         }
     }
     logging.config.dictConfig(logging_settings)
-
-
