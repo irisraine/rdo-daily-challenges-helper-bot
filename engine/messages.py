@@ -83,6 +83,8 @@ def get_header_messages():
 
 def get_madam_nazar_location_message():
     madam_nazar_location_map_url = get_madam_nazar_location_map_url()
+    if not madam_nazar_location_map_url:
+        return None
     response = requests.get(madam_nazar_location_map_url)
     location_filepath = os.path.join(os.getcwd(), config.MADAM_NAZAR_LOCATION_MAP)
     with open(location_filepath, 'wb') as file:
