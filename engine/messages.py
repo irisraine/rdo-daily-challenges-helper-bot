@@ -19,7 +19,7 @@ role_titles = {
 }
 
 
-class TutorialMessage:
+class MessageContainer:
     def __init__(self, title=None, description=None, image_path=None):
         self.__embed = nextcord.Embed(
             title=title,
@@ -75,9 +75,9 @@ def get_header_messages():
     cover_image.save(config.HEADER_COVER)
 
     header_messages = {
-        'cover': TutorialMessage(image_path=config.HEADER_COVER),
-        'general': TutorialMessage(image_path=config.HEADER_GENERAL),
-        'role': TutorialMessage(image_path=config.HEADER_ROLE)
+        'cover': MessageContainer(image_path=config.HEADER_COVER),
+        'general': MessageContainer(image_path=config.HEADER_GENERAL),
+        'role': MessageContainer(image_path=config.HEADER_ROLE)
     }
     return header_messages
 
@@ -90,7 +90,7 @@ def get_madam_nazar_location_message():
         file.write(response.content)
     title = f"{config.EMOJI['madam_nazar_emoji']} Мадам Назар: <t:{int(datetime.now().timestamp())}:D>"
     description = "Сегодняшнее местонахождение мадам Назар вы можете увидеть на карте, приведенной ниже:"
-    madam_nazar_location_message = TutorialMessage(
+    madam_nazar_location_message = MessageContainer(
         title=title,
         description=description,
         image_path=location_filepath
@@ -113,7 +113,7 @@ def get_tutorial_messages():
                 description = get_description(index, solutions, current_challenge)
                 image = solutions[current_challenge['title']]['image']
                 image_path = os.path.join(os.getcwd(), image) if image else None
-                message = TutorialMessage(description=description, image_path=image_path)
+                message = MessageContainer(description=description, image_path=image_path)
                 general_tutorial_messages.append(message)
         else:
             solutions = get_solutions(category)
@@ -124,7 +124,7 @@ def get_tutorial_messages():
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
                 description_single = get_description(index, solutions, current_challenge)
                 description += f"{description_single}{newline}"
-            message = TutorialMessage(title=title, description=description)
+            message = MessageContainer(title=title, description=description)
             role_tutorial_messages.append(message)
     tutorial_messages = {
         'general': general_tutorial_messages,
