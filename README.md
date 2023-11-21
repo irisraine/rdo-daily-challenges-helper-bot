@@ -15,7 +15,5 @@ Here is an example:
 # Bot token
 DISCORD_BOT_TOKEN='your-discord-bot-token-here'
 # Allowed channels
-ALLOWED_CHANNELS=1111111111, 2222222222
-# API key of Microsoft Content Moderator service
-CONTENT_MODERATOR_API_KEY='your-api-key-here'
+DAILY_CHALLENGES_TUTORIALS_CHANNEL=1111111111, 2222222222
 ```
