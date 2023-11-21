@@ -8,8 +8,6 @@ from PIL import Image, ImageDraw, ImageFont
 from engine.api_handler import get_daily_challenges_api_response, get_madam_nazar_location_map_url
 import engine.config as config
 
-basic_color = nextcord.Colour.from_rgb(*config.BASIC_COLOR_CODE)
-newline = "\n"
 role_titles = {
     'bounty_hunter': f'{config.EMOJI["bounty_hunter_emoji"]} Охотник за головами',
     'naturalist': f'{config.EMOJI["naturalist_emoji"]} Натуралист',
@@ -17,6 +15,7 @@ role_titles = {
     'collector': f'{config.EMOJI["collector_emoji"]} Коллекционер',
     'moonshiner': f'{config.EMOJI["moonshiner_emoji"]} Самогонщик'
 }
+newline = "\n"
 
 
 class MessageContainer:
@@ -24,7 +23,7 @@ class MessageContainer:
         self.__embed = nextcord.Embed(
             title=title,
             description=description,
-            colour=basic_color
+            colour=nextcord.Colour.from_rgb(*config.BASIC_COLOR_CODE)
         )
         if not image_path:
             image_path = config.SEPARATOR
