@@ -1,10 +1,11 @@
 import nextcord
-import time
 import requests
 import os
 import json
 import logging
-from engine.api_handler import get_daily_challenges, get_madam_nazar_location
+from datetime import datetime
+from PIL import Image, ImageDraw, ImageFont
+from engine.api_handler import get_daily_challenges_api_response, get_madam_nazar_location_map_url
 import engine.config as config
 
 basic_color = nextcord.Colour.from_rgb(*config.BASIC_COLOR_CODE)
@@ -18,104 +19,115 @@ role_titles = {
 }
 
 
+class TutorialMessage:
+    def __init__(self, title=None, description=None, image_path=None):
+        self.__embed = nextcord.Embed(
+            title=title,
+            description=description,
+            colour=basic_color
+        )
+        if not image_path:
+            image_path = config.SEPARATOR
+        image_name = image_path.split('/')[-1]
+        image_attachment = f'attachment://{image_name}'
+        self.__embed.set_image(url=image_attachment)
+        filepath = os.path.join(os.getcwd(), image_path)
+        self.__image = nextcord.File(filepath, filename=image_name)
+
+    @property
+    def embed(self):
+        return self.__embed
+
+    @property
+    def image(self):
+        return self.__image
+
+
 def get_solutions(category):
     filename = os.path.join(os.getcwd(), "solutions", f'{category}.json')
     if not os.path.isfile(filename):
-        logging.warning(f'Файл с туториалами {filename} отсутствует, проверьте правильность пути!')
+        logging.error(f'Файл с туториалами {filename} отсутствует, проверьте правильность пути!')
         return None
     with open(filename, 'r') as file:
         return json.load(file)
 
 
-def get_complete_text(index, current_solutions, current_challenge):
-    description_text = f"{index + 1}. {current_solutions[current_challenge['title']]['description']}: "
-    goal_text = f"`0/{current_challenge['goal']}`"
-    solution_text = f"* {current_solutions[current_challenge['title']]['solution']}"
-    complete_text = f"**{description_text}{goal_text}**{newline}{solution_text}"
-    return complete_text
+def get_description(index, solutions, current_challenge):
+    task = f"{index + 1}. {solutions[current_challenge['title']]['task']}: "
+    goal = f"`0/{current_challenge['goal']}`"
+    solution = f"{solutions[current_challenge['title']]['solution']}"
+    description = f'***{task}{goal}***{solution}'
+    return description
 
 
-def get_embed(complete_text, image=None):
-    message = nextcord.Embed(
-        description=complete_text,
-        colour=basic_color)
-    if not image:
-        image = config.SEPARATOR
-    is_image_exists = requests.get(image)
-    if is_image_exists:
-        message.set_image(url=image)
-    else:
-        logging.warning(f'Ссылка {image} не работает!')
-    return message
+def get_header_messages():
+    today = datetime.today()
+    current_date_formatted = f"{today.day} {config.MONTH_LIST[today.month - 1]} {today.year}"
+    header_cover_image_blank_path = os.path.join(os.getcwd(), config.HEADER_COVER_BLANK)
+    font_path = os.path.join(os.getcwd(), config.CUSTOM_RDO_FONT)
+    cover_image = Image.open(header_cover_image_blank_path)
+    draw = ImageDraw.Draw(cover_image)
+    font = ImageFont.truetype(font_path, size=200)
+    image_length, text_length = 1280, int(draw.textlength(current_date_formatted, font))
+    x_shift, y_shift = ((image_length - text_length) // 2), 500
+    draw.text((x_shift, y_shift), current_date_formatted, fill='white', font=font,
+              stroke_width=4, stroke_fill='black')
+    cover_image.save(config.HEADER_COVER)
+
+    header_messages = {
+        'cover': TutorialMessage(image_path=config.HEADER_COVER),
+        'general': TutorialMessage(image_path=config.HEADER_GENERAL),
+        'role': TutorialMessage(image_path=config.HEADER_ROLE)
+    }
+    return header_messages
 
 
-def get_initial_message():
-    initial_message = nextcord.Embed(
-        title=f"ДЕЙЛИКИ НА <t:{int(time.time())}:D>",
-        colour=basic_color)
-    return initial_message
+def get_madam_nazar_location_message():
+    madam_nazar_location_map_url = get_madam_nazar_location_map_url()
+    response = requests.get(madam_nazar_location_map_url)
+    location_filepath = os.path.join(os.getcwd(), config.MADAM_NAZAR_LOCATION_MAP)
+    with open(location_filepath, 'wb') as file:
+        file.write(response.content)
+    title = f"{config.EMOJI['madam_nazar_emoji']} Мадам Назар: <t:{int(datetime.now().timestamp())}:D>"
+    description = "Сегодняшнее местонахождение мадам Назар вы можете увидеть на карте, приведенной ниже:"
+    madam_nazar_location_message = TutorialMessage(
+        title=title,
+        description=description,
+        image_path=location_filepath
+    )
+    return madam_nazar_location_message
 
 
-def get_general_title_message():
-    general_title_message = nextcord.Embed(
-        title=f'{config.EMOJI["pointer_emoji"]} '
-              f'Общие ежедневные задания '
-              f'{config.EMOJI["pointer_emoji"]}',
-        colour=basic_color)
-    return general_title_message
-
-
-def get_role_title_message():
-    role_title_message = nextcord.Embed(
-        title=f'{config.EMOJI["pointer_emoji"]} '
-              f'Ролевые ежедневные задания '
-              f'{config.EMOJI["pointer_emoji"]}',
-        colour=basic_color)
-    return role_title_message
-
-
-def get_madam_nazar_message():
-    location = get_madam_nazar_location()
-    if not location:
+def get_tutorial_messages():
+    daily_challenges_api_response = get_daily_challenges_api_response()
+    if not daily_challenges_api_response:
         return None
-    madam_nazar_message = nextcord.Embed(
-        title=f'{config.EMOJI["madam_nazar_emoji"]} '
-              f'Мадам Назар: <t:{int(time.time())}:D>',
-        description="Сегодняшнее местонахождение мадам Назар вы можете увидеть на карте, приведенной ниже:",
-        colour=basic_color)
-    madam_nazar_message.set_image(url=location)
-    return madam_nazar_message
-
-
-def get_daily_challenges_messages():
-    daily_challenges = get_daily_challenges()
-    if not daily_challenges:
-        return None
-    daily_challenges_general_messages = []
-    daily_challenges_roles_messages = []
+    general_tutorial_messages = []
+    role_tutorial_messages = []
     for category in config.CATEGORIES:
         if category == 'general':
-            current_solutions = get_solutions(category)
-            if not current_solutions:
+            solutions = get_solutions(category)
+            if not solutions:
                 return None
-            for i, current_challenge in enumerate(daily_challenges[category]):
-                complete_text = get_complete_text(i, current_solutions, current_challenge)
-                image = current_solutions[current_challenge['title']]['image']
-                message = get_embed(complete_text, image)
-                daily_challenges_general_messages.append(message)
+            for index, current_challenge in enumerate(daily_challenges_api_response[category]):
+                description = get_description(index, solutions, current_challenge)
+                image = solutions[current_challenge['title']]['image']
+                image_path = os.path.join(os.getcwd(), image) if image else None
+                message = TutorialMessage(description=description, image_path=image_path)
+                general_tutorial_messages.append(message)
         else:
-            current_solutions = get_solutions(category)
-            if not current_solutions:
+            solutions = get_solutions(category)
+            if not solutions:
                 return None
-            complete_text = f"**{role_titles[category]}**{newline}"
-            for i, current_challenge in enumerate(daily_challenges[category]):
-                complete_text += (f"{newline}"
-                                  f"{get_complete_text(i, current_solutions, current_challenge)}"
-                                  f"{newline}")
-            message = get_embed(complete_text)
-            daily_challenges_roles_messages.append(message)
-    daily_challenges_messages = {
-        'general': daily_challenges_general_messages,
-        'roles': daily_challenges_roles_messages
+            title = f"**{role_titles[category]}**"
+            description = ""
+            for index, current_challenge in enumerate(daily_challenges_api_response[category]):
+                description_single = get_description(index, solutions, current_challenge)
+                description += f"{description_single}{newline}"
+            message = TutorialMessage(title=title, description=description)
+            role_tutorial_messages.append(message)
+    tutorial_messages = {
+        'general': general_tutorial_messages,
+        'role': role_tutorial_messages
     }
-    return daily_challenges_messages
+    return tutorial_messages
