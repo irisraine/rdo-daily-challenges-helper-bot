@@ -2,43 +2,51 @@
   "mprc_moonshiner_band_played_hard": "Played with a band for 2 mins",
   "mprc_moonshiner_band_played_med": "Played with a band for 1 min",
   "mprc_moonshiner_bar_changed_decor": {
-    "description": "Интерьер в баре изменен",
+    "task": "Интерьер в баре изменен",
     "solution": "Подходим к Мэгги в хижине самогонщика, открываем меню магазина, выбираем доступную тему бара (или картину) и выходим из магазина - готово.",
     "image": false
   },
   "mprc_moonshiner_craft_poison_bottle": "Crafted Toxic Moonshine",
   "mprc_moonshiner_danced_bar_hard": {
-    "description": "Вы танцевали в баре в течение 2 минут",
+    "task": "Вы танцевали в баре в течение 2 минут",
     "solution": "У вас или вашего друга должны быть музыканты в хижине самогонщика. Говорите им играть, становитесь рядом, у вас появится кнопка \"танцевать\" - танцуете нужное количество времени.",
     "image": false
   },
   "mprc_moonshiner_danced_bar_med": "Moonshine Bar - Danced for 1 min",
   "mprc_moonshiner_drunk_interaction_bar": {
-    "description": "Взаимодействий с игроками в пьяном виде в баре",
+    "task": "Взаимодействий с игроками в пьяном виде в баре",
     "solution": "Напиться и подойти к другим игрокам - у вас будут появляться дополнительные кнопки взаимодействия",
     "image": false
   },
   "mprc_moonshiner_last_round_bar": "Moonshine Bar - Stayed for the last round",
   "mprc_moonshiner_marketing_mission_completed": {
-    "description": "Заданий по бутлегерству выполнено",
+    "task": "Заданий по бутлегерству выполнено",
     "solution": "Ищем задания бутлегера в открытом мире (подойдёт блокпост агентов, лагерь конкурентов и т. д). Также можно взять задание у Мэгги в хижине самогонщика, но после выполнения надо будет подождать 20+ минут, пока задание вновь не станет доступным.",
     "image": false
   },
-  "mprc_moonshiner_money_made": "Money made from moonshine sold",
+  "mprc_moonshiner_money_made": {
+    "task": "Доход от торговли самогоном",
+    "solution": "Готовим и отвозим самогон на нужную сумму, стараемся довезти в целости.",
+    "image": false
+  },
   "mprc_moonshiner_moonshine_drank_easy": "Drank own weak or higher strength moonshine",
   "mprc_moonshiner_moonshine_drank_hard": "Drank own strong moonshine",
   "mprc_moonshiner_moonshine_drank_med": "Drank own average or higher strength moonshine",
-  "mprc_moonshiner_moonshine_served_bar": "Moonshine served to other players at a bar",
+  "mprc_moonshiner_moonshine_served_bar": {
+    "task": "Раз подано самогона другим игрокам в баре",
+    "solution": "Становимся за барную стойку в хижине самогонщика, зовем друзей и угощаем их напитком. Для зачёта ваш клиент должен \"облокотиться на стойку\" - подойти к самой стойке и нажать соответствующую кнопку.",
+    "image": false
+  },
   "mprc_moonshiner_moonshine_sold_buyer": "Moonshine of any type sold to a buyer",
   "mprc_moonshiner_moonshine_sold_buyer_condition_easy": "Moonshine sold with at least 10 bottles intact",
   "mprc_moonshiner_moonshine_sold_buyer_condition_hard": {
-    "description": "Вы продали самогон, сохранив в целости не менее 18 бутылок",
+    "task": "Вы продали самогон, сохранив в целости не менее 18 бутылок",
     "solution": "Тут и так всё понятно =)",
     "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_condition_med": "Moonshine sold with at least 15 bottles intact",
   "mprc_moonshiner_moonshine_sold_buyer_hard": {
-    "description": "Самогона предпочитаемого типа продано покупателю",
+    "task": "Самогона предпочитаемого типа продано покупателю",
     "solution": "Доставить повозку самогона с нужным ароматизатором покупателю.",
     "image": false
   },
@@ -48,6 +56,14 @@
   "mprc_moonshiner_recipe_completed_easy": "Completed regular or better moonshine recipe",
   "mprc_moonshiner_recipe_completed_hard": "Completed special moonshine recipe",
   "mprc_moonshiner_recipe_completed_med": "Completed improved or better moonshine recipe",
-  "mprc_moonshiner_story_mission_completed": "Moonshine Story Mission completed",
-  "mprc_moonshiner_travel_wagon": "Distance Moonshine Wagon traveled on mission"
+  "mprc_moonshiner_story_mission_completed": {
+    "task": "Сюжетных заданий для роли самогонщика пройдено",
+    "solution": "Подходим к Мэгги в баре самогонщика и берем любое сюжетное задание или запускаем через меню Прогресс -> Сюжетные задания -> Самогонщик",
+    "image": false
+  },
+  "mprc_moonshiner_travel_wagon": {
+    "task": "Расстояние, преодоленное на повозке самогонщика во время задания (в футах)",
+    "solution": "Запускаем готовку/отвозку самогона у Марселя, отвозим. Одной отвозки по маршруту скорее всего не хватит - найдите подходящую дорогу и покатайтесь кругами, а потом просто перезапустите задание, сменив сессию, если времени на доставку уже не хватает. Также можно приготовить самогон еще раз или попроситься к другу.",
+    "image": false
+  }
 }

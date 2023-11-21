@@ -1,13 +1,21 @@
 {
-  "mprc_bounty_completed_no_kills": "Bounty completed without killing an enemy or bounty target",
+  "mprc_bounty_completed_no_kills": {
+    "task": "Заданий по поимке преступников выполнено, не убив врага или преступника",
+    "solution": "Часто багует, рекомендуем перезайти в сессию перед попыткой. Можно взять контракт на легендарного преступника Этту Дойл или найти разыскиваемую цель в открытом мире",
+    "image": false
+  },
   "mprc_bounty_completed_posse_member": {
-    "description": "Заданий по поимке преступников выполнено с членом отряда",
+    "task": "Заданий по поимке преступников выполнено с членом отряда",
     "solution": "Берём друга, идём к плакату, выполняем задание. Данное задание иногда багует, если вы выполнили условие, но его не засчитало - попробуйте перезайти в сессию и попробовать снова.",
     "image": false
   },
-  "mprc_bounty_completed_timed": "Bounties completed within one real-world hour",
+  "mprc_bounty_completed_timed": {
+    "task": "Заданий по поимке преступников выполнено за 1 час в реальном времени",
+    "solution": "Отправляемся к любому плакату охотника за головами, выбираем любое задание по поимке преступника. Повторяем.",
+    "image": false
+  },
   "mprc_bounty_general_delivered": {
-    "description": "Преступников доставлено",
+    "task": "Преступников доставлено",
     "solution": "Берём любой из плакатов розыска, находим преступников и доставляем живыми или мёртвыми. Также подойдут разыскиваемые цели, которых вы встречаете в открытом мире.",
     "image": false
   },
@@ -17,33 +25,45 @@
   "mprc_bounty_general_delivered_timed_med": "Bounty hunt completed with 4 min or more left",
   "mprc_bounty_location_lemoyne": "Bounties brought in from Lemoyne posters",
   "mprc_bounty_location_new_austin": {
-    "description": "Поймано преступников с плакатов из Нью-Остина",
+    "task": "Поймано преступников с плакатов из Нью-Остина",
     "solution": "Берём любой из плакатов в Тамблвиде или Армадилло. Также подойдут преступники из этой локации в открытом мире.",
     "image": false
   },
-  "mprc_bounty_location_new_hanover": "Bounties brought in from New Hanover posters",
+  "mprc_bounty_location_new_hanover": {
+    "task": "Поймано преступников с плакатов из Нью-Ганновера",
+    "solution": "Берём любой из плакатов на станции Эмеральд, в Валентайне, Аннесберге или Ван-Хорне. Также подойдут преступники из этой локации в открытом мире.",
+    "image": false
+  },
   "mprc_bounty_location_west_elizabeth": {
-    "description": "Поймано преступников с плакатов из Вест-Элизабет",
+    "task": "Поймано преступников с плакатов из Вест-Элизабет",
     "solution": "Берём любой из плакатов в Блэкуотере, Строберри, на станциях Риггс или Уоллес. Также подойдут и преступники из этой локации в открытом мире.",
     "image": false
   },
   "mprc_bounty_mission_completed_easy": "Easy ($) bounty mission completed",
   "mprc_bounty_mission_completed_hard": {
-    "description": "Выполнено сложных ($$$) или легендарных заданий по поимке преступников",
+    "task": "Выполнено сложных ($$$) или легендарных заданий по поимке преступников",
     "solution": "Отправляемся к любой доске со списком плакатов о розыске, выбираем любое задание по поимке преступника с соответствующей сложностью и выполняем.",
     "image": false
   },
   "mprc_bounty_mission_completed_medium": "Medium ($$) bounty mission completed",
   "mprc_bounty_player_completed": "Player bounties collected",
   "mprc_bounty_targets_looted": {
-    "description": "Разыскиваемых преступников ограблено",
+    "task": "Разыскиваемых преступников ограблено",
     "solution": "Подойдёт любой преступник с плаката или открытого мира. Находим, вяжем/вырубаем/убиваем -> обыскиваем -> готово.",
     "image": false
   },
   "mprc_bounty_target_photographed_alive": "Living bounty targets in a photograph",
   "mprc_bounty_used_bolas": "Bounty targets taken down with Bolas",
   "mprc_bounty_used_eagle_eye": "Eagle Eye used to track a bounty target",
-  "mprc_bounty_used_lasso_horseback": "Bounty targets lassoed from horseback",
-  "mprc_bounty_used_reinforced_lasso": "Bounty targets hogtied with a Reinforced Lasso",
+  "mprc_bounty_used_lasso_horseback": {
+    "task": "Разыскиваемых преступников заарканено с лошади",
+    "solution": "Подойдёт любой преступник с плаката или открытого мира. Набрасываем лассо с лошади. Можно выполнить на одной цели, набрасывая лассо несколько раз.",
+    "image": false
+  },
+  "mprc_bounty_used_reinforced_lasso": {
+    "task": "Разыскиваемых преступников связано с помощью улучшенного лассо",
+    "solution": "Подойдёт любой преступник с плаката или открытого мира. Вяжем с помощью улучшенного лассо (не перепутайте, иногда улучшенное лассо может остаться на лошади). Можно выполнить на одной цели, связав и развязав несколько раз.",
+    "image": false
+  },
   "mprc_bounty_used_track_arrow": "Bounty targets tagged with Tracking Arrow"
 }

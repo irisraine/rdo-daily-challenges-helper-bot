@@ -1,16 +1,16 @@
 {
   "mprc_trader_goods_sold_far_away": {
-    "description": "Товаров продано удаленному покупателю",
+    "task": "Товаров продано удаленному покупателю",
     "solution": "Выполнить доставку повозки Криппса на дальнюю дистанцию указанное количество раз.",
     "image": false
   },
   "mprc_trader_goods_sold_local": {
-    "description": "Товаров продано местному покупателю",
+    "task": "Товаров продано местному покупателю",
     "solution": "Выполнить доставку повозки Криппса на ближнюю дистанцию указанное количество раз.",
     "image": false
   },
   "mprc_trader_money_made": {
-    "description": "Заработано денег с помощью торговли",
+    "task": "Заработано денег с помощью торговли",
     "solution": "Сделать доставку(и) товаров от Криппса на указанную сумму.",
     "image": false
   },
@@ -20,7 +20,7 @@
   "mprc_trader_resupply_completed_timed_med": "Resupply completed with 4 mins left",
   "mprc_trader_sold_carcass_timed": "Carcasses donated within 10 minutes",
   "mprc_trader_stew_eaten": {
-    "description": "Рагу для лагеря съедено",
+    "task": "Рагу для лагеря съедено",
     "solution": "Подходим к котлу, берем рагу, съедаем (котёл в лагере друга тоже подойдёт).",
     "image": false
   },
@@ -28,18 +28,30 @@
   "mprc_trader_stew_recipe_completed_high": "High Quality Camp Stew recipes completed",
   "mprc_trader_stew_recipe_completed_superior": "Superior Quality Camp Stew recipes completed",
   "mprc_trader_supplies_donated": "Donations to Cripps",
-  "mprc_trader_supplies_donated_animal_large": "Large animal carcasses donated to Cripps",
-  "mprc_trader_supplies_donated_animal_medium": "Medium animal carcasses donated to Cripps",
+  "mprc_trader_supplies_donated_animal_large": {
+    "task": "Туш крупных животных отдано Криппсу",
+    "solution": "Наиболее эффективный способ определить размер животного - это узнать, каким оружием его рекомендуется убивать (во время прицеливания нажать `Показать информацию`). Для крупных таким оружием будут винтовка, винтовка с оптическим прицелом, лук с отравленными стрелами. Таким образом, это все крупные животные, размещаемые на крупе лошади целиком (олени, волки и т.д.).",
+    "image": false
+  },
+  "mprc_trader_supplies_donated_animal_medium": {
+    "task": "Тушек средних животных отдано Криппсу",
+    "solution": "Наиболее эффективный способ определить размер животного - это узнать, каким оружием его рекомендуется убивать (во время прицеливания нажать `Показать информацию`). Для средних таким оружием будут варминт и карабин. Таким образом, это не только индейки, казарки, зайцы, ондатры и прочие из тех, что размещаются сбоку седла; но также и лисы, бобры, койоты (размещающиеся на крупе лошади).",
+    "image": false
+  },
   "mprc_trader_supplies_donated_animal_small": "Small animal carcasses donated to Cripps",
   "mprc_trader_supplies_donated_carcass_perfect": {
-    "description": "Превосходных туш отдано Криппсу",
+    "task": "Превосходных туш отдано Криппсу",
     "solution": "Убиваем трехзвездочных и двухзвездочных крупных и средних животных (с лука или винтовки в голову) и мелких (стрелой в голову на мелкую дичь) [Баг: не кладите двухзвездочные туши в повозку, иначе при сдаче Криппсу их не засчитает].",
     "image": false
   },
   "mprc_trader_supplies_donated_predator": {
-    "description": "Туш или шкур опасных хищников отдано Криппсу",
+    "task": "Туш или шкур опасных хищников отдано Криппсу",
     "solution": "На болотах убиваем аллигаторов (их найти проще всего) и отдаем Криппсу.",
     "image": false
   },
-  "mprc_trader_travel_wagon": "Distance Delivery Wagon traveled on mission"
+  "mprc_trader_travel_wagon": {
+    "task": "Расстояние, преодоленное грузовой повозкой во время задания",
+    "solution": "Запускаем отвозку товаров (запустить можно даже если готова только 1 единица товара). Можно накатать нужное расстояние по кругу, а затем выйти/перезайти - товары останутся.",
+    "image": false
+  }
 }
