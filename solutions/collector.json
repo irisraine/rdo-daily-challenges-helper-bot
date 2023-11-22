@@ -19,7 +19,11 @@
     "solution": "Информацию о местонахождении птичьих яиц найдено вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
     "image": false
   },
-  "mprc_collector_coins_found": "Coins found",
+  "mprc_collector_coins_found": {
+    "task": "Монет найдено",
+    "solution": "Информацию о местонахождении монет вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
   "mprc_collector_family_heirlooms_found": {
     "task": "Фамильных ценностей найдено",
     "solution": "Информацию о местонахождении фамильных ценностей вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
@@ -30,8 +34,16 @@
     "solution": "Информацию о местонахождении окаменелостей вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
     "image": false
   },
-  "mprc_collector_items_collected": "Collectibles collected",
-  "mprc_collector_items_looted_enemy": "Collectibles looted from non-player enemies",
+  "mprc_collector_items_collected": {
+    "task": "Коллекционных предметов собрано",
+    "solution": "Информацию о местонахождении различных коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
+  "mprc_collector_items_looted_enemy": {
+    "task": "Добыто коллекционных предметов у ИИ-врагов",
+    "solution": "Убиваем НПС и лутаем его. Повторить, пока с них не выпадет нужное количество коллекционных предметов",
+    "image": false
+  },
   "mprc_collector_items_sold": {
     "task": "Продано коллекционных предметов мадам Назар",
     "solution": "Найти мадам Назар и продать ей коллекционные предметы (не наборы!).",
@@ -57,7 +69,11 @@
     "solution": "С помощью металлоискателя и карты коллекционера находим нужное количество предметов. Информацию о местонахождении коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
     "image": false
   },
-  "mprc_collector_used_shovel": "Collectibles found with a Shovel",
+  "mprc_collector_used_shovel": {
+    "task": "Откопано коллекционных предметов с помощью лопаты",
+    "solution": "Покупаем лопату у Назар и идем копать, находим нужное количество предметов. Информацию о местонахождении коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
   "mprc_collector_wild_flowers_found": {
     "task": "Американских диких цветов найдено",
     "solution": "Информацию о местонахождении американских диких цветов найдено вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
