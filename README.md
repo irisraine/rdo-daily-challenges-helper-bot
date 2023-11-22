@@ -15,6 +15,6 @@ Here is an example:
 ```
 # Bot token
 DISCORD_BOT_TOKEN='your-discord-bot-token-here'
-# Allowed channels
-DAILY_CHALLENGES_TUTORIALS_CHANNEL=1111111111, 2222222222
+# Allowed channel
+DAILY_CHALLENGES_TUTORIALS_CHANNEL=1111111111
 ```
