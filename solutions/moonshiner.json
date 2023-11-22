@@ -54,7 +54,11 @@
   "mprc_moonshiner_moonshine_sold_buyer_timed_hard": "Moonshine sold with 5 mins left",
   "mprc_moonshiner_moonshine_sold_buyer_timed_med": "Moonshine sold with 4 mins left",
   "mprc_moonshiner_recipe_completed_easy": "Completed regular or better moonshine recipe",
-  "mprc_moonshiner_recipe_completed_hard": "Completed special moonshine recipe",
+  "mprc_moonshiner_recipe_completed_hard": {
+    "task": "Рецепт для приготовления особого самогона использован",
+    "solution": "Запускаем готовку самогона у Марселя, добавляем любой ароматизатор на 3 звезды. Дожидаемся готовности - дейлик выполнен.",
+    "image": false
+  },
   "mprc_moonshiner_recipe_completed_med": "Completed improved or better moonshine recipe",
   "mprc_moonshiner_story_mission_completed": {
     "task": "Сюжетных заданий для роли самогонщика пройдено",

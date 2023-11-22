@@ -18,7 +18,11 @@
   "mpgc_badgers_skinned": "American Badgers skinned",
   "mpgc_bats_skinned": "Little Brown Bats collected",
   "mpgc_bay_bolete_picked": "Bay Bolete picked",
-  "mpgc_bears_killed": "Bears killed",
+  "mpgc_bears_killed": {
+    "task": "Медведей убито",
+    "solution": "Подойдут гризли, чёрный медведь, а также любой из легендарных медведей.",
+    "image": "solutions/images/bears_killed.jpg"
+  },
   "mpgc_beavers_skinned": "Beavers skinned",
   "mpgc_black_berry_picked": "Blackberries picked",
   "mpgc_black_currant_picked": {
@@ -30,7 +34,11 @@
   "mpgc_buffalo_skinned": "Bison skinned",
   "mpgc_bullfrogs_skinned": "American Bullfrogs collected",
   "mpgc_bulls_skinned": "Bulls skinned",
-  "mpgc_burdock_root_picked": "Burdock Roots picked",
+  "mpgc_burdock_root_picked": {
+    "task": "Корня лопуха собрано",
+    "solution": "Собираем или сразу съедаем на месте.",
+    "image": "solutions/images/burdock_root_picked.jpg"
+  },
   "mpgc_capitale_notes_collected": "Capitale notes collected",
   "mpgc_chanterelle_picked": "Chanterelle picked",
   "mpgc_chickens_skinned": "Chickens skinned",
@@ -54,7 +62,11 @@
   },
   "mpgc_consumable_herbs_tasted": "Herbs eaten",
   "mpgc_consumable_meat_eaten": "Meats eaten",
-  "mpgc_consumable_saloon_snacks_eaten": "Complimentary snacks eaten at a Saloon",
+  "mpgc_consumable_saloon_snacks_eaten": {
+    "task": "Бесплатных закусок съедено в салуне",
+    "solution": "Закуски (миндаль в мисочке на барной стойке) можно найти в 4х салунах (в Блэкуотере, Роудсе, крупных салунах Валентайна и Сен-Дени). В каждом баре 3 порции закуски, так что, если вы с компанией - разделяйтесь. Для самогонщиков и их друзей есть вариант получше: идем в хижину самогонщика - там орешков хватит на всех.",
+    "image": false
+  },
   "mpgc_consumable_tobacco_used": "Tobacco smoked or chewed",
   "mpgc_consumable_tonics_oils_used": "Player stats boosted by tonics",
   "mpgc_cormorant_skinned": "Cormorants plucked",
@@ -102,7 +114,11 @@
   "mpgc_customization_camp_style": "Camp themes updated",
   "mpgc_customization_clothing_style": "Clothing style updated",
   "mpgc_customization_facial_appearance": "Facial appearance updated at a Barber",
-  "mpgc_customization_hairstyle": "Hairstyle updated",
+  "mpgc_customization_hairstyle": {
+    "task": "Прическа изменена",
+    "solution": "Идём стричься к любому парикмахеру в Валентайн, Блэкуотер или Сен-Дени.",
+    "image": false
+  },
   "mpgc_customization_horse_kit": "Horse tack updated",
   "mpgc_customization_horse_mask": "Put a mask on your horse",
   "mpgc_customization_horse_style": "Horse appearance updated",
@@ -336,7 +352,11 @@
   "mpgc_prairie_poppy_picked": "Prairie Poppies picked",
   "mpgc_pronghorns_skinned": "Pronghorns skinned",
   "mpgc_protect_waves_completed": "Waves completed in Call to Arms",
-  "mpgc_rabbits_skinned": "Black-tailed Jackrabbits skinned",
+  "mpgc_rabbits_skinned": {
+    "task": "Чернохвостых зайцев освежевано",
+    "solution": "Находим, убиваем и свежуем.",
+    "image": "solutions/images/rabbits_skinned.jpg"
+  },
   "mpgc_raccoons_skinned": "North American Raccoons skinned",
   "mpgc_race_wins": "Placed top 3 in a Race",
   "mpgc_rams_head_picked": "Ram's Head picked",
@@ -353,7 +373,11 @@
     "image": "solutions/images/seagulls_skinned.jpg"
   },
   "mpgc_series_adversarial_attempts": "Finish Showdown in any Showdown Series",
-  "mpgc_series_elimination_attempts": "Finish Showdown in Elimination Series",
+  "mpgc_series_elimination_attempts": {
+    "task": "Завершено противоборство в серии на выбывание",
+    "solution": "Заходим в Меню игрока -> Быстрый вход -> Серия на выбывание. Победа не важна, главное - участие. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего",
+    "image": false
+  },
   "mpgc_series_elimination_wins": "Placed top 3 in an Elimination Showdown",
   "mpgc_series_featured_attempts": "Finish a mode in Featured Series",
   "mpgc_series_race_attempts": {
@@ -425,7 +449,11 @@
   "mpgc_turtle_skinned": "Turtles skinned",
   "mpgc_vanilla_flower_picked": "Vanilla Flowers picked",
   "mpgc_violet_snowdrop_picked": "Violet Snowdrop picked",
-  "mpgc_vultures_skinned": "Vultures plucked",
+  "mpgc_vultures_skinned": {
+    "task": "Стервятников ощипано",
+    "solution": "Отстреливаем и свежуем.",
+    "image": "solutions/images/vultures_skinned.jpg"
+  },
   "mpgc_wild_carrots_picked": "Wild Carrots picked",
   "mpgc_wild_feverfew_picked": "Wild Feverfew picked",
   "mpgc_wild_mint_picked": "Wild Mint picked",

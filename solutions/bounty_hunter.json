@@ -21,7 +21,11 @@
   },
   "mprc_bounty_general_delivered_multi_target": "More than one bounty target brought in at once",
   "mprc_bounty_general_delivered_timed_easy": "Bounty hunt completed with 3 min or more left",
-  "mprc_bounty_general_delivered_timed_hard": "Bounty hunt completed with 5 min or more left",
+  "mprc_bounty_general_delivered_timed_hard": {
+    "task": "Вы завершили охоту за головами, имея в запасе 5 минут или больше",
+    "solution": "Отправляемся к любому плакату розыска, выбираем любое задание по поимке преступника и выполняем, внимательно следя за таймером. (!) Задание иногда багует, если вы выполнили условие, но не засчитало - попробуйте перезайти в сессию и попробовать снова.",
+    "image": false
+  },
   "mprc_bounty_general_delivered_timed_med": "Bounty hunt completed with 4 min or more left",
   "mprc_bounty_location_lemoyne": "Bounties brought in from Lemoyne posters",
   "mprc_bounty_location_new_austin": {
@@ -46,13 +50,21 @@
     "image": false
   },
   "mprc_bounty_mission_completed_medium": "Medium ($$) bounty mission completed",
-  "mprc_bounty_player_completed": "Player bounties collected",
+  "mprc_bounty_player_completed": {
+    "task": "Разыскиваемых игроков поймано",
+    "solution": "Ждём приглашение с наградой за разыскиваемого игрока, принимаем и выполняем. Или же зовём друга, который готов устроить разбой, набить за свою голову +5$ награды и стать вашей целью. Если это случайный игрок - проще убить или вырубить, и уже потом доставлять, иначе будет вырываться.",
+    "image": false
+  },
   "mprc_bounty_targets_looted": {
     "task": "Разыскиваемых преступников ограблено",
     "solution": "Подойдёт любой преступник с плаката или открытого мира. Находим, вяжем/вырубаем/убиваем -> обыскиваем -> готово.",
     "image": false
   },
-  "mprc_bounty_target_photographed_alive": "Living bounty targets in a photograph",
+  "mprc_bounty_target_photographed_alive": {
+    "task": "Живых преступников сфотографировано",
+    "solution": "Отправляемся к любой доске со списком плакатов о розыске, выбираем любое задание по поимке преступника, находим цели, фотографируем (если повезёт с контрактом на несколько целей, то можно попытаться уместить сразу троих в один кадр). Также подойдут преступники из открытого мира.",
+    "image": false
+  },
   "mprc_bounty_used_bolas": "Bounty targets taken down with Bolas",
   "mprc_bounty_used_eagle_eye": "Eagle Eye used to track a bounty target",
   "mprc_bounty_used_lasso_horseback": {

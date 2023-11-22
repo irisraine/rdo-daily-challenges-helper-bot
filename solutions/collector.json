@@ -1,5 +1,9 @@
 {
-  "mprc_collector_antique_alcohol_drunk": "Antique Alcohol drunk",
+  "mprc_collector_antique_alcohol_drunk": {
+    "task": "Старинного алкоголя выпито",
+    "solution": "Информацию о местонахождении cтаринного алкоголя вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "image": false
+  },
   "mprc_collector_antique_bottles_found": {
     "task": "Старинного алкоголя найдено",
     "solution": "Информацию о местонахождении cтаринного алкоголя вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
@@ -43,7 +47,11 @@
     "solution": "Информацию о местонахождении карт Таро вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
     "image": false
   },
-  "mprc_collector_used_map": "Collector Maps used",
+  "mprc_collector_used_map": {
+    "task": "Использовано карт коллекционера",
+    "solution": "Покупаем у мадам Назар карты коллекционера и используем их",
+    "image": false
+  },
   "mprc_collector_used_metal_dectector": {
     "task": "Коллекционных предметов с помощью металлоискателя найдено",
     "solution": "С помощью металлоискателя и карты коллекционера находим нужное количество предметов. Информацию о местонахождении коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
