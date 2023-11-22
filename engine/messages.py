@@ -15,7 +15,6 @@ role_titles = {
     'collector': f'{config.EMOJI["collector_emoji"]} Коллекционер',
     'moonshiner': f'{config.EMOJI["moonshiner_emoji"]} Самогонщик'
 }
-newline = "\n"
 
 
 class MessageContainer:
@@ -70,7 +69,7 @@ def get_header_messages():
     image_length, text_length = 1280, int(draw.textlength(current_date_formatted, font))
     x_shift, y_shift = ((image_length - text_length) // 2), 500
     draw.text((x_shift, y_shift), current_date_formatted, fill='white', font=font,
-              stroke_width=4, stroke_fill='black')
+              stroke_width=10, stroke_fill='black')
     cover_image.save(config.HEADER_COVER)
 
     header_messages = {
@@ -124,7 +123,7 @@ def get_tutorial_messages():
             description = ""
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
                 description_single = get_description(index, solutions, current_challenge)
-                description += f"{description_single}{newline}"
+                description += f"{description_single}\n"
             message = MessageContainer(title=title, description=description)
             role_tutorial_messages.append(message)
     tutorial_messages = {
