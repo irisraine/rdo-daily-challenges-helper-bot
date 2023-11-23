@@ -30,7 +30,11 @@
     "image": false
   },
   "mprc_moonshiner_moonshine_drank_easy": "Drank own weak or higher strength moonshine",
-  "mprc_moonshiner_moonshine_drank_hard": "Drank own strong moonshine",
+  "mprc_moonshiner_moonshine_drank_hard": {
+    "task": "Самогона высокой крепости приготовлено и выпито",
+    "solution": "Запускаем готовку самогона у Марселя. По готовности заходим в бар и выпиваем рюмочку за стойкой. Если самогон уже готов, то достаточно просто выпить. (!) Иногда багует. Если не засчитало - попробуйте перезайти в игровую сессию (сеть - свободный режим) и выпить рюмочку заново.",
+    "image": false
+  },
   "mprc_moonshiner_moonshine_drank_med": "Drank own average or higher strength moonshine",
   "mprc_moonshiner_moonshine_served_bar": {
     "task": "Раз подано самогона другим игрокам в баре",

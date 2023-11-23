@@ -22,7 +22,11 @@
   "mprc_trader_resupply_completed_timed_easy": "Resupply completed with 3 mins left",
   "mprc_trader_resupply_completed_timed_hard": "Resupply completed with 5 mins left",
   "mprc_trader_resupply_completed_timed_med": "Resupply completed with 4 mins left",
-  "mprc_trader_sold_carcass_timed": "Carcasses donated within 10 minutes",
+  "mprc_trader_sold_carcass_timed": {
+    "task": "Туш отдано за 10 минут",
+    "solution": "Заранее насобирать белок, лягушек или птичек и разом отдать.",
+    "image": false
+  },
   "mprc_trader_stew_eaten": {
     "task": "Рагу для лагеря съедено",
     "solution": "Подходим к котлу, берем рагу, съедаем (котёл в лагере друга тоже подойдёт).",
@@ -31,7 +35,11 @@
   "mprc_trader_stew_recipe_completed_cripps": "Cripps Special Camp Stew recipes completed",
   "mprc_trader_stew_recipe_completed_high": "High Quality Camp Stew recipes completed",
   "mprc_trader_stew_recipe_completed_superior": "Superior Quality Camp Stew recipes completed",
-  "mprc_trader_supplies_donated": "Donations to Cripps",
+  "mprc_trader_supplies_donated": {
+    "task": "Материалов отдано Криппсу",
+    "solution": "Отдать Криппсу всё, что отдается (туши, перья, рога и т. д.)",
+    "image": false
+  },
   "mprc_trader_supplies_donated_animal_large": {
     "task": "Туш крупных животных отдано Криппсу",
     "solution": "Наиболее эффективный способ определить размер животного - это узнать, каким оружием его рекомендуется убивать (во время прицеливания нажать `Показать информацию`). Для крупных таким оружием будут винтовка, винтовка с оптическим прицелом, лук с отравленными стрелами. Таким образом, это все крупные животные, размещаемые на крупе лошади целиком (олени, волки и т.д.).",

@@ -53,7 +53,11 @@
   },
   "mpgc_consumable_canned_goods_eaten": "Canned food eaten",
   "mpgc_consumable_coffee_drunk": "Cups of coffee drunk",
-  "mpgc_consumable_drinks_ordered_saloon": "Drinks ordered at a Saloon",
+  "mpgc_consumable_drinks_ordered_saloon": {
+    "task": "Выпивок в салунах заказано",
+    "solution": "Идём в любой салун, заказываем напиток, пьём/выбрасываем, повторяем 5 раз. Салуны есть в Валентайне, Армадилло, Тамблвиде, Блэкуотере, Роудсе, Ван-Хорне и Сен-Дени.",
+    "image": false
+  },
   "mpgc_consumable_dry_goods_eaten": "Dry goods eaten",
   "mpgc_consumable_fresh_produce_eaten": {
     "task": "Свежих продуктов съедено",
@@ -61,7 +65,11 @@
     "image": false
   },
   "mpgc_consumable_herbs_tasted": "Herbs eaten",
-  "mpgc_consumable_meat_eaten": "Meats eaten",
+  "mpgc_consumable_meat_eaten": {
+    "task": "Мяса съедено",
+    "solution": "Съедаем пять кусков любого мяса (предварительно пожарив их на костре, конечно же).",
+    "image": false
+  },
   "mpgc_consumable_saloon_snacks_eaten": {
     "task": "Бесплатных закусок съедено в салуне",
     "solution": "Закуски (миндаль в мисочке на барной стойке) можно найти в 4х салунах (в Блэкуотере, Роудсе, крупных салунах Валентайна и Сен-Дени). В каждом баре 3 порции закуски, так что, если вы с компанией - разделяйтесь. Для самогонщиков и их друзей есть вариант получше: идем в хижину самогонщика - там орешков хватит на всех.",
@@ -147,7 +155,11 @@
   "mpgc_distance_run": "Distance ran",
   "mpgc_distance_swim": "Distance swam",
   "mpgc_distance_train": "Distance traveled by train",
-  "mpgc_dog_pat": "Petted a dog",
+  "mpgc_dog_pat": {
+    "task": "Собак поглажено",
+    "solution": "Находим собаку в собственном лагере/лагере друга. Если таковой нет, то отправляемся на пост Мансанита или же в любой город - и ищем собаку там.",
+    "image": "solutions/images/dog_pat.jpg"
+  },
   "mpgc_ducks_skinned": "Ducks skinned",
   "mpgc_dynamic_ambush": "Successfully fended off an ambush",
   "mpgc_dynamic_campsite_defend": "Defended a campsite",
@@ -241,7 +253,11 @@
     "image": false
   },
   "mpgc_horse_enemies_trampled": "Non-player enemies trampled",
-  "mpgc_horse_fed": "Horses fed",
+  "mpgc_horse_fed": {
+    "task": "Лошадей накормлено",
+    "solution": "Скармливаем своей или чужой лошадке любые доступные угощения через селектор.",
+    "image": false
+  },
   "mpgc_horse_jump_from_height": "Jumped onto a horse from a 3m height",
   "mpgc_horse_jump_to_horse": "Jumped from a horse to another horse",
   "mpgc_horse_jump_to_train": "Jumped from a horse onto a moving train",
@@ -445,7 +461,11 @@
   "mpgc_travel_visit_mount_hagen": "Visited the peak of Mount Hagen",
   "mpgc_travel_visit_owanjila_dam": "Visited Owanjila Dam",
   "mpgc_travel_visit_van_horn": "Visited Van Horn",
-  "mpgc_turkeys_skinned": "Turkeys skinned",
+  "mpgc_turkeys_skinned": {
+    "task": "Индеек выпотрошено",
+    "solution": "Убиваем и свежуем.",
+    "image": "solutions/images/turkeys_skinned.jpg"
+  },
   "mpgc_turtle_skinned": "Turtles skinned",
   "mpgc_vanilla_flower_picked": "Vanilla Flowers picked",
   "mpgc_violet_snowdrop_picked": "Violet Snowdrop picked",
