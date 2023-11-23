@@ -18,27 +18,36 @@ role_titles = {
 
 
 class MessageContainer:
-    def __init__(self, title=None, description=None, image_path=None):
-        self.__embed = nextcord.Embed(
+    def __init__(self, title=None, description=None, images_paths=None):
+        self.__embeds = []
+        self.__images = []
+        main_embed = nextcord.Embed(
             title=title,
             description=description,
-            colour=nextcord.Colour.from_rgb(*config.BASIC_COLOR_CODE)
+            colour=nextcord.Colour.from_rgb(*config.BASIC_COLOR_CODE),
         )
-        if not image_path:
-            image_path = config.SEPARATOR
-        image_name = image_path.split('/')[-1]
-        image_attachment = f'attachment://{image_name}'
-        self.__embed.set_image(url=image_attachment)
-        filepath = os.path.join(os.getcwd(), image_path)
-        self.__image = nextcord.File(filepath, filename=image_name)
+        self.__embeds.append(main_embed)
+        if not images_paths:
+            images_paths = [config.SEPARATOR]
+        if len(images_paths) > 1:
+            self.__embeds[0].url = config.DUMMY_LINK
+            linking_embed = nextcord.Embed(url=config.DUMMY_LINK)
+            self.__embeds.append(linking_embed)
+        for index, image_path in enumerate(images_paths):
+            image_name = image_path.split('/')[-1]
+            image_attachment = f'attachment://{image_name}'
+            self.__embeds[index].set_image(url=image_attachment)
+            filepath = os.path.join(os.getcwd(), image_path)
+            image_file = nextcord.File(filepath, filename=image_name)
+            self.__images.append(image_file)
 
     @property
-    def embed(self):
-        return self.__embed
+    def embeds(self):
+        return self.__embeds
 
     @property
-    def image(self):
-        return self.__image
+    def images(self):
+        return self.__images
 
 
 def get_solutions(category):
@@ -73,9 +82,9 @@ def get_header_messages():
     cover_image.save(config.HEADER_COVER)
 
     header_messages = {
-        'cover': MessageContainer(image_path=config.HEADER_COVER),
-        'general': MessageContainer(image_path=config.HEADER_GENERAL),
-        'role': MessageContainer(image_path=config.HEADER_ROLE)
+        'cover': MessageContainer(images_paths=[config.HEADER_COVER]),
+        'general': MessageContainer(images_paths=[config.HEADER_GENERAL]),
+        'role': MessageContainer(images_paths=[config.HEADER_ROLE])
     }
     return header_messages
 
@@ -93,7 +102,7 @@ def get_madam_nazar_location_message():
     madam_nazar_location_message = MessageContainer(
         title=title,
         description=description,
-        image_path=location_filepath
+        images_paths=[location_filepath]
     )
     return madam_nazar_location_message
 
@@ -111,9 +120,12 @@ def get_tutorial_messages():
                 return None
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
                 description = get_description(index, solutions, current_challenge)
-                image = solutions[current_challenge['title']]['image']
-                image_path = os.path.join(os.getcwd(), image) if image else None
-                message = MessageContainer(description=description, image_path=image_path)
+                images = solutions[current_challenge['title']]['images']
+                images_paths = []
+                for image in images:
+                    image_path = os.path.join(os.getcwd(), image)
+                    images_paths.append(image_path)
+                message = MessageContainer(description=description, images_paths=images_paths)
                 general_tutorial_messages.append(message)
         else:
             solutions = get_solutions(category)

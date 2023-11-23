@@ -32,3 +32,5 @@ CUSTOM_RDO_FONT = 'assets/chineserocksboldcyrillic.otf'
 
 RDO_DAILY_CHALLENGES_API_URL = 'https://api.rdo.gg/challenges/index.json'
 RDO_MADAM_NAZAR_LOCATION_URL = 'https://rdocollector.com/madam-nazar'
+
+DUMMY_LINK = 'https://dummy.link/'

@@ -2,12 +2,12 @@
   "mpgc_alaskan_ginseng_picked": {
     "task": "Аляскинского женьшеня собрано",
     "solution": "Самый лучший вариант - отправиться к хижине в Window Rock. Там есть две грядки с этим женьшенем. Или же воспользуйтесь [картой коллекционера](https://jeanropke.github.io/RDR2CollectorsMap/)",
-    "image": "solutions/images/alaskan_ginseng_picked.jpg"
+    "images": ["solutions/images/alaskan_ginseng_picked.jpg"]
   },
   "mpgc_american_ginseng_picked": {
     "task": "Американского женьшеня собрано",
     "solution": "Находим, срываем или съедаем на месте, где нашли.",
-    "image": "solutions/images/american_ginseng_picked.jpg"
+    "images": ["solutions/images/american_ginseng_picked.jpg"]
   },
   "mpgc_animals_skinned": "Animals skinned",
   "mpgc_animal_bow_kills": "Animals killed with a Bow",
@@ -21,14 +21,14 @@
   "mpgc_bears_killed": {
     "task": "Медведей убито",
     "solution": "Подойдут гризли, чёрный медведь, а также любой из легендарных медведей.",
-    "image": "solutions/images/bears_killed.jpg"
+    "images": ["solutions/images/bears_killed.jpg"]
   },
   "mpgc_beavers_skinned": "Beavers skinned",
   "mpgc_black_berry_picked": "Blackberries picked",
   "mpgc_black_currant_picked": {
     "task": "Черной смородины собрано",
     "solution": "Находим, срываем или съедаем на месте, где нашли.",
-    "image": "solutions/images/black_currant_picked.jpg"
+    "images": ["solutions/images/black_currant_picked.jpg"]
   },
   "mpgc_boars_skinned": "Boars skinned",
   "mpgc_buffalo_skinned": "Bison skinned",
@@ -37,7 +37,7 @@
   "mpgc_burdock_root_picked": {
     "task": "Корня лопуха собрано",
     "solution": "Собираем или сразу съедаем на месте.",
-    "image": "solutions/images/burdock_root_picked.jpg"
+    "images": ["solutions/images/burdock_root_picked.jpg"]
   },
   "mpgc_capitale_notes_collected": "Capitale notes collected",
   "mpgc_chanterelle_picked": "Chanterelle picked",
@@ -49,31 +49,31 @@
   "mpgc_consumable_candy_eaten": {
     "task": "Конфет съедено",
     "solution": "Через селектор или сумку съедаем шоколад/конфеты/мятные леденцы (если в сумке нет, то заказываем через каталог и забираем на почте, либо покупаем в магазине).",
-    "image": false
+    "images": []
   },
   "mpgc_consumable_canned_goods_eaten": "Canned food eaten",
   "mpgc_consumable_coffee_drunk": "Cups of coffee drunk",
   "mpgc_consumable_drinks_ordered_saloon": {
     "task": "Выпивок в салунах заказано",
     "solution": "Идём в любой салун, заказываем напиток, пьём/выбрасываем, повторяем 5 раз. Салуны есть в Валентайне, Армадилло, Тамблвиде, Блэкуотере, Роудсе, Ван-Хорне и Сен-Дени.",
-    "image": false
+    "images": []
   },
   "mpgc_consumable_dry_goods_eaten": "Dry goods eaten",
   "mpgc_consumable_fresh_produce_eaten": {
     "task": "Свежих продуктов съедено",
     "solution": "Съедаем фрукты/овощи: яблоки, груши, персики, кукурузу, морковь. Если с собой нет, то покупаем в каталоге -> забираем на почте -> съедаем.",
-    "image": false
+    "images": []
   },
   "mpgc_consumable_herbs_tasted": "Herbs eaten",
   "mpgc_consumable_meat_eaten": {
     "task": "Мяса съедено",
     "solution": "Съедаем пять кусков любого мяса (предварительно пожарив их на костре, конечно же).",
-    "image": false
+    "images": []
   },
   "mpgc_consumable_saloon_snacks_eaten": {
     "task": "Бесплатных закусок съедено в салуне",
     "solution": "Закуски (миндаль в мисочке на барной стойке) можно найти в 4х салунах (в Блэкуотере, Роудсе, крупных салунах Валентайна и Сен-Дени). В каждом баре 3 порции закуски, так что, если вы с компанией - разделяйтесь. Для самогонщиков и их друзей есть вариант получше: идем в хижину самогонщика - там орешков хватит на всех.",
-    "image": false
+    "images": []
   },
   "mpgc_consumable_tobacco_used": "Tobacco smoked or chewed",
   "mpgc_consumable_tonics_oils_used": "Player stats boosted by tonics",
@@ -83,7 +83,7 @@
   "mpgc_coyotes_skinned": {
     "task": "Койотов освежевано",
     "solution": "Бегают практически везде. Можете поискать возле станции Эмеральд или Блекуотера.",
-    "image": "solutions/images/coyotes_skinned.jpg"
+    "images": ["solutions/images/coyotes_skinned.jpg"]
   },
   "mpgc_craft_big_game_seasoned": "Cooked Seasoned Big Game",
   "mpgc_craft_broke_down_small_animals": "Small animal carcasses broken down",
@@ -92,26 +92,26 @@
   "mpgc_craft_flakey_fish_seasoned": {
     "task": "Приготовлена рассыпчатая рыба с приправой",
     "solution": "Готовим на костре с мятой/душицей/тимьяном. Можно получить с любых окуней, краснопёрой и полосатой щуки (ловим, обдираем в сумке и потом уже готовим). Места ловли:",
-    "image": "solutions/images/craft_flakey_fish_seasoned.jpg"
+    "images": ["solutions/images/craft_flakey_fish_seasoned.jpg"]
   },
   "mpgc_craft_food": "Provisions cooked at campfire",
   "mpgc_craft_game_seasoned": "Cooked Seasoned Game",
   "mpgc_craft_horse_care": {
     "task": "Предметов для ухода за лошадью изготовлено",
     "solution": "Садимся у костра и делаем любой предмет для лошади (раздел \"уход за лошадью\"). Рецепты можно купить у скупщика. Не забудьте, что их нужно предварительно прочитать.",
-    "image": false
+    "images": []
   },
   "mpgc_craft_mutton_seasoned": "Cooked Seasoned Mutton",
   "mpgc_craft_plump_bird_seasoned": {
     "task": "Приготовлено мясо упитанной птицы с приправой",
     "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с дикой индейки, казарки или курицы. Ниже карта с ареалом диких индеек.",
-    "image": "solutions/images/craft_plump_bird_seasoned.jpg"
+    "images": ["solutions/images/craft_plump_bird_seasoned.jpg"]
   },
   "mpgc_craft_pork_seasoned": "Cooked Seasoned Pork",
   "mpgc_craft_prime_beef_seasoned": {
     "task": "Приготовлена первосортная говядина с приправой",
     "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с бизонов, быков, коров и волов. Также можно купить у мясника.",
-    "image": false
+    "images": []
   },
   "mpgc_craft_succulent_fish_seasoned": "Cooked Seasoned Succulent Fish",
   "mpgc_craft_tonic": "Crafted a Tonic",
@@ -125,7 +125,7 @@
   "mpgc_customization_hairstyle": {
     "task": "Прическа изменена",
     "solution": "Идём стричься к любому парикмахеру в Валентайн, Блэкуотер или Сен-Дени.",
-    "image": false
+    "images": []
   },
   "mpgc_customization_horse_kit": "Horse tack updated",
   "mpgc_customization_horse_mask": "Put a mask on your horse",
@@ -140,12 +140,12 @@
   "mpgc_distance_companion_boat": {
     "task": "Расстояние, преодоленное в лодке с членом отряда (в футах)",
     "solution": "Находим лодку в одной из этих точек и катаемся вместе с членом отряда.",
-    "image": "solutions/images/distance_companion_boat.jpg"
+    "images": ["solutions/images/distance_companion_boat.jpg"]
   },
   "mpgc_distance_companion_horse": {
     "task": "Расстояние, преодоленное в седле с членом отряда (в футах)",
     "solution": "Зовём друга, создаём отряд, катаемся вместе на одной лошади.",
-    "image": false
+    "images": []
   },
   "mpgc_distance_companion_wagon": "Distance traveled by wagon with a Posse Member",
   "mpgc_distance_driven_train": "Distance driven a train",
@@ -158,7 +158,7 @@
   "mpgc_dog_pat": {
     "task": "Собак поглажено",
     "solution": "Находим собаку в собственном лагере/лагере друга. Если таковой нет, то отправляемся на пост Мансанита или же в любой город - и ищем собаку там.",
-    "image": "solutions/images/dog_pat.jpg"
+    "images": ["solutions/images/dog_pat.jpg", "solutions/images/dog_pat_1.jpg"]
   },
   "mpgc_ducks_skinned": "Ducks skinned",
   "mpgc_dynamic_ambush": "Successfully fended off an ambush",
@@ -171,7 +171,7 @@
   "mpgc_egret_skinned": {
     "task": "Белых цапель выпотрошено",
     "solution": "Находим, убиваем, ощипываем. Могут сидеть на земле у водоёмов или пролетать в небе.",
-    "image": "solutions/images/egret_skinned.jpg"
+    "images": ["solutions/images/egret_skinned.jpg"]
   },
   "mpgc_elk_skinned": "Elk skinned",
   "mpgc_emote_npc": "Used an emote on a local",
@@ -188,7 +188,7 @@
   "mpgc_enemy_hats_shot_off": {
     "task": "Шляп ИИ-врагов сбито",
     "solution": "Стреляем ботам по шляпам, стараясь не прострелить голову. Для упрощения - стреляем по головам стрелами для мелкой дичи или снотворными патронами с варминта. Если лень искать врагов, то провоцируем случайных нпс: можно просто связать, а потом с лежачего сбить шляпу любым оружием",
-    "image": false
+    "images": []
   },
   "mpgc_english_mace_picked": "English Mace picked",
   "mpgc_evergreen_huckleberry_picked": "Evergreen Huckleberries picked",
@@ -205,7 +205,7 @@
   "mpgc_fish_caught_lure": {
     "task": "Рыб поймано на приманку",
     "solution": "Идём к водоёму, берём удочку и ловим рыбу на приманки: болотные, речные, озерные или особую блесну. Приманки можно купить у рыболова в Лаграсе (значок крючка на карте) или заказать через каталог.",
-    "image": false
+    "images": []
   },
   "mpgc_fish_caught_muskie": "Muskie caught",
   "mpgc_fish_caught_perch": "Perch caught",
@@ -229,7 +229,7 @@
   "mpgc_gfh_bonnie_macfarlane_wins": {
     "task": "Заданий Бонни Макфарлейн выполнено",
     "solution": "Идём к точке, отмеченной на карте, и берём задание у персонажа. Ближайшее быстрое перемещение на \"ранчо Макфарлейнов\".",
-    "image": "solutions/images/gfh_bonnie_macfarlane_wins.jpg"
+    "images": ["solutions/images/gfh_bonnie_macfarlane_wins.jpg"]
   },
   "mpgc_gfh_hamish_sinclair_wins": "Hamish Sinclair missions completed",
   "mpgc_gfh_james_langton_wins": "James Langton missions completed",
@@ -250,13 +250,13 @@
   "mpgc_horse_animals_trampled": {
     "task": "Животных растоптано",
     "solution": "Седлаем коня и берём на таран животных покрупнее. Можно усыпить снотворными патронами и затем растоптать (минус немного репутации, которую потом легко восстановить, просто погладив коня).",
-    "image": false
+    "images": []
   },
   "mpgc_horse_enemies_trampled": "Non-player enemies trampled",
   "mpgc_horse_fed": {
     "task": "Лошадей накормлено",
     "solution": "Скармливаем своей или чужой лошадке любые доступные угощения через селектор.",
-    "image": false
+    "images": []
   },
   "mpgc_horse_jump_from_height": "Jumped onto a horse from a 3m height",
   "mpgc_horse_jump_to_horse": "Jumped from a horse to another horse",
@@ -311,14 +311,14 @@
   "mpgc_players_killed_from_hip_fme": {
     "task": "Игроков убито выстрелами от бедра в событии свободного режима",
     "solution": "Дожидаемся приглашения на событие свободного режима с ПВП (расписание приходящих приглашений ниже) и убиваем одного игрока выстрелом от бедра. Стреляем, нажимая только кнопку выстрела без прицеливания (легко выполнить дробовиками на ближних дистанциях), либо используем МГ с картой \"раскрась в чёрное\", ставя по несколько меток за раз (тогда персонаж стреляет от бедра).",
-    "image": "solutions/images/fme_common.jpg"
+    "images": ["solutions/images/fme_common.jpg"]
   },
   "mpgc_players_killed_from_hip_showdown": "Player kills from the hip in Showdowns",
   "mpgc_players_killed_melee_fme": "Player kills with melee in Free Roam Events",
   "mpgc_players_killed_melee_showdown": {
     "task": "Игроков убито оружием ближнего боя в противоборствах",
     "solution": "Заходим в любой режим противоборств  (Меню игрока -> Быстрый вход -> Любая серия по вкусу) и идём резать/рубить (можно в т.ч. метательными ножами/топорами, но в рукопашную). Легче выполнить с помощью болы. Дейлик иногда не засчитывается, если вас закинуло в уже начатую игру. В таком случае просто не выходите в конце, дождитесь начала следующего матча.",
-    "image": false
+    "images": []
   },
   "mpgc_players_killed_pistol_fme": "Player kills with a Pistol in Free Roam Events",
   "mpgc_players_killed_pistol_showdown": "Player kills with a Pistol in Showdowns",
@@ -326,7 +326,7 @@
   "mpgc_players_killed_pv_timer": {
     "task": "Вы убили больше одного игрока за 5 секунд в противостоянии отрядов",
     "solution": "Потребуется постоянный отряд. Пригласите в него друга или кого-нибудь из сессии. Далее выбирайте: Меню игрока -> Отряд -> Противостояние отрядов -> Распря. Убиваем двух или больше игроков за 5 секунд. Карта \"Раскрась в чёрное\" или динамит вам в помощь.",
-    "image": false
+    "images": []
   },
   "mpgc_players_killed_repeater_fme": "Player kills with a Repeater in Free Roam Events",
   "mpgc_players_killed_repeater_showdown": "Player kills with a Repeater in Showdowns",
@@ -335,7 +335,7 @@
   "mpgc_players_killed_rifle_fme": {
     "task": "Игроков убито из винтовки в событии свободного режима",
     "solution": "Дожидаемся приглашения на ПВП событие свободного режима и убиваем игроков из заранее взятой винтовки. Расписание подходящих событий ниже.",
-    "image": "solutions/images/fme_common.jpg"
+    "images": ["solutions/images/fme_common.jpg"]
   },
   "mpgc_players_killed_rifle_showdown": "Player kills with a Rifle in Showdowns",
   "mpgc_players_killed_shotgun_fme": "Player kills with a Shotgun in Free Roam Events",
@@ -346,19 +346,19 @@
   "mpgc_players_killed_throw_showdown": {
     "task": "Игроков убито метательным оружием в противоборствах",
     "solution": "Берём с собой метательное оружие (динамит, молотов, метательные ножи, топоры - всё это можно купить у скупщика), заходим в любой режим противоборств (Меню игрока -> Быстрый вход -> Любая серия по вкусу), и убиваем троих игроков метательным оружием (но не в рукопашную). В некоторых режимах будет назначено оружие, поищите нужное на земле или дождитесь смены режима. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
-    "image": false
+    "images": []
   },
   "mpgc_players_revived": "Players revived",
   "mpgc_posse_bird_challenge_completed": {
     "task": "Пройдено состязание «Стрельба по птицам»",
     "solution": "Зовём друга, создаём отряд, запускаем состязание: Меню игрока -> Отряд -> Противостояние отрядов -> Стрельба по птицам. Дожидаемся завершения.",
-    "image": false
+    "images": []
   },
   "mpgc_posse_fish_challenge_completed": "Biggest Fish Contest completed",
   "mpgc_posse_herb_challenge_completed": {
     "task": "Пройдено состязание «Сбор трав»",
     "solution": "Зовём друга, создаём отряд, запускаем состязание: Меню игрока -> Отряд -> Противостояние отрядов -> Сбор трав. Дожидаемся завершения.",
-    "image": false
+    "images": []
   },
   "mpgc_posse_hunt_posse_leader_attempts": "Hunt the Leader completed",
   "mpgc_posse_infighting_completed": "Posse Infighting completed",
@@ -371,7 +371,7 @@
   "mpgc_rabbits_skinned": {
     "task": "Чернохвостых зайцев освежевано",
     "solution": "Находим, убиваем и свежуем.",
-    "image": "solutions/images/rabbits_skinned.jpg"
+    "images": ["solutions/images/rabbits_skinned.jpg"]
   },
   "mpgc_raccoons_skinned": "North American Raccoons skinned",
   "mpgc_race_wins": "Placed top 3 in a Race",
@@ -386,25 +386,25 @@
   "mpgc_seagulls_skinned": {
     "task": "Чаек ощипано",
     "solution": "Убиваем и ощипываем.",
-    "image": "solutions/images/seagulls_skinned.jpg"
+    "images": ["solutions/images/seagulls_skinned.jpg"]
   },
   "mpgc_series_adversarial_attempts": "Finish Showdown in any Showdown Series",
   "mpgc_series_elimination_attempts": {
     "task": "Завершено противоборство в серии на выбывание",
     "solution": "Заходим в Меню игрока -> Быстрый вход -> Серия на выбывание. Победа не важна, главное - участие. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего",
-    "image": false
+    "images": []
   },
   "mpgc_series_elimination_wins": "Placed top 3 in an Elimination Showdown",
   "mpgc_series_featured_attempts": "Finish a mode in Featured Series",
   "mpgc_series_race_attempts": {
     "task": "Завершена гонка в серии гонок",
     "solution": "Меню игрока -> Быстрый вход -> Серия гонок. Выигрывать необязательно, но отыграть нужно полную гонку (от общего старта до объявления победителей).",
-    "image": false
+    "images": []
   },
   "mpgc_series_shootout_attempts": {
     "task": "Завершено противоборство в серии перестрелок",
     "solution": "Меню игрока -> Быстрый вход -> Серия перестрелок. Побеждать необязательно, просто отыгрываем от начала и до конца. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
-    "image": false
+    "images": []
   },
   "mpgc_series_shootout_wins": "Placed top 3 in a Shootout Showdown",
   "mpgc_series_takeover_attempts": "Finish Showdown in Takeover Series",
@@ -416,7 +416,7 @@
   "mpgc_shop_animal_whole_sell": {
     "task": "Целых туш животных продано",
     "solution": "Продаем мяснику/Гасу неосвежёванные туши любых животных, птиц или радужной форели. Легче всего набрать в карманы и держать про запас различную мелочь по типу жаб, крыс, воробьёв, белок, небольших рыб и т. д.",
-    "image": false
+    "images": []
   },
   "mpgc_shop_feathers_sell": "Feathers sold",
   "mpgc_shop_herbs_sell": "Herbs sold",
@@ -431,14 +431,14 @@
   "mpgc_shop_visit_valentine": {
     "task": "Вы посетили магазин в Валентайне",
     "solution": "Проезжаем мимо прилавка мясника или заходим внутрь любого магазина.",
-    "image": false
+    "images": []
   },
   "mpgc_showdown_wins": "Placed top 3 in a Showdown",
   "mpgc_skunks_skinned": "Striped Skunks skinned",
   "mpgc_snakes_skinned": {
     "task": "Змей освежевано",
     "solution": "Обитают практически везде (кроме заснеженной части Амбарино). Убиваем и свежуем. На болотах их найти легче всего.",
-    "image": "solutions/images/snakes_skinned.jpg"
+    "images": ["solutions/images/snakes_skinned.jpg"]
   },
   "mpgc_songbirds_collected": "Small bird carcasses collected",
   "mpgc_spoonbill_skinned": "Spoonbills skinned",
@@ -464,7 +464,7 @@
   "mpgc_turkeys_skinned": {
     "task": "Индеек выпотрошено",
     "solution": "Убиваем и свежуем.",
-    "image": "solutions/images/turkeys_skinned.jpg"
+    "images": ["solutions/images/turkeys_skinned.jpg"]
   },
   "mpgc_turtle_skinned": "Turtles skinned",
   "mpgc_vanilla_flower_picked": "Vanilla Flowers picked",
@@ -472,7 +472,7 @@
   "mpgc_vultures_skinned": {
     "task": "Стервятников ощипано",
     "solution": "Отстреливаем и свежуем.",
-    "image": "solutions/images/vultures_skinned.jpg"
+    "images": ["solutions/images/vultures_skinned.jpg"]
   },
   "mpgc_wild_carrots_picked": "Wild Carrots picked",
   "mpgc_wild_feverfew_picked": "Wild Feverfew picked",
@@ -480,7 +480,7 @@
   "mpgc_wintergreen_berry_picked": {
     "task": "Гаультерии собрано",
     "solution": "Находим и собираем.",
-    "image": "solutions/images/wintergreen_berry_picked.jpg"
+    "images": ["solutions/images/wintergreen_berry_picked.jpg"]
   },
   "mpgc_wolves_killed": "Wolves killed",
   "mpgc_yarrow_picked": "Yarrow picked"

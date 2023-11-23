@@ -26,33 +26,33 @@ async def daily_challenges_guide():
         logging.error(f"Данные о дейликах за {current_date} не отображены из-за ошибки")
         return
     await message_channel.send(
-        embed=header_messages['cover'].embed,
-        file=header_messages['cover'].image
+        embeds=header_messages['cover'].embeds,
+        files=header_messages['cover'].images
     )
     await message_channel.send(
-        embed=header_messages['general'].embed,
-        file=header_messages['general'].image
+        embeds=header_messages['general'].embeds,
+        files=header_messages['general'].images
     )
     for tutorial_message in tutorial_messages['general']:
         await message_channel.send(
-            embed=tutorial_message.embed,
-            file=tutorial_message.image
+            embeds=tutorial_message.embeds,
+            files=tutorial_message.images
         )
     await message_channel.send(
-        embed=header_messages['role'].embed,
-        file=header_messages['role'].image
+        embeds=header_messages['role'].embeds,
+        files=header_messages['role'].images
     )
     for tutorial_message in tutorial_messages['role']:
         await message_channel.send(
-            embed=tutorial_message.embed,
-            file=tutorial_message.image
+            embeds=tutorial_message.embeds,
+            files=tutorial_message.images
         )
     if not madam_nazar_location_message:
         logging.warning("Невозможно получить данные о местонахождении мадам Назар")
     else:
         await message_channel.send(
-            embed=madam_nazar_location_message.embed,
-            file=madam_nazar_location_message.image
+            embeds=madam_nazar_location_message.embeds,
+            files=madam_nazar_location_message.images
         )
     logging.info(f"Данные о дейликах за {current_date} успешно отображены")
 
