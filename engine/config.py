@@ -19,6 +19,11 @@ EMOJI = {
 MONTH_LIST = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
               'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
 
+DAILY_CHALLENGES_UPDATE_TIME = {
+    'hour': 6,
+    'minute': 10
+}
+
 BASIC_COLOR_CODE = (48, 213, 200)
 
 HEADER_COVER_BLANK = 'assets/daily-challenges-header-cover-blank.jpg'

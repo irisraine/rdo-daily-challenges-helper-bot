@@ -1,12 +1,17 @@
 import nextcord
 from nextcord.ext import commands, tasks
 import os
-from datetime import datetime
+import datetime
 from dotenv import load_dotenv
 import logging
+import engine.config as config
 import engine.messages as messages
 
 load_dotenv()
+launch_time = datetime.time(
+    hour=config.DAILY_CHALLENGES_UPDATE_TIME['hour'],
+    minute=config.DAILY_CHALLENGES_UPDATE_TIME['minute']
+)
 
 intents = nextcord.Intents.all()
 client = commands.Bot(command_prefix='!', intents=intents)
@@ -14,10 +19,10 @@ client = commands.Bot(command_prefix='!', intents=intents)
 target_channel_id = int(os.getenv('DAILY_CHALLENGES_TUTORIALS_CHANNEL'))
 
 
-@tasks.loop(minutes=1)
+@tasks.loop(time=launch_time)
 async def daily_challenges_guide():
     message_channel = client.get_channel(target_channel_id)
-    current_date = datetime.today().strftime('%d-%m-%Y')
+    current_date = datetime.datetime.today().strftime('%d-%m-%Y')
 
     header_messages = messages.get_header_messages()
     tutorial_messages = messages.get_tutorial_messages()
