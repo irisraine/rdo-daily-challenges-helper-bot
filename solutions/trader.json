@@ -19,9 +19,21 @@
     "solution": "Выполнить задание поставки припасов для Криппса.",
     "image": false
   },
-  "mprc_trader_resupply_completed_timed_easy": "Resupply completed with 3 mins left",
-  "mprc_trader_resupply_completed_timed_hard": "Resupply completed with 5 mins left",
-  "mprc_trader_resupply_completed_timed_med": "Resupply completed with 4 mins left",
+  "mprc_trader_resupply_completed_timed_easy": {
+    "task": "Задание по поставке завершено с запасом в 3 минуты",
+    "solution": "Тут и так всё понятно =)",
+    "image": false
+  },
+  "mprc_trader_resupply_completed_timed_hard": {
+    "task": "Задание по поставке завершено с запасом в 5 минут",
+    "solution": "Тут и так всё понятно =)",
+    "image": false
+  },
+  "mprc_trader_resupply_completed_timed_med": {
+    "task": "Задание по поставке завершено с запасом в 4 минуты",
+    "solution": "Тут и так всё понятно =)",
+    "image": false
+  },
   "mprc_trader_sold_carcass_timed": {
     "task": "Туш отдано за 10 минут",
     "solution": "Заранее насобирать белок, лягушек или птичек и разом отдать.",
@@ -32,9 +44,21 @@
     "solution": "Подходим к котлу, берем рагу, съедаем (котёл в лагере друга тоже подойдёт).",
     "image": false
   },
-  "mprc_trader_stew_recipe_completed_cripps": "Cripps Special Camp Stew recipes completed",
-  "mprc_trader_stew_recipe_completed_high": "High Quality Camp Stew recipes completed",
-  "mprc_trader_stew_recipe_completed_superior": "Superior Quality Camp Stew recipes completed",
+  "mprc_trader_stew_recipe_completed_cripps": {
+    "task": "Фирменных рецептов рагу Криппса для лагеря завершено",
+    "solution": "Идём к котлу в лагере, готовим именное рагу (самое верхнее в списке). Многие недостающие ингредиенты можно докупить через каталог и забрать на почте, но для некоторых придется охотиться или ехать к мяснику.",
+    "image": false
+  },
+  "mprc_trader_stew_recipe_completed_high": {
+    "task": "Рецептов рагу высокого качества для лагеря завершено",
+    "solution": "Идём к котлу в лагере, готовим рагу высокого качества. Многие недостающие ингредиенты можно докупить через каталог и забрать на почте, но для некоторых придется охотиться или ехать к мяснику.",
+    "image": false
+  },
+  "mprc_trader_stew_recipe_completed_superior": {
+    "task": "Рецептов рагу выcшего качества для лагеря завершено",
+    "solution": "Идём к котлу в лагере, готовим рагу выcшего качества. Многие недостающие ингредиенты можно докупить через каталог и забрать на почте, но для некоторых придется охотиться или ехать к мяснику.",
+    "image": false
+  },
   "mprc_trader_supplies_donated": {
     "task": "Материалов отдано Криппсу",
     "solution": "Отдать Криппсу всё, что отдается (туши, перья, рога и т. д.)",

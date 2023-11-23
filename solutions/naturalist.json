@@ -9,26 +9,66 @@
     "solution": "Разбиваем походный лагерь и готовим еду, делаем стрелы или тоники. Возможность размещать походный лагерь покупается у Гарриет.",
     "image": false
   },
-  "mprc_naturalist_dont_kill_animals_easy": "Don't kill an animal for 12 game hours",
+  "mprc_naturalist_dont_kill_animals_easy": {
+    "task": "Не убивайте животных в течение 12 игровых часов",
+    "solution": "Тут и так всё понятно =)",
+    "image": false
+  },
   "mprc_naturalist_dont_kill_animals_hard": {
     "task": "Не убивайте животных в течение 24 игровых часов",
     "solution": "Тут и так всё понятно =)",
     "image": false
   },
-  "mprc_naturalist_dont_kill_animals_med": "Don't kill an animal for 18 game hours",
+  "mprc_naturalist_dont_kill_animals_med": {
+    "task": "Не убивайте животных в течение 18 игровых часов",
+    "solution": "Тут и так всё понятно =)",
+    "image": false
+  },
   "mprc_naturalist_photo_animal_legendary": {
     "task": "Сфотографировано легендарных животных",
     "solution": "Идём к Гарриет и запускаем задание легендарных животных, либо открываем [интерактивную карту](https://jeanropke.github.io/RDOMap/) и ищем легендарных животных по ней (не забывая смотреть условия встречи/спавна животного). Чтобы животные вас меньше пугались - пьём маскирующий тоник.",
     "image": false
   },
-  "mprc_naturalist_samples_sold": "Animal samples sold to Harriet",
-  "mprc_naturalist_samples_taken_timed": "Animal samples taken within 10 mins",
-  "mprc_naturalist_sample_animal_desert": "Desert animal samples taken",
-  "mprc_naturalist_sample_animal_domesticated": "Farmland animal samples taken",
-  "mprc_naturalist_sample_animal_forest": "Forest/River animal samples taken",
-  "mprc_naturalist_sample_animal_grassland": "Mountain/Grassland animal samples taken",
-  "mprc_naturalist_sample_animal_legendary": "Legendary Animal samples taken",
-  "mprc_naturalist_sample_animal_swamp": "Wetland animal samples taken",
+  "mprc_naturalist_samples_sold": {
+    "task": "Образцов животных продано Гарриет",
+    "solution": "Усыпляем любое животное (кроме птиц и самых мелких животных, вроде белок) с помощью снотворных патронов для винтовки Варминт, собираем образцы и продаем требуемое количество Гарриет",
+    "image": false
+  },
+  "mprc_naturalist_samples_taken_timed": {
+    "task": "Взято образцов животных за 10 минут",
+    "solution": "Тут и так всё понятно =)",
+    "image": false
+  },
+  "mprc_naturalist_sample_animal_desert": {
+    "task": "Взято образцов обитателей пустынь",
+    "solution": "Собираем образцы пустынных животных",
+    "image": false
+  },
+  "mprc_naturalist_sample_animal_domesticated": {
+    "task": "Взято образцов домашнего скота",
+    "solution": "Собираем образцы домашнего скота - овец, свиней, коров. Можно найти на фермах и на ранчо",
+    "image": false
+  },
+  "mprc_naturalist_sample_animal_forest": {
+    "task": "Взято образцов обитателей лесов и рек",
+    "solution": "Собираем образцы обитателей лесов и рек",
+    "image": false
+  },
+  "mprc_naturalist_sample_animal_grassland": {
+    "task": "Взято образцов обитателей гор и лугов",
+    "solution": "Собираем образцы обитателей гор и лугов",
+    "image": false
+  },
+  "mprc_naturalist_sample_animal_legendary": {
+    "task": "Взято образцов легендарных животных",
+    "solution": "Собираем образцы любых легендарных животных",
+    "image": false
+  },
+  "mprc_naturalist_sample_animal_swamp": {
+    "task": "Взято образцов обитателей болот",
+    "solution": "Собираем образцы обитателей болот",
+    "image": false
+  },
   "mprc_naturalist_tranq_animal_revived": {
     "task": "Оживлено усыпленных животных",
     "solution": "Усыпляем снотворными патронами Варминта, оживляем. Снотворные патроны и оживители животных можно купить у Гарриет.",
@@ -44,5 +84,9 @@
     "solution": "Берем задание на легендарное животное у Гарриет или находим двоих в открытом мире, применяем феромон как только понимаем, что животное появилось рядом. Феромоны находятся в селекторе предметов, в разделе с удочкой и приманками, купить их также можно у Гарриет.",
     "image": false
   },
-  "mprc_naturalist_used_weight_tonic": "Weight Change Tonics used"
+  "mprc_naturalist_used_weight_tonic": {
+    "task": "Тоников для изменения веса использовано",
+    "solution": "Покупаем у Гарриет тоник для изменения веса, или крафтим самостоятельно, и выпиваем нужное количество",
+    "image": false
+  }
 }
