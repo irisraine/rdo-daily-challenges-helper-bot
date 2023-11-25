@@ -15,6 +15,7 @@ requests = "^2.31.0"
 python-dotenv = "^1.0.0"
 beautifulsoup4 = "^4.12.2"
 pillow = "^10.1.0"
+tqdm = "^4.66.1"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"

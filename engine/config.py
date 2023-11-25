@@ -26,6 +26,8 @@ DAILY_CHALLENGES_UPDATE_TIME = {
 
 BASIC_COLOR_CODE = (48, 213, 200)
 
+OVERALL_NUMBER_OF_MESSAGES = 16
+
 HEADER_COVER_BLANK = 'assets/daily-challenges-header-cover-blank.jpg'
 HEADER_COVER = 'assets/daily-challenges-header-cover.jpg'
 HEADER_GENERAL = 'assets/daily-challenges-header-general.jpg'

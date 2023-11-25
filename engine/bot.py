@@ -4,6 +4,7 @@ import os
 import datetime
 from dotenv import load_dotenv
 import logging
+from tqdm import tqdm
 import engine.config as config
 import engine.messages as messages
 
@@ -27,39 +28,54 @@ async def daily_challenges_guide():
     header_messages = messages.get_header_messages()
     tutorial_messages = messages.get_tutorial_messages()
     madam_nazar_location_message = messages.get_madam_nazar_location_message()
+
     if not tutorial_messages:
-        logging.error(f"Данные о дейликах за {current_date} не отображены из-за ошибки")
+        logging.error(f"Данные о дейликах за {current_date} не могут быть отображены из-за ошибки")
         return
+    if not madam_nazar_location_message:
+        logging.warning("Невозможно получить данные о местонахождении мадам Назар")
+
+    progressbar = tqdm(
+        desc="Размещение сообщений: ",
+        total=len(range(config.OVERALL_NUMBER_OF_MESSAGES)),
+        bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}]'
+    )
+
     await message_channel.send(
         embeds=header_messages['cover'].embeds,
         files=header_messages['cover'].images
     )
+    progressbar.update(1)
     await message_channel.send(
         embeds=header_messages['general'].embeds,
         files=header_messages['general'].images
     )
+    progressbar.update(1)
     for tutorial_message in tutorial_messages['general']:
         await message_channel.send(
             embeds=tutorial_message.embeds,
             files=tutorial_message.images
         )
+        progressbar.update(1)
     await message_channel.send(
         embeds=header_messages['role'].embeds,
         files=header_messages['role'].images
     )
+    progressbar.update(1)
     for tutorial_message in tutorial_messages['role']:
         await message_channel.send(
             embeds=tutorial_message.embeds,
             files=tutorial_message.images
         )
-    if not madam_nazar_location_message:
-        logging.warning("Невозможно получить данные о местонахождении мадам Назар")
-    else:
+        progressbar.update(1)
+    if madam_nazar_location_message:
         await message_channel.send(
             embeds=madam_nazar_location_message.embeds,
             files=madam_nazar_location_message.images
         )
-    logging.info(f"Данные о дейликах за {current_date} успешно отображены")
+        progressbar.update(1)
+    progressbar.close()
+    logging.info(f"Данные о дейликах за {current_date} успешно отображены!\n")
 
 
 @client.event
