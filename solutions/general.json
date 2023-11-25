@@ -1,4 +1,4 @@
-  {
+{
   "mpgc_alaskan_ginseng_picked": {
     "task": "Аляскинского женьшеня собрано",
     "solution": "Самый лучший вариант - отправиться к хижине в Window Rock. Там есть две грядки с этим женьшенем. Или же воспользуйтесь [картой коллекционера](https://jeanropke.github.io/RDR2CollectorsMap/)",
@@ -9,62 +9,166 @@
     "solution": "Находим, срываем или съедаем на месте, где нашли.",
     "images": ["solutions/images/american_ginseng_picked.jpg"]
   },
-  "mpgc_animals_skinned": "Animals skinned",
-  "mpgc_animal_bow_kills": "Animals killed with a Bow",
-  "mpgc_animal_kills": "Animals killed",
-  "mpgc_animal_knife_kills": "Animals killed with a knife",
-  "mpgc_animal_throwing_kills": "Animals killed with a Throwing Weapon",
-  "mpgc_armadillo_skinned": "Nine-banded Armadillos skinned",
-  "mpgc_badgers_skinned": "American Badgers skinned",
-  "mpgc_bats_skinned": "Little Brown Bats collected",
-  "mpgc_bay_bolete_picked": "Bay Bolete picked",
+  "mpgc_animals_skinned": {
+    "task": "Животных освежевано",
+    "solution": "Убиваем и свежуем любых животных.",
+    "images": []
+  },
+  "mpgc_animal_bow_kills": {
+    "task": "Животных убито из лука",
+    "solution": "Берём лук и убиваем нужное кол-во животных/птиц.",
+    "images": []
+  },
+  "mpgc_animal_kills": {
+    "task": "Животных убито",
+    "solution": "Просто убиваем 20 любых животных/птиц/рыб.",
+    "images": []
+  },
+  "mpgc_animal_knife_kills": {
+    "task": "Животных зарезано ножом",
+    "solution": "Экипируем свой нож и убиваем нужное кол-во животных/птиц",
+    "images": []
+  },
+  "mpgc_animal_throwing_kills": {
+    "task": "Животных убито метательным оружием",
+    "solution": "Берём метательные ножи/томагавки/топорики/динамит и убиваем любых животных. Можно также выполнить на рыбах, глуша их динамитом",
+    "images": []
+  },
+  "mpgc_armadillo_skinned": {
+    "task": "Девятипоясных броненосцев освежевано",
+    "solution": "Убиваем, свежуем. Места обитания броненосцев смотрим по карте",
+    "images": ["solutions/images/armadillo_skinned.jpg"]
+  },
+  "mpgc_badgers_skinned": {
+    "task": "Американских барсуков освежевано",
+    "solution": "Убиваем, свежуем. Места обитания",
+    "images": ["solutions/images/badgers_skinned.jpg"]
+  },
+  "mpgc_bats_skinned": {
+    "task": "Маленьких бурых ночниц собрано",
+    "solution": "Находим летучих мышей, убиваем, собираем. Почти всегда можно встретить в пещерах (например, под водопадом на отравленном озере возле Бутчер-Крик, а также ночью в небе в некоторых областях (см. карту ниже).",
+    "images": ["solutions/images/bats_skinned.jpg"]
+  },
+  "mpgc_bay_bolete_picked": {
+    "task": "Польских грибов собрано",
+    "solution": "Берем карту, находим и собираем",
+    "images": ["solutions/images/bay_bolete_picked.jpg"]
+  },
   "mpgc_bears_killed": {
     "task": "Медведей убито",
     "solution": "Подойдут гризли, чёрный медведь, а также любой из легендарных медведей.",
     "images": ["solutions/images/bears_killed.jpg"]
   },
-  "mpgc_beavers_skinned": "Beavers skinned",
-  "mpgc_black_berry_picked": "Blackberries picked",
+  "mpgc_beavers_skinned": {
+    "task": "Бобров освежевано",
+    "solution": "Берем карту, ищем, убиваем, свежуем",
+    "images": ["solutions/images/beavers_skinned.jpg"]
+  },
+  "mpgc_black_berry_picked": {
+    "task": "Ежевики собрано",
+    "solution": "Находим, срываем или съедаем на месте, где нашли.",
+    "images": ["solutions/images/black_berry_picked.jpg"]
+  },
   "mpgc_black_currant_picked": {
     "task": "Черной смородины собрано",
     "solution": "Находим, срываем или съедаем на месте, где нашли.",
     "images": ["solutions/images/black_currant_picked.jpg"]
   },
-  "mpgc_boars_skinned": "Boars skinned",
-  "mpgc_buffalo_skinned": "Bison skinned",
-  "mpgc_bullfrogs_skinned": "American Bullfrogs collected",
-  "mpgc_bulls_skinned": "Bulls skinned",
+  "mpgc_boars_skinned": {
+    "task": "Кабанов освежевано",
+    "solution": "Идем в места обитания, убиваем, свежуем",
+    "images": ["solutions/images/boars_skinned.jpg"]
+  },
+  "mpgc_buffalo_skinned": {
+    "task": "Бизонов освежевано",
+    "solution": "Ищем в этих трех точках, убиваем и сдираем шкуру.",
+    "images": ["solutions/images/buffalo_skinned.jpg"]
+  },
+  "mpgc_bullfrogs_skinned": {
+    "task": "",
+    "solution": "",
+    "images": ["solutions/images/bullfrogs_skinned.jpg"]
+  },
+  "mpgc_bulls_skinned": {
+    "task": "Быков освежевано",
+    "solution": "Находим, убиваем, свежуем. Найти быков можно только в 2х местах: в загоне с коровами на ранчо Кармоди-Делл (возле нефтяных полей) и в отдельном загоне на ранчо Хилл-Хэвен (ближе к реке), что возле Роудса (см. карту ниже).",
+    "images": ["solutions/images/bulls_skinned.jpg"]
+  },
   "mpgc_burdock_root_picked": {
     "task": "Корня лопуха собрано",
     "solution": "Собираем или сразу съедаем на месте.",
     "images": ["solutions/images/burdock_root_picked.jpg"]
   },
-  "mpgc_capitale_notes_collected": "Capitale notes collected",
-  "mpgc_chanterelle_picked": "Chanterelle picked",
-  "mpgc_chickens_skinned": "Chickens skinned",
-  "mpgc_chipmunk_skinned": "Western Chipmunks collected",
-  "mpgc_common_bulrush_picked": "Common Bulrush picked",
-  "mpgc_condor_skinned": "Condors plucked",
-  "mpgc_consumable_became_drunk": "Times became drunk",
+  "mpgc_capitale_notes_collected": {
+    "task": "Банкнот капитале собрано",
+    "solution": "Можно получить с трупов и сундуков в заданиях \"Кровавые деньги\"(берутся у незнакомцев, что отмечены на карте ниже). Рекомендуемо: у любого из них \"Джеб Фелпс\", 2-е задание: на крыше на козырке дома что нужно поджечь - есть сейф в котором лежит 3-4 шт. капитале. Миссию можно провалить убив цель, чтобы иметь возможность запустить её ещё раз.",
+    "images": ["solutions/images/capitale_notes_collected.jpg"]
+  },
+  "mpgc_chanterelle_picked": {
+    "task": "Лисичек собрано",
+    "solution": "Собираем или сразу съедаем на месте",
+    "images": ["solutions/images/chanterelle_picked.jpg"]
+  },
+  "mpgc_chickens_skinned": {
+    "task": "Куриц выпотрошено",
+    "solution": "Находим, убиваем, свежуем",
+    "images": ["solutions/images/chickens_skinned.jpg"]
+  },
+  "mpgc_chipmunk_skinned": {
+    "task": "Малых бурундуков собрано",
+    "solution": "Находим, убиваем, свежуем (см. карту ниже). Рекомендуем отправиться на пост Мансанита, пробежаться на север по тропинке до развилки и поискать бурундуков там (зеленая область).",
+    "images": ["solutions/images/chipmunk_skinned.jpg"]
+  },
+  "mpgc_common_bulrush_picked": {
+    "task": "Камыша обыкновенного собрано",
+    "solution": "Растет около водоёмов, подходим и срываем",
+    "images": ["solutions/images/common_bulrush_picked.jpg"]
+  },
+  "mpgc_condor_skinned": {
+    "task": "Кондоров ощипано",
+    "solution": "Убиваем и ощипываем",
+    "images": ["solutions/images/condor_skinned.jpg"]
+  },
+  "mpgc_consumable_became_drunk": {
+    "task": "Опьянений",
+    "solution": "Напиваемся алкоголем до выполнения: пивом в лагере/салуне, самогоном в хижине самогонщика или любым алкоголем из инвентаря.",
+    "images": []
+  },
   "mpgc_consumable_candy_eaten": {
     "task": "Конфет съедено",
     "solution": "Через селектор или сумку съедаем шоколад/конфеты/мятные леденцы (если в сумке нет, то заказываем через каталог и забираем на почте, либо покупаем в магазине).",
     "images": []
   },
-  "mpgc_consumable_canned_goods_eaten": "Canned food eaten",
-  "mpgc_consumable_coffee_drunk": "Cups of coffee drunk",
+  "mpgc_consumable_canned_goods_eaten": {
+    "task": "Консервов съедено",
+    "solution": "Через селектор съедаем любые 5 банок консервов. Если нет, то заказываем через каталог, забираем на почте или покупаем в магазине.",
+    "images": []
+  },
+  "mpgc_consumable_coffee_drunk": {
+    "task": "Кружек кофе выпито",
+    "solution": "Можно сварить на любом костре, если есть в инвентаре (если нет, то заказать в каталоге и забрать на почте). А можно просто взять уже готовый справа от стойки в баре самогонщика.",
+    "images": []
+  },
   "mpgc_consumable_drinks_ordered_saloon": {
     "task": "Выпивок в салунах заказано",
     "solution": "Идём в любой салун, заказываем напиток, пьём/выбрасываем, повторяем 5 раз. Салуны есть в Валентайне, Армадилло, Тамблвиде, Блэкуотере, Роудсе, Ван-Хорне и Сен-Дени.",
     "images": []
   },
-  "mpgc_consumable_dry_goods_eaten": "Dry goods eaten",
+  "mpgc_consumable_dry_goods_eaten": {
+    "task": "Бакалейных продуктов съедено",
+    "solution": "Съедаем хлеб, шоколад, конфеты, печенье/крекеры. Можно купить через каталог в соответствующем разделе и потом забрать на почте.",
+    "images": []
+  },
   "mpgc_consumable_fresh_produce_eaten": {
     "task": "Свежих продуктов съедено",
     "solution": "Съедаем фрукты/овощи: яблоки, груши, персики, кукурузу, морковь. Если с собой нет, то покупаем в каталоге -> забираем на почте -> съедаем.",
     "images": []
   },
-  "mpgc_consumable_herbs_tasted": "Herbs eaten",
+  "mpgc_consumable_herbs_tasted": {
+    "task": "Трав съедено",
+    "solution": "Ищем травы и съедаем. Если есть в сумке, то жуём сразу оттуда (подойдёт всё, кроме олеандра, камыша и коллекционных растений).",
+    "images": []
+  },
   "mpgc_consumable_meat_eaten": {
     "task": "Мяса съедено",
     "solution": "Съедаем пять кусков любого мяса (предварительно пожарив их на костре, конечно же).",
@@ -75,68 +179,196 @@
     "solution": "Закуски (миндаль в мисочке на барной стойке) можно найти в 4х салунах (в Блэкуотере, Роудсе, крупных салунах Валентайна и Сен-Дени). В каждом баре 3 порции закуски, так что, если вы с компанией - разделяйтесь. Для самогонщиков и их друзей есть вариант получше: идем в хижину самогонщика - там орешков хватит на всех.",
     "images": []
   },
-  "mpgc_consumable_tobacco_used": "Tobacco smoked or chewed",
-  "mpgc_consumable_tonics_oils_used": "Player stats boosted by tonics",
-  "mpgc_cormorant_skinned": "Cormorants plucked",
-  "mpgc_cougars_killed": "Cougars killed",
-  "mpgc_cows_skinned": "Cows skinned",
+  "mpgc_consumable_tobacco_used": {
+    "task": "Табака выкурено или сжевано",
+    "solution": "Находим сигареты/сигары/жевательный табак в селекторе или сумке. Если нет, то всегда можно закупиться в каталоге и забрать на почте.",
+    "images": []
+  },
+  "mpgc_consumable_tonics_oils_used": {
+    "task": "Характеристик игрока усилено тониками",
+    "solution": "Выпиваем 2 любых тоника/настойки/зелья/самогона или съедаем жевательный табак.",
+    "images": []
+  },
+  "mpgc_cormorant_skinned": {
+    "task": "Бакланов ощипано",
+    "solution": "Находим, убиваем, ощипываем.",
+    "images": ["solutions/images/cormorant_skinned.jpg"]
+  },
+  "mpgc_cougars_killed": {
+    "task": "Пум убито",
+    "solution": "Находим, убиваем. Ночью шанс встретить выше, особенно в ущелье на севере от поста Мансанита.",
+    "images": ["solutions/images/cougars_killed.jpg"]
+  },
+  "mpgc_cows_skinned": {
+    "task": "Коров освежевано",
+    "solution": "Находим и режем.",
+    "images": ["solutions/images/cows_skinned.jpg"]
+  },
   "mpgc_coyotes_skinned": {
     "task": "Койотов освежевано",
     "solution": "Бегают практически везде. Можете поискать возле станции Эмеральд или Блекуотера.",
     "images": ["solutions/images/coyotes_skinned.jpg"]
   },
-  "mpgc_craft_big_game_seasoned": "Cooked Seasoned Big Game",
-  "mpgc_craft_broke_down_small_animals": "Small animal carcasses broken down",
-  "mpgc_craft_crustacean_seasoned": "Cooked Seasoned Crustacean",
-  "mpgc_craft_exotic_bird_seasoned": "Cooked Seasoned Exotic Bird",
+  "mpgc_craft_big_game_seasoned": {
+    "task": "Приготовлена крупная дичь с приправой",
+    "solution": "Готовим мясо крупной дичи с мятой/душицей/тимьяном. Получить его можно с любых крупных хищников (аллигаторов, медведей, пум, пантер, волков).",
+    "images": []
+  },
+  "mpgc_craft_broke_down_small_animals": {
+    "task": "Тушек мелких животных ободрано",
+    "solution": "В сумке обдираем 5 мелких животных. Подойдут белки, рыбы, бурундуки, жабы и вся остальная живность, которая помещается в сумку.",
+    "images": []
+  },
+  "mpgc_craft_crustacean_seasoned": {
+    "task": "Приготовлено мясо ракообразных с приправой",
+    "solution": "Мясо можно получить с крабов. Обдираем в сумке и готовим на костре с мятой/душицей/тимьяном.",
+    "images": ["solutions/images/craft_crustacean_seasoned.jpg"]
+  },
+  "mpgc_craft_exotic_bird_seasoned": {
+    "task": "Приготовлено мясо экзотической птицы с приправой",
+    "solution": "Мясо экзотической птицы можно получить с Американских пеликанов. Готовим на костре с мятой/душицей/тимьяном.",
+    "images": ["solutions/images/craft_exotic_bird_seasoned.jpg"]
+  },
   "mpgc_craft_flakey_fish_seasoned": {
     "task": "Приготовлена рассыпчатая рыба с приправой",
     "solution": "Готовим на костре с мятой/душицей/тимьяном. Можно получить с любых окуней, краснопёрой и полосатой щуки (ловим, обдираем в сумке и потом уже готовим). Места ловли:",
     "images": ["solutions/images/craft_flakey_fish_seasoned.jpg"]
   },
-  "mpgc_craft_food": "Provisions cooked at campfire",
-  "mpgc_craft_game_seasoned": "Cooked Seasoned Game",
+  "mpgc_craft_food": {
+    "task": "Блюд приготовлено на лагерном костре",
+    "solution": "Отправляемся в лагерь и у костра жарим любое добытое мясо или варим кофе.",
+    "images": []
+  },
+  "mpgc_craft_game_seasoned": {
+    "task": "Приготовлена дичь с приправой",
+    "solution": "Дичь можно получить с зайцев и уток. Готовим с мятой/тимьяном/душицей на костре.",
+    "images": []
+  },
   "mpgc_craft_horse_care": {
     "task": "Предметов для ухода за лошадью изготовлено",
     "solution": "Садимся у костра и делаем любой предмет для лошади (раздел \"уход за лошадью\"). Рецепты можно купить у скупщика. Не забудьте, что их нужно предварительно прочитать.",
     "images": []
   },
-  "mpgc_craft_mutton_seasoned": "Cooked Seasoned Mutton",
+  "mpgc_craft_mutton_seasoned": {
+    "task": "Приготовлена баранина с приправой",
+    "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с толсторогов и коз.",
+    "images": []
+  },
   "mpgc_craft_plump_bird_seasoned": {
     "task": "Приготовлено мясо упитанной птицы с приправой",
     "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с дикой индейки, казарки или курицы. Ниже карта с ареалом диких индеек.",
     "images": ["solutions/images/craft_plump_bird_seasoned.jpg"]
   },
-  "mpgc_craft_pork_seasoned": "Cooked Seasoned Pork",
+  "mpgc_craft_pork_seasoned": {
+    "task": "Приготовлена свинина с приправой",
+    "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с кабанов, свиней и пекари или же купить у мясника.",
+    "images": []
+  },
   "mpgc_craft_prime_beef_seasoned": {
     "task": "Приготовлена первосортная говядина с приправой",
     "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с бизонов, быков, коров и волов. Также можно купить у мясника.",
     "images": []
   },
-  "mpgc_craft_succulent_fish_seasoned": "Cooked Seasoned Succulent Fish",
-  "mpgc_craft_tonic": "Crafted a Tonic",
-  "mpgc_craft_venison_seasoned": "Cooked Seasoned Venison",
-  "mpgc_cranewhooping_skinned": "Whooping Cranes plucked",
-  "mpgc_creeping_thyme_picked": "Creeping Thyme picked",
-  "mpgc_customization_belt_buckle": "Belt Buckle updated",
-  "mpgc_customization_camp_style": "Camp themes updated",
-  "mpgc_customization_clothing_style": "Clothing style updated",
-  "mpgc_customization_facial_appearance": "Facial appearance updated at a Barber",
+  "mpgc_craft_succulent_fish_seasoned": {
+    "task": "Приготовлена сочная рыба с приправой",
+    "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с радужной форели или лосося (ловим, обдираем в сумке и потом уже готовим).",
+    "images": []
+  },
+  "mpgc_craft_tonic": {
+    "task": "Изготовлен тоник",
+    "solution": "Варим любой тоник на костре в обычном или походном лагере.",
+    "images": []
+  },
+  "mpgc_craft_venison_seasoned": {
+    "task": "Приготовлена оленина с приправой",
+    "solution": "Готовим на костре с мятой/душицей/тимьяном. Мясо можно получить с белохвостых оленей, вилорогов, вапити и лосей. Также можно купить у мясника.",
+    "images": []
+  },
+  "mpgc_cranewhooping_skinned": {
+    "task": "Американских журавлей ощипано",
+    "solution": "Находим, убиваем, свежуем. Водятся на болотах около Лаграса и Сен-Дени, найти можно у водоёмов или летящими в небе.",
+    "images": ["solutions/images/cranewhooping_skinned.jpg"]
+  },
+  "mpgc_creeping_thyme_picked": {
+    "task": "Тимьяна ползучего собрано",
+    "solution": "Собираем или едим.",
+    "images": ["solutions/images/creeping_thyme_picked.jpg"]
+  },
+  "mpgc_customization_belt_buckle": {
+    "task": "Пряжек для пояса изменено",
+    "solution": "Меняется в лагере (около спального места выбираем \"Гардероб\")..",
+    "images": []
+  },
+  "mpgc_customization_camp_style": {
+    "task": "Тем лагеря изменено",
+    "solution": "Подходим к Криппсу и меняем тему лагеря: \"Изменить лагерь\" -> \"Тема\".",
+    "images": []
+  },
+  "mpgc_customization_clothing_style": {
+    "task": "Стиль одежды изменен",
+    "solution": "Переодеваемся у себя в лагере/магазине/у лошади.",
+    "images": []
+  },
+  "mpgc_customization_facial_appearance": {
+    "task": "Внешность изменена у цирюльника",
+    "solution": "Меняем у одного из цирюльников зубы, щетину (на мужских персах) или помаду (на женских). Изменение причёски в зачёт дейлика не идёт! Цирюльники есть в Сен-Дени, Блэкуотере и Валентайне.",
+    "images": []
+  },
   "mpgc_customization_hairstyle": {
     "task": "Прическа изменена",
     "solution": "Идём стричься к любому парикмахеру в Валентайн, Блэкуотер или Сен-Дени.",
     "images": []
   },
-  "mpgc_customization_horse_kit": "Horse tack updated",
-  "mpgc_customization_horse_mask": "Put a mask on your horse",
-  "mpgc_customization_horse_style": "Horse appearance updated",
-  "mpgc_customization_mask": "Masks worn",
-  "mpgc_customization_weapon_cleaning": "Weapons cleaned with Gun Oil",
-  "mpgc_customization_weapon_customization": "Weapons customized",
-  "mpgc_deer_skinned": "Deer skinned",
-  "mpgc_desert_sage_picked": "Desert Sage picked",
-  "mpgc_distance_any": "Distance traveled",
-  "mpgc_distance_coach": "Distance traveled by coach or wagon",
+  "mpgc_customization_horse_kit": {
+    "task": "Сбруя лошади изменена",
+    "solution": "Конюшня => управление своими лошадьми => сбруя и услуги, меняем что-нибудь. Иногда достаточно будет просто зайти в меню \"сёдла\" своей лошади в конюшне и подождать 2-3 сек, дейлик зачтется.",
+    "images": []
+  },
+  "mpgc_customization_horse_mask": {
+    "task": "Вы надели маску на свою лошадь",
+    "solution": "Выбираем и надеваем маску в меню лошади.",
+    "images": []
+  },
+  "mpgc_customization_horse_style": {
+    "task": "Внешний вид лошади изменен",
+    "solution": "Заходим в конюшню. \"Управление своими лошадьми\" -> Выбираем лошадь -> \"Внешний вид\" -> меняем гриву/хвост/усы (можно на уже купленное/бесплатное, если имеется).",
+    "images": []
+  },
+  "mpgc_customization_mask": {
+    "task": "Масок надето",
+    "solution": "Надеваем маску в гардеробе или в меню лошади. Если у вас нет маски, то подойдёт любая бандана, но надеть её нужно именно через гардероб (с лошади не засчитает).",
+    "images": []
+  },
+  "mpgc_customization_weapon_cleaning": {
+    "task": "Оружия почищено оружейным маслом",
+    "solution": "Чистим оружие. Если нет масла, то покупаем в магазине/каталоге (последняя страница раздела \"Рыбалка и охота\") и забираем на почте. Если всё оружие чистое - делаем несколько выстрелов. Чистка оружия иногда может быть не доступна в некоторых ситуациях (на заданиях, возле стола Криппса, возле почтового ящика и т. д.).",
+    "images": []
+  },
+  "mpgc_customization_weapon_customization": {
+    "task": "Оружия модифицировано",
+    "solution": "Идем к оружейнику (Валентайн, Роудс, Сен-Дени, Аннесберг, Тамблвид), жмакаем \"модифицировать\" и меняем любой компонент на любом оружии. Покупать необязательно - можно снять и поставить обратно любой купленный элемент (обтяжку/прицел/нарез и т. д.).",
+    "images": []
+  },
+  "mpgc_deer_skinned": {
+    "task": "Оленей освежевано",
+    "solution": "Находим, убиваем, свежуем.",
+    "images": ["solutions/images/deer_skinned.jpg"]
+  },
+  "mpgc_desert_sage_picked": {
+    "task": "Пустынного шалфея собрано",
+    "solution": "Собираем или едим.",
+    "images": ["solutions/images/desert_sage_picked.jpg"]
+  },
+  "mpgc_distance_any": {
+    "task": "Преодоленное расстояние (в футах)",
+    "solution": "Наматываем километры любыми способами.",
+    "images": []
+  },
+  "mpgc_distance_coach": {
+    "task": "Расстояние, преодоленное на дилижансе или повозке с членом отряда (в футах)",
+    "solution": "Берём с собой друга, создаём отряд, угоняем/вызываем любую повозку (торговца или охотника), усаживаемся вместе и катаемся.",
+    "images": []
+  },
   "mpgc_distance_companion_boat": {
     "task": "Расстояние, преодоленное в лодке с членом отряда (в футах)",
     "solution": "Находим лодку в одной из этих точек и катаемся вместе с членом отряда.",
@@ -234,7 +466,11 @@
   "mpgc_gfh_hamish_sinclair_wins": "Hamish Sinclair missions completed",
   "mpgc_gfh_james_langton_wins": "James Langton missions completed",
   "mpgc_gfh_joe_wins": "Joe missions completed",
-  "mpgc_gfh_sadie_adler_wins": "Sadie Adler missions completed",
+  "mpgc_gfh_sadie_adler_wins": {
+    "task": "Заданий Сэди Адлер выполнено",
+    "solution": "Берём и выполняем задание данного персонажа.  Ближайшая точка перемещения \"Колтер\".",
+    "images": ["solutions/images/gfh_sadie_adler_wins.jpg"]
+  },
   "mpgc_gfh_sean_macquire_wins": "Sean Macguire missions completed",
   "mpgc_gfh_shaky_wins": "Shaky missions completed",
   "mpgc_gfh_the_boy_wins": "The Boy missions completed",
@@ -281,7 +517,11 @@
   "mpgc_opossums_skinned": "Virginia Opossums skinned",
   "mpgc_oregano_picked": "Oregano picked",
   "mpgc_outlaw_mission_wins": "Blood Money Crimes completed",
-  "mpgc_owls_skinned": "Owls plucked",
+  "mpgc_owls_skinned": {
+    "task": "Сов ощипано",
+    "solution": "Находим филина/сыча, убиваем, свежуем (см. карту ниже). Найти можно в основном ночью (с 21:00 до 5:00), летают в небе или сидят на краях скал/столбах.",
+    "images": ["solutions/images/owls_skinned.jpg"]
+  },
   "mpgc_oxen_skinned": "Oxen skinned",
   "mpgc_panthers_killed": "Panthers killed",
   "mpgc_parasol_mushroom_picked": "Parasol Mushrooms picked",
@@ -311,7 +551,7 @@
   "mpgc_players_killed_from_hip_fme": {
     "task": "Игроков убито выстрелами от бедра в событии свободного режима",
     "solution": "Дожидаемся приглашения на событие свободного режима с ПВП (расписание приходящих приглашений ниже) и убиваем одного игрока выстрелом от бедра. Стреляем, нажимая только кнопку выстрела без прицеливания (легко выполнить дробовиками на ближних дистанциях), либо используем МГ с картой \"раскрась в чёрное\", ставя по несколько меток за раз (тогда персонаж стреляет от бедра).",
-    "images": ["solutions/images/fme_common.jpg"]
+    "images": ["solutions/images/fme_pvp_schedule.jpg"]
   },
   "mpgc_players_killed_from_hip_showdown": "Player kills from the hip in Showdowns",
   "mpgc_players_killed_melee_fme": "Player kills with melee in Free Roam Events",
@@ -329,13 +569,17 @@
     "images": []
   },
   "mpgc_players_killed_repeater_fme": "Player kills with a Repeater in Free Roam Events",
-  "mpgc_players_killed_repeater_showdown": "Player kills with a Repeater in Showdowns",
+  "mpgc_players_killed_repeater_showdown": {
+    "task": "Игроков убито из карабина в противоборствах",
+    "solution": "Берём с собой карабин, запускаем противоборства (Меню игрока -> Быстрый вход -> Серия перестрелок (или захватов) и убиваем троих игроков из карабина. В некоторых режимах будет назначено другое оружие, поищите карабин на карте или дождитесь смены режима. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
+    "images": []
+  },
   "mpgc_players_killed_revolver_fme": "Player kills with a Revolver in Free Roam Events",
   "mpgc_players_killed_revolver_showdown": "Player kills with a Revolver in Showdowns",
   "mpgc_players_killed_rifle_fme": {
     "task": "Игроков убито из винтовки в событии свободного режима",
     "solution": "Дожидаемся приглашения на ПВП событие свободного режима и убиваем игроков из заранее взятой винтовки. Расписание подходящих событий ниже.",
-    "images": ["solutions/images/fme_common.jpg"]
+    "images": ["solutions/images/fme_pvp_schedule.jpg"]
   },
   "mpgc_players_killed_rifle_showdown": "Player kills with a Rifle in Showdowns",
   "mpgc_players_killed_shotgun_fme": "Player kills with a Shotgun in Free Roam Events",
@@ -419,7 +663,11 @@
     "images": []
   },
   "mpgc_shop_feathers_sell": "Feathers sold",
-  "mpgc_shop_herbs_sell": "Herbs sold",
+  "mpgc_shop_herbs_sell": {
+    "task": "Трав продано",
+    "solution": "Травы можно продать доктору ( находится в Валентайне и Сен-Дени, обозначен на карте белой сумкой с крестом). Подойдут любые растения, кроме коллекционных.",
+    "images": []
+  },
   "mpgc_shop_pelt_pristine_sell": "Perfect pelts sold",
   "mpgc_shop_sell_to_fence": "Items sold to a Fence",
   "mpgc_shop_sell_to_trapper": "Items sold to Gus",
@@ -442,7 +690,11 @@
   },
   "mpgc_songbirds_collected": "Small bird carcasses collected",
   "mpgc_spoonbill_skinned": "Spoonbills skinned",
-  "mpgc_squirrel_skinned": "Squirrels collected",
+  "mpgc_squirrel_skinned": {
+    "task": "Белок собрано",
+    "solution": "Находим, убиваем, подбираем. Встретить можно практически везде (см.карту ниже).",
+    "images": ["solutions/images/squirrel_skinned.jpg"]
+  },
   "mpgc_story_mission_wins": "A Land of Opportunities missions completed",
   "mpgc_story_mission_wins_on_call": "Go On-Call and complete a Story mission",
   "mpgc_telegram_mission_wins": "Telegram missions completed",
@@ -482,6 +734,14 @@
     "solution": "Находим и собираем.",
     "images": ["solutions/images/wintergreen_berry_picked.jpg"]
   },
-  "mpgc_wolves_killed": "Wolves killed",
-  "mpgc_yarrow_picked": "Yarrow picked"
+  "mpgc_wolves_killed": {
+    "task": "Волков убито",
+    "solution": "Находим, убиваем.\n1) Можно отправиться быстрым перемещением в Вапити и пробежаться на запад или же найти их в лесу на северо-западе от Мансанита пост, либо около ранчо Макфарлейнов. В ночное время шанс встретить чуть выше.\n2) Гарантированно настрелять волков можно на задании по поимке легендарного преступника \"Волка\" (роль охотник за головами).",
+    "images": ["solutions/images/wolves_killed.jpg"]
+  },
+  "mpgc_yarrow_picked": {
+    "task": "Тысячелистника собрано",
+    "solution": "Срываем или съедаем.",
+    "images": ["solutions/images/yarrow_picked.jpg"]
   }
+}
