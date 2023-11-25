@@ -10,6 +10,8 @@ ROLE_DAILY_CHALLENGES_COUNT = 3
 
 def get_daily_challenges_api_response():
     response = get_response(config.RDO_DAILY_CHALLENGES_API_URL)
+    if not response:
+        return None
     daily_challenges_api_response = {}
     try:
         daily_challenges_raw = json.loads(response)
@@ -51,7 +53,14 @@ def normalize(current_challenge):
 def get_response(url):
     try:
         response = requests.get(url)
-        return response.content
-    except requests.RequestException:
+        if response.status_code == 200:
+            logging.info(f"Ответ от {url} успешно получен!")
+            return response.content
+        else:
+            response.raise_for_status()
+    except (requests.RequestException, requests.HTTPError):
         logging.error(f"Ошибка соединения с {url}")
+        return None
+    except requests.Timeout:
+        logging.error(f"{url} не отвечает")
         return None
