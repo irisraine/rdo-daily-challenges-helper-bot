@@ -124,6 +124,9 @@ def get_tutorial_messages():
                 images_paths = []
                 for image in images:
                     image_path = os.path.join(os.getcwd(), image)
+                    if not os.path.isfile(image_path):
+                        logging.error(f'Файл с картинкой {image_path} отсутствует, проверьте правильность пути!')
+                        return None
                     images_paths.append(image_path)
                 message = MessageContainer(description=description, images_paths=images_paths)
                 general_tutorial_messages.append(message)
