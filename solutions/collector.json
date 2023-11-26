@@ -1,82 +1,82 @@
 {
   "mprc_collector_antique_alcohol_drunk": {
     "task": "Старинного алкоголя выпито",
-    "solution": "Информацию о местонахождении cтаринного алкоголя вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем самогон деда [на карте](https://jeanropke.github.io/RDR2CollectorsMap/) и выпиваем.",
     "images": []
   },
   "mprc_collector_antique_bottles_found": {
     "task": "Старинного алкоголя найдено",
-    "solution": "Информацию о местонахождении cтаринного алкоголя вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем самогон деда [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_arrowheads_found": {
     "task": "Наконечников стрел найдено",
-    "solution": "Информацию о местонахождении наконечников стрел вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем наконечники стрел Амура [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_bird_eggs_found": {
     "task": "Птичьих яиц найдено",
-    "solution": "Информацию о местонахождении птичьих яиц найдено вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем пасхальные яйца [на карте](https://jeanropke.github.io/RDR2CollectorsMap/). Сбиваем Варминтом. В некоторых местах яйцо намертво застревает на дереве, можете попробовать подогнать тюремный фургон и собрать с него.",
     "images": []
   },
   "mprc_collector_coins_found": {
     "task": "Монет найдено",
-    "solution": "Информацию о местонахождении монет вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем шоколадные монеты [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_family_heirlooms_found": {
     "task": "Фамильных ценностей найдено",
-    "solution": "Информацию о местонахождении фамильных ценностей вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем семейные реликвии [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_fossils_found": {
     "task": "Окаменелостей найдено",
-    "solution": "Информацию о местонахождении окаменелостей вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем останки заскамленных мамонтов [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_items_collected": {
     "task": "Коллекционных предметов собрано",
-    "solution": "Информацию о местонахождении различных коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Собираем любые коллекционки [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_items_looted_enemy": {
     "task": "Добыто коллекционных предметов у ИИ-врагов",
-    "solution": "Убиваем НПС и лутаем его. Повторить, пока с них не выпадет нужное количество коллекционных предметов",
+    "solution": "Выворачиваем карманы всем убитым НПС. В соло сессии шанс выпадения выше.",
     "images": []
   },
   "mprc_collector_items_sold": {
     "task": "Продано коллекционных предметов мадам Назар",
-    "solution": "Найти мадам Назар и продать ей коллекционные предметы (не наборы!).",
+    "solution": "Разыскиваем с мигалками мадам Назар на карте и продаем ей найденные побрякушки.",
     "images": []
   },
   "mprc_collector_lost_jewelry_found": {
     "task": "Потерянных украшений найдено",
-    "solution": "Информацию о местонахождении потерянных украшений вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем золотые перстни и гранатовые браслеты [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_tarot_cards_found": {
     "task": "Карт Таро найдено",
-    "solution": "Информацию о местонахождении карт Таро вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем гадальные карточки [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   },
   "mprc_collector_used_map": {
     "task": "Использовано карт коллекционера",
-    "solution": "Покупаем у мадам Назар карты коллекционера и используем их",
+    "solution": "Покупаем карты коллекционера у мадам Назар и открываем их по очереди.",
     "images": []
   },
   "mprc_collector_used_metal_dectector": {
     "task": "Коллекционных предметов с помощью металлоискателя найдено",
-    "solution": "С помощью металлоискателя и карты коллекционера находим нужное количество предметов. Информацию о местонахождении коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Вооружаемся металлоискателем, лопатой и [интерактивной картой](https://jeanropke.github.io/RDR2CollectorsMap/) и идем искать закопанное добро.",
     "images": []
   },
   "mprc_collector_used_shovel": {
     "task": "Откопано коллекционных предметов с помощью лопаты",
-    "solution": "Покупаем лопату у Назар и идем копать, находим нужное количество предметов. Информацию о местонахождении коллекционных предметов вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Вооружаемся металлоискателем, лопатой и [интерактивной картой](https://jeanropke.github.io/RDR2CollectorsMap/) и идем искать закопанное добро.",
     "images": []
   },
   "mprc_collector_wild_flowers_found": {
     "task": "Американских диких цветов найдено",
-    "solution": "Информацию о местонахождении американских диких цветов найдено вы можете найти на карте [по ссылке](https://jeanropke.github.io/RDR2CollectorsMap/)",
+    "solution": "Ищем розовые розы [на карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
     "images": []
   }
 }
