@@ -38,7 +38,7 @@ async def daily_challenges_guide():
     progressbar = tqdm(
         desc="Размещение сообщений: ",
         total=len(range(config.OVERALL_NUMBER_OF_MESSAGES)),
-        bar_format='{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}]'
+        bar_format='{l_bar}{bar:25}| {n_fmt}/{total_fmt} [{elapsed}]'
     )
 
     await message_channel.send(
