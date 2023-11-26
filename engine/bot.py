@@ -36,7 +36,7 @@ async def daily_challenges_guide():
         logging.warning("Невозможно получить данные о местонахождении мадам Назар")
 
     progressbar = tqdm(
-        desc="Размещение сообщений: ",
+        desc="[PROGRESS] Размещение сообщений: ",
         total=len(range(config.OVERALL_NUMBER_OF_MESSAGES)),
         bar_format='{l_bar}{bar:25}| {n_fmt}/{total_fmt} [{elapsed}]'
     )
@@ -80,5 +80,5 @@ async def daily_challenges_guide():
 
 @client.event
 async def on_ready():
-    logging.info(f'Залогинен под именем: {client.user.name}')
+    logging.info(f'Бот залогинен под именем: {client.user.name}')
     daily_challenges_guide.start()
