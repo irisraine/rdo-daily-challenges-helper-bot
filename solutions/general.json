@@ -26,7 +26,7 @@
   },
   "mpgc_animal_knife_kills": {
     "task": "Животных зарезано ножом",
-    "solution": "Экипируем свой нож и убиваем нужное кол-во животных/птиц",
+    "solution": "Находим оленя/овечку/козу/вилорога/бизона/корову/быка и т. д. - накидываем лассо, подходим поближе и режем, нажав соответствующую кнопку. С дикими животными лучше делать с лошади",
     "images": []
   },
   "mpgc_animal_throwing_kills": {
@@ -379,100 +379,356 @@
     "solution": "Зовём друга, создаём отряд, катаемся вместе на одной лошади.",
     "images": []
   },
-  "mpgc_distance_companion_wagon": "Distance traveled by wagon with a Posse Member",
-  "mpgc_distance_driven_train": "Distance driven a train",
-  "mpgc_distance_led_horse": "Distance traveled leading own horse",
-  "mpgc_distance_mount": "Distance traveled on mount",
-  "mpgc_distance_rowed_boat": "Distance rowed a boat or canoe",
-  "mpgc_distance_run": "Distance ran",
-  "mpgc_distance_swim": "Distance swam",
-  "mpgc_distance_train": "Distance traveled by train",
+  "mpgc_distance_companion_wagon": {
+    "task": "Расстояние, преодоленное на дилижансе или повозке с членом отряда (в футах)",
+    "solution": "Берём с собой друга, создаём отряд, угоняем/вызываем любую повозку (торговца или охотника), усаживаемся вместе и катаемся.",
+    "images": []
+  },
+  "mpgc_distance_driven_train": {
+    "task": "Расстояние, преодоленное на угнанном поезде (в футах)",
+    "solution": "Поезд часто спавнится у ранчо Макфарлейн, станций Эмеральд, Риггс и Армадилло. Угоняем и катаемся, пока дейлик не засчитается.",
+    "images": []
+  },
+  "mpgc_distance_led_horse": {
+    "task": "Расстояние, которое вы вели лошадь",
+    "solution": "Берем лошадь под уздцы (подходим к коню, фокусируемся, нажимаем \"вести\") и выгуливаем её до выполнения.",
+    "images": []
+  },
+  "mpgc_distance_mount": {
+    "task": "Расстояние, преодоленное в седле (в футах)",
+    "solution": "Просто катаемся на лошадке.",
+    "images": []
+  },
+  "mpgc_distance_rowed_boat": {
+    "task": "Расстояние, преодоленное на лодке или каноэ (в футах)",
+    "solution": "Находим любую проплывающую или стоящую лодку (найти можно плавающими в реке Лаграса, у берегов западнее Роудса, возле Блэкуотера и Сен-Дени, либо на миссии по поимке легендарного преступника Джин Бо Финли, где они помечаются на карте). Подплываем на коне, забираем и катаемся до выполнения.",
+    "images": ["solutions/images/distance_rowed_boat.jpg"]
+  },
+  "mpgc_distance_run": {
+    "task": "Расстояние, преодоленное бегом (в футах)",
+    "solution": "Просто бегаем до выполнения.",
+    "images": []
+  },
+  "mpgc_distance_swim": {
+    "task": "Расстояние, преодоленное вплавь (в футах)",
+    "solution": "Находим любой глубокий водоём, плаваем.",
+    "images": []
+  },
+  "mpgc_distance_train": {
+    "task": "Расстояние, преодоленное на поезде (в футах)",
+    "solution": "Поезд часто спавнится у ранчо Макфарлейн, станций Эмеральд, Риггс и Армадилло. Запрыгиваем и катаемся.",
+    "images": ["solutions/images/distance_train.jpg"]
+  },
   "mpgc_dog_pat": {
     "task": "Собак поглажено",
     "solution": "Находим собаку в собственном лагере/лагере друга. Если таковой нет, то отправляемся на пост Мансанита или же в любой город - и ищем собаку там.",
     "images": ["solutions/images/dog_pat.jpg", "solutions/images/dog_pat_1.jpg"]
   },
-  "mpgc_ducks_skinned": "Ducks skinned",
-  "mpgc_dynamic_ambush": "Successfully fended off an ambush",
-  "mpgc_dynamic_campsite_defend": "Defended a campsite",
-  "mpgc_dynamic_found_treasure_or_map": "Treasure Maps or treasures found",
-  "mpgc_dynamic_hobo_dog": "Followed dog to something interesting",
-  "mpgc_dynamic_rescue_escort_ped": "Helped someone in need",
-  "mpgc_dynamic_runaway_wagon": "Stopped a runaway wagon",
-  "mpgc_eagles_skinned": "Eagles plucked",
+  "mpgc_ducks_skinned": {
+    "task": "Уток выпотрошено",
+    "solution": "Утки обитают возле воды. Находим -> Расстреливаем -> Свежуем.",
+    "images": ["solutions/images/ducks_skinned.jpg"]
+  },
+  "mpgc_dynamic_ambush": {
+    "task": "Отражено нападение из засады",
+    "solution": "Случайное событие (в соло-сессии шанс встретить выше), карта с возможными засадами прикреплена ниже.",
+    "images": ["solutions/images/dynamic_ambush.jpg"]
+  },
+  "mpgc_dynamic_campsite_defend": {
+    "task": "Отражено нападение на лагерь",
+    "solution": "Случайное событие, на которое можно наткнуться в строго определённых местах (карта ниже). В соло-сессии шанс найти выше.",
+    "images": ["solutions/images/dynamic_campsite_defend.jpg"]
+  },
+  "mpgc_dynamic_found_treasure_or_map": {
+    "task": "Сокровищ или карт сокровищ найдено",
+    "solution": "Открываем карту сокровищ в сумке и идём искать. Для поиска самого сокровища - [интерактивная карта в помощь](https://jeanropke.github.io/RDOMap/)\nЕсли же карты у вас нет, то шансы найти её весьма малы, но есть несколько вариантов:\nа) Проверить, не завалялась ли лишняя карта на почте или в разделе Бонусы в гл. меню.\nб) Получить карту как награду за каждый 5ур (также отправляют на почту).\nв) Подобрать с трупа (шанс мизерный).\nг) Найти карту сокровищ на дереве или у охотника за сокровищами. Это случайные события (где можно встретить - см. карту ниже). Искать такое событие лучше в соло сессии, но только если не встречали его в последние 72ч.",
+    "images": ["solutions/images/dynamic_found_treasure_or_map.jpg"]
+  },
+  "mpgc_dynamic_hobo_dog": {
+    "task": "Собака привела вас к интересной находке",
+    "solution": "Случайное событие, на которое можно наткнуться только в определенных точках (см. карту ниже). Собака активно лает и помечается белой точкой на мини-карте. Находим собаку, бежим за ней и смотрим, куда приведёт. Искать лучше в соло сессии. Внимание! Если последние трое суток вы уже встречали это событие, то шанс его повторного появления крайне минимален. Можно попросить поискать друга, но засчитает находку только одному.",
+    "images": ["solutions/images/dynamic_hobo_dog.jpg"]
+  },
+  "mpgc_dynamic_rescue_escort_ped": {
+    "task": "Оказано помощи нуждающимся",
+    "solution": "Случайное событие, в зачёт пойдут: помощь попрошайке (Сен-Дени), спасение законника (окрестности Роудса) или заложника (почти по всему миру), спасение от животных или из ловушки (точки этих событий на карте ниже). Посматривайте на мини-карту (событие отмечается белой точкой), и слушайте звуки (нуждающиеся обычно кричат о помощи, а нищий причитает, сидя у дороги). При поиске в соло-сессии шанс встречи события гораздо выше.",
+    "images": ["solutions/images/dynamic_rescue_escort_ped.jpg"]
+  },
+  "mpgc_dynamic_runaway_wagon": {
+    "task": "Неуправляемых повозок остановлено",
+    "solution": "Если повозка, в которой мы ехали, потеряла управление - демонстрируем виртуозные навыки вождения и благополучно тормозим в метре от обрыва.",
+    "images": []
+  },
+  "mpgc_eagles_skinned": {
+    "task": "Орлов ощипано",
+    "solution": "Внимательно смотрите на всякие столбы/скалы/обрывы, орёл часто на них сидит.",
+    "images": ["solutions/images/eagles_skinned.jpg"]
+  },
   "mpgc_egret_skinned": {
     "task": "Белых цапель выпотрошено",
     "solution": "Находим, убиваем, ощипываем. Могут сидеть на земле у водоёмов или пролетать в небе.",
     "images": ["solutions/images/egret_skinned.jpg"]
   },
-  "mpgc_elk_skinned": "Elk skinned",
-  "mpgc_emote_npc": "Used an emote on a local",
-  "mpgc_emote_player": "Used an emote on a player",
-  "mpgc_enemies_grappled_to_ground": "Non-player enemies grappled to the ground",
-  "mpgc_enemies_killed_cover": "Non-player enemies killed from cover",
-  "mpgc_enemies_killed_deadeye": "Non-player enemies killed while in Dead Eye",
-  "mpgc_enemies_killed_from_hip": "Non-player enemies killed from the hip",
-  "mpgc_enemies_killed_from_long_distance": "Non-player enemies killed at long range",
-  "mpgc_enemies_killed_gatling_maxim": "Non-player enemies killed with a Maxim Gun",
-  "mpgc_enemies_killed_stealth": "Non-player enemies killed while not seen",
-  "mpgc_enemies_knocked_out": "Non-player enemies knocked out",
-  "mpgc_enemies_looted": "Non-player enemies looted",
+  "mpgc_elk_skinned": {
+    "task": "Вапити освежевано",
+    "solution": "Находим, убиваем, свежуем.",
+    "images": ["solutions/images/elk_skinned.jpg"]
+  },
+  "mpgc_emote_npc": {
+    "task": "Жестов показано местному жителю",
+    "solution": "Показываем жест любому НПС (можно Криппсу).",
+    "images": []
+  },
+  "mpgc_emote_player": {
+    "task": "Жестов показано игроку",
+    "solution": "Показываем жесты игрокам.",
+    "images": []
+  },
+  "mpgc_enemies_grappled_to_ground": {
+    "task": "ИИ-врагов схвачено и повалено на землю",
+    "solution": "Агрим любого нпс (он должен стать красным на мини-карте), затем подбегаем и валим его на землю. Нужно разогнаться и нажать \"F\".",
+    "images": []
+  },
+  "mpgc_enemies_killed_cover": {
+    "task": "ИИ-врагов убито из укрытия",
+    "solution": "Находим врагов на задании или создаём их себе сами, провоцируя случайных НПС с помощью кулаков, выстрелов, лассо и т.д. (они должны отметиться красными точками на мини-карте). Прислоняемся к укрытию по кнопке и из него убиваем так 5 врагов.",
+    "images": []
+  },
+  "mpgc_enemies_killed_deadeye": {
+    "task": "ИИ-врагов убито в режиме «Меткий глаз»",
+    "solution": "Находим врагов на задании или создаём их себе сами, провоцируя случайных НПС с помощью кулаков, выстрелов, лассо и т.д. (они должны отметиться красными точками на мини-карте). Убиваем пятерых, используя МГ.",
+    "images": []
+  },
+  "mpgc_enemies_killed_from_hip": {
+    "task": "ИИ-врагов убито выстрелами от бедра",
+    "solution": "Находим врагов на задании или создаём их себе сами, провоцируя случайных НПС с помощью кулаков, выстрелов, лассо и т.д. (они должны отметиться красными точками на мини-карте). Убиваем пятерых, стреляя без прицеливания или через МГ с картой \"раскрась в чёрное\", ставя по несколько меток за раз (тогда персонаж стреляет от бедра).",
+    "images": []
+  },
+  "mpgc_enemies_killed_from_long_distance": {
+    "task": "ИИ-врагов убито с большого расстояния",
+    "solution": "Можно зачистить аванпост агентов, логово бандитов или пристань разбойников, используя снайперскую винтовку на расстоянии. Также можно выполнить на прохожих, выстрелив сначала в лошадь или рядом в землю, а после того как НПС станет вражеским (красным на мини-карте), убить его. Не отходите слишком далеко от цели, иначе может не засчитаться.",
+    "images": []
+  },
+  "mpgc_enemies_killed_gatling_maxim": {
+    "task": "ИИ-врагов убито из пулемета Максима",
+    "solution": "Пулемет можно найти в сюжетной миссии \"Мазут и масло\", которую возможно переиграть через: Главное меню -> Прогресс -> Сюжет. Также они есть в случайных событиях и в логовах бандитов.",
+    "images": []
+  },
+  "mpgc_enemies_killed_stealth": {
+    "task": "ИИ-врагов убито скрытно",
+    "solution": "Убиваем ещё не обнаруживших вас врагов (обозначаются обычно тёмно-красным точками на мини-карте). Можно выполнить на многих сюжетных миссиях, заданиях охотника за головами, зачистке лагерей самогонщиков, логовах, заданиях по поставке материалов и т. д). Делать лучше с ножом или луком.",
+    "images": []
+  },
+  "mpgc_enemies_knocked_out": {
+    "task": "ИИ-врагов оглушено",
+    "solution": "Агрим нпс и начинаем с ними кулачный бой.",
+    "images": []
+  },
+  "mpgc_enemies_looted": {
+    "task": "ИИ-врагов ограблено",
+    "solution": "Все просто - убиваем/оглушаем врагов, а затем обыскиваем.",
+    "images": []
+  },
   "mpgc_enemy_hats_shot_off": {
     "task": "Шляп ИИ-врагов сбито",
     "solution": "Стреляем ботам по шляпам, стараясь не прострелить голову. Для упрощения - стреляем по головам стрелами для мелкой дичи или снотворными патронами с варминта. Если лень искать врагов, то провоцируем случайных нпс: можно просто связать, а потом с лежачего сбить шляпу любым оружием",
     "images": []
   },
-  "mpgc_english_mace_picked": "English Mace picked",
-  "mpgc_evergreen_huckleberry_picked": "Evergreen Huckleberries picked",
-  "mpgc_fish_caught": "Fish caught",
-  "mpgc_fish_caught_bluegill": "Bluegill caught",
-  "mpgc_fish_caught_bullhead_catfish": "Bullhead Catfish caught",
-  "mpgc_fish_caught_chain_pickerel": "Chain Pickerel caught",
-  "mpgc_fish_caught_channel_catfish": "Channel Catfish caught",
-  "mpgc_fish_caught_food": "Fish caught with food",
-  "mpgc_fish_caught_lake_sturgeon": "Lake Sturgeon caught",
-  "mpgc_fish_caught_largemouth_bass": "Largemouth Bass caught",
-  "mpgc_fish_caught_live_bait": "Fish caught with live bait",
-  "mpgc_fish_caught_longnose_gar": "Longnose Gar caught",
+  "mpgc_english_mace_picked": {
+    "task": "Тысячелистника агератумного собрано",
+    "solution": "Находим, срываем или сразу съедаем.",
+    "images": ["solutions/images/english_mace_picked.jpg"]
+  },
+  "mpgc_evergreen_huckleberry_picked": {
+    "task": "Черники овальнолистной собрано",
+    "solution": "Находим, срываем или сразу съедаем.",
+    "images": ["solutions/images/evergreen_huckleberry_picked.jpg"]
+  },
+  "mpgc_fish_caught": {
+    "task": "Разновидностей рыб поймано",
+    "solution": "Ловим 5 рыб разного вида. Пробуйте разную наживку в разных водоёмах (озёрах/реках/болотах).",
+    "images": []
+  },
+  "mpgc_fish_caught_bluegill": {
+    "task": "Синежаберников поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте (один из лучших вариантов - малые озёрца близ Роудса, они отмечены зелёным). Сперва может показаться, что рыбы там нет, но забросьте удочку и немного подождите. Мелкая рыба, ловим на любую съедобную наживку или блесну.",
+    "images": ["solutions/images/fish_caught_bluegill.jpg"]
+  },
+  "mpgc_fish_caught_bullhead_catfish": {
+    "task": "Американских сомов поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Мелкая рыба, ловим на любую съедобную наживку или блесну.",
+    "images": ["solutions/images/fish_caught_bullhead_catfish.jpg"]
+  },
+  "mpgc_fish_caught_chain_pickerel": {
+    "task": "Полосатых щук поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Мелкая рыба, ловим на любую съедобную наживку или блесну.",
+    "images": ["solutions/images/"]
+  },
+  "mpgc_fish_caught_channel_catfish": {
+    "task": "Канальный сом пойман",
+    "solution": "Идём к водоёмам, отмеченным на карте. Большая рыба, проще ловить на особую приманку (речную/болотную/озёрную).",
+    "images": ["solutions/images/fish_caught_channel_catfish.jpg"]
+  },
+  "mpgc_fish_caught_food": {
+    "task": "Рыб поймано на приманку из пищи",
+    "solution": "Ловим любую рыбу на хлеб, сыр или кукурузу.",
+    "images": []
+  },
+  "mpgc_fish_caught_lake_sturgeon": {
+    "task": "Озерный осетр пойман",
+    "solution": "Идём к водоёмам, отмеченным на карте. Ловим на болотные или озёрные приманки (разницы большой нет).",
+    "images": ["solutions/images/fish_caught_lake_sturgeon.jpg"]
+  },
+  "mpgc_fish_caught_largemouth_bass": {
+    "task": "Большеротых окуней поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Лучше ловить на приманки (кроме особой блесны).",
+    "images": ["solutions/images/fish_caught_largemouth_bass.jpg"]
+  },
+  "mpgc_fish_caught_live_bait": {
+    "task": "Рыб поймано на живую наживку",
+    "solution": "Ловим любую рыбу на червяка/рака/сверчка (если их нет, то покупаем через каталог и забираем на почте).",
+    "images": []
+  },
+  "mpgc_fish_caught_longnose_gar": {
+    "task": "Панцирник пойман",
+    "solution": "Берём удочку и идём к водоёмам, отмеченным на карте. Большая рыба, проще ловить на особую приманку (болотную/озёрную/речную).",
+    "images": ["solutions/images/fish_caught_longnose_gar.jpg"]
+  },
   "mpgc_fish_caught_lure": {
     "task": "Рыб поймано на приманку",
     "solution": "Идём к водоёму, берём удочку и ловим рыбу на приманки: болотные, речные, озерные или особую блесну. Приманки можно купить у рыболова в Лаграсе (значок крючка на карте) или заказать через каталог.",
     "images": []
   },
-  "mpgc_fish_caught_muskie": "Muskie caught",
-  "mpgc_fish_caught_perch": "Perch caught",
-  "mpgc_fish_caught_redfin_pickerel": "Redfin Pickerel caught",
-  "mpgc_fish_caught_rock_bass": "Rock Bass caught",
-  "mpgc_fish_caught_smallmouth_bass": "Smallmouth Bass caught",
-  "mpgc_fish_caught_sockeye_salmon": "Sockeye Salmon caught",
-  "mpgc_fish_caught_steelhead_trout": "Steelhead Trout caught",
-  "mpgc_fish_caught_variety": "Types of fish caught",
-  "mpgc_fish_northern_pike": "Northern Pike caught",
-  "mpgc_fish_size_caught": "Fish caught weighing at least 5 lbs (2.2 kg)",
-  "mpgc_flying_bird_kills": "Flying birds killed",
-  "mpgc_flying_bird_kills_sniper": "Flying birds killed with a sniper rifle",
-  "mpgc_flying_bird_train_kills": "Flying birds killed while on a moving train",
-  "mpgc_fme_attempts": "Free Roam Events played",
-  "mpgc_fme_wins": "Placed top 3 with a score in Free Roam Events",
-  "mpgc_foxes_skinned": "Foxes skinned",
-  "mpgc_gators_killed": "Alligators killed",
-  "mpgc_general_meta": "Daily General Challenges",
-  "mpgc_gfh_anthony_foreman_wins": "Anthony Foreman missions completed",
+  "mpgc_fish_caught_muskie": {
+    "task": "Щука-маскинонг поймана",
+    "solution": "Идём к водоёмам, отмеченным на карте. Лучше ловить на приманки (кроме особой блесны).",
+    "images": ["solutions/images/fish_caught_muskie.jpg"]
+  },
+  "mpgc_fish_caught_perch": {
+    "task": "Желтых окуней поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Ловится на хлеб, сыр или кукурузу.",
+    "images": ["solutions/images/fish_caught_perch.jpg"]
+  },
+  "mpgc_fish_caught_redfin_pickerel": {
+    "task": "Красноперых щук поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Мелкая рыба, ловим на любую съедобную наживку или блесну.",
+    "images": ["solutions/images/fish_caught_redfin_pickerel.jpg"]
+  },
+  "mpgc_fish_caught_rock_bass": {
+    "task": "Каменных окуней поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Ловится на сыр или любую другую съедобную наживку.",
+    "images": ["solutions/images/fish_caught_rock_bass.jpg"]
+  },
+  "mpgc_fish_caught_smallmouth_bass": {
+    "task": "Малоротых окуней поймано",
+    "solution": "Находим и ловим. Карты у нас пока нет, нужно сделать, так что помочь не сможем",
+    "images": ["solutions/images/_0_coming_soon_placeholder.jpg"]
+  },
+  "mpgc_fish_caught_sockeye_salmon": {
+    "task": "Лососей поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Средняя рыба, проще ловить на приманки (речную/болотную/озёрную).",
+    "images": ["solutions/images/fish_caught_sockeye_salmon.jpg"]
+  },
+  "mpgc_fish_caught_steelhead_trout": {
+    "task": "Радужных форелей поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Лучше ловить на приманки (кроме особой блесны).",
+    "images": ["solutions/images/fish_caught_steelhead_trout.jpg"]
+  },
+  "mpgc_fish_caught_variety": {
+    "task": "Разновидностей рыб поймано",
+    "solution": "Ловим 5 рыб разного вида. Пробуйте разную наживку в разных водоёмах (озёрах/реках/болотах).",
+    "images": []
+  },
+  "mpgc_fish_northern_pike": {
+    "task": "Щук поймано",
+    "solution": "Идём к водоёмам, отмеченным на карте. Лучше ловить на приманки (кроме особой блесны).",
+    "images": ["solutions/images/fish_northern_pike.jpg"]
+  },
+  "mpgc_fish_size_caught": {
+    "task": "Поймано рыб весом более 5 фунтов (2.2 килограмма)",
+    "solution": "Берём удочку, идём к водоёму и ловим среднюю или крупную рыбу. Такая чаще клюёт на особые приманки (речную/болотную/озёрную).",
+    "images": []
+  },
+  "mpgc_flying_bird_kills": {
+    "task": "Летящих птиц убито",
+    "solution": "Стреляем по любым летящим птицам.",
+    "images": []
+  },
+  "mpgc_flying_bird_kills_sniper": {
+    "task": "Летящих птиц убито из снайперской винтовки",
+    "solution": "Экипируем любую винтовку с оптическим прицелом и убиваем птиц.",
+    "images": []
+  },
+  "mpgc_flying_bird_train_kills": {
+    "task": "Летящих птиц убито с движущегося поезда",
+    "solution": "Находим поезд, запрыгиваем на него, высматриваем в небе птиц и стреляем в них из чего вам удобнее. Легче выполнять днем. Чаще всего поезд спавнится на ранчо Макфрлейнов (отправляйтесь быстрым перемещением, ждите 1-2 минуты, если поезда нет, то попробуйте сменить сессию).",
+    "images": []
+  },
+  "mpgc_fme_attempts": {
+    "task": "Участие в событиях свободного режима принято",
+    "solution": "Дожидаемся приглашения на любое событие свободного режима (расписание подходящих режимов ниже). Доигрываем до конца в двух таких событиях.",
+    "images": ["solutions/images/fme_schedule.jpg"]
+  },
+  "mpgc_fme_wins": {
+    "task": "1, 2 или 3 место в событии свободного режима занято c очками",
+    "solution": "Приглашения на события свободного режима приходят в определённое время по расписанию (см. график ниже). Подойдет любое. Принимаем участие и занимаем 1-е, 2-е или 3-е место.",
+    "images": ["solutions/images/fme_schedule.jpg"]
+  },
+  "mpgc_foxes_skinned": {
+    "task": "Лис освежевано",
+    "solution": "Находим, убиваем, свежуем (см.карту). В некоторых местах встретить можно в основном в тёмное время суток.",
+    "images": ["solutions/images/foxes_skinned.jpg"]
+  },
+  "mpgc_gators_killed": {
+    "task": "Аллигаторов убито",
+    "solution": "Отправляемся в Лаграс, ищем аллигаторов и убиваем их.",
+    "images": ["solutions/images/gators_killed.jpg"]
+  },
+  "mpgc_general_meta": {
+    "task": "Ежедневные общие испытания",
+    "solution": "Выполняем задания совершенно любых типов, присутствующие в игре.",
+    "images": []
+  },
+  "mpgc_gfh_anthony_foreman_wins": {
+    "task": "Заданий Энтони Формана выполнено",
+    "solution": "Идём к одной из точек, отмеченных на карте. Берём и выполняем задание персонажа.",
+    "images": ["solutions/images/gfh_anthony_foreman_wins.jpg"]
+  },
   "mpgc_gfh_bonnie_macfarlane_wins": {
     "task": "Заданий Бонни Макфарлейн выполнено",
     "solution": "Идём к точке, отмеченной на карте, и берём задание у персонажа. Ближайшее быстрое перемещение на \"ранчо Макфарлейнов\".",
     "images": ["solutions/images/gfh_bonnie_macfarlane_wins.jpg"]
   },
-  "mpgc_gfh_hamish_sinclair_wins": "Hamish Sinclair missions completed",
-  "mpgc_gfh_james_langton_wins": "James Langton missions completed",
-  "mpgc_gfh_joe_wins": "Joe missions completed",
+  "mpgc_gfh_hamish_sinclair_wins": {
+    "task": "Заданий Хэмиша Синклера выполнено",
+    "solution": "Берём и выполняем задание данного персонажа. Может находиться в двух местах: на горячих источниках Которра-Спрингс (ближ. точка телепорта - Вапити) либо же в хижине у озера О'Кригс-Ран (Ранчо Эмеральд) (см. карту).",
+    "images": ["solutions/images/gfh_hamish_sinclair_wins.jpg"]
+  },
+  "mpgc_gfh_james_langton_wins": {
+    "task": "Заданий Джеймса Лэнгтона выполнено",
+    "solution": "Идём к точке, отмеченной на карте, и берём задание у персонажа.",
+    "images": ["solutions/images/gfh_james_langton_wins.jpg"]
+  },
+  "mpgc_gfh_joe_wins": {
+    "task": "Заданий Джо выполнено",
+    "solution": "Выполняем любое задание у Джо.",
+    "images": ["solutions/images/gfh_joe_wins.jpg"]
+  },
   "mpgc_gfh_sadie_adler_wins": {
     "task": "Заданий Сэди Адлер выполнено",
     "solution": "Берём и выполняем задание данного персонажа.  Ближайшая точка перемещения \"Колтер\".",
     "images": ["solutions/images/gfh_sadie_adler_wins.jpg"]
   },
-  "mpgc_gfh_sean_macquire_wins": "Sean Macguire missions completed",
-  "mpgc_gfh_shaky_wins": "Shaky missions completed",
+  "mpgc_gfh_sean_macquire_wins": {
+    "task": "Заданий Шона Макгуайра выполнено",
+    "solution": "Идём к одной из точек, отмеченных на карте, берём и выполняем задание персонажа.",
+    "images": ["solutions/images/gfh_sean_macquire_wins.jpg"]
+  },
+  "mpgc_gfh_shaky_wins": {
+    "task": "Заданий Шейки выполнено",
+    "solution": "Идём к одной из точек, отмеченных на карте, берём и выполняем задание персонажа.",
+    "images": ["solutions/images/gfh_shaky_wins.jpg"]
+  },
   "mpgc_gfh_the_boy_wins": "The Boy missions completed",
   "mpgc_gfh_train_clerk_wins": "Train clerk missions completed",
   "mpgc_gfh_wins": "Free Roam missions completed",
@@ -494,8 +750,16 @@
     "solution": "Скармливаем своей или чужой лошадке любые доступные угощения через селектор.",
     "images": []
   },
-  "mpgc_horse_jump_from_height": "Jumped onto a horse from a 3m height",
-  "mpgc_horse_jump_to_horse": "Jumped from a horse to another horse",
+  "mpgc_horse_jump_from_height": {
+    "task": "Совершен прыжок на лошадь с высоты 3 м",
+    "solution": "Оставляем лошадь внизу здания/вышки/хижины самогонщика, залезаем наверх, аккуратно спрыгиваем в седло. Можно сделать с крыши салуна Валентайна (см. скрин ниже).",
+    "images": ["solutions/images/horse_jump_from_height.jpg"]
+  },
+  "mpgc_horse_jump_to_horse": {
+    "task": "Прыжков с лошади на другую лошадь выполнено",
+    "solution": "Верхом на лошади равняемся с другим всадником на ходу и прыгаем",
+    "images": []
+  },
   "mpgc_horse_jump_to_train": "Jumped from a horse onto a moving train",
   "mpgc_horse_jump_to_wagon": "Jumped from a horse to a moving wagon",
   "mpgc_horse_stowed_animals": "Animals stowed on horseback",
@@ -512,7 +776,11 @@
   "mpgc_milkweed_picked": "Milkweed picked",
   "mpgc_moose_skinned": "Moose skinned",
   "mpgc_muskrats_skinned": "American Muskrats skinned",
-  "mpgc_notoriety_no_hostility_timed": "Don't reach high Hostility within one game day",
+  "mpgc_notoriety_no_hostility_timed": {
+    "task": "Дней в игре без достижения высокого уровня враждебности",
+    "solution": "24 игровых часа (48 реальных минут) не ввязываемся в перестрелку с другими игроками.",
+    "images": []
+  },
   "mpgc_oleander_picked": "Oleander Sage picked",
   "mpgc_opossums_skinned": "Virginia Opossums skinned",
   "mpgc_oregano_picked": "Oregano picked",
@@ -527,10 +795,18 @@
   "mpgc_parasol_mushroom_picked": "Parasol Mushrooms picked",
   "mpgc_pelicans_skinned": "Pelicans plucked",
   "mpgc_pheasants_skinned": "Pheasants skinned",
-  "mpgc_photograph_cat": "Cats photographed",
+  "mpgc_photograph_cat": {
+    "task": "Сфотографировано кошек",
+    "solution": "У вас должен быть куплен фотоаппарат. Находим кошку в одном из городов, экипируем фотоаппарат и снимаем котейку.",
+    "images": []
+  },
   "mpgc_photograph_dog": "Dogs photographed",
   "mpgc_photograph_player": "Other players photographed",
-  "mpgc_photograph_selfie": "Self portraits taken",
+  "mpgc_photograph_selfie": {
+    "task": "Вы сфотографировали себя",
+    "solution": "Достаём любую камеру, выбираем режим \"Автопортрет\" (подсказка будет висеть в правом нижнем углу), делаем фото.",
+    "images": []
+  },
   "mpgc_photograph_your_horse": "Photographed your horse",
   "mpgc_pigs_skinned": "Pigs skinned",
   "mpgc_players_cover_fme": "Player kills from cover in Free Roam Events",
@@ -611,7 +887,11 @@
   "mpgc_prairiechicken_skinned": "Prairie Chickens skinned",
   "mpgc_prairie_poppy_picked": "Prairie Poppies picked",
   "mpgc_pronghorns_skinned": "Pronghorns skinned",
-  "mpgc_protect_waves_completed": "Waves completed in Call to Arms",
+  "mpgc_protect_waves_completed": {
+    "task": "Завершено волн атак в режиме «К оружию»",
+    "solution": "Для запуска режима нужно взять телеграмму с просьбой о помощи от «Дж.» в сейфе в лагере. Далее в сумке в разделе телеграмм ищем пункт `К оружию` и идем на одну волну.",
+    "images": []
+  },
   "mpgc_rabbits_skinned": {
     "task": "Чернохвостых зайцев освежевано",
     "solution": "Находим, убиваем и свежуем.",
@@ -671,64 +951,196 @@
   "mpgc_shop_pelt_pristine_sell": "Perfect pelts sold",
   "mpgc_shop_sell_to_fence": "Items sold to a Fence",
   "mpgc_shop_sell_to_trapper": "Items sold to Gus",
-  "mpgc_shop_visit_blackwater": "Visited a shop in Blackwater",
-  "mpgc_shop_visit_rhodes": "Visited a shop in Rhodes",
-  "mpgc_shop_visit_saint_denis": "Visited a shop in Saint Denis",
-  "mpgc_shop_visit_strawberry": "Visited a shop in Strawberry",
-  "mpgc_shop_visit_tumbleweed": "Visited a shop in Tumbleweed",
+  "mpgc_shop_visit_blackwater": {
+    "task": "Вы посетили магазин в Блэкуотере",
+    "solution": "Проезжаем мимо прилавка мясника или заходим внутрь любого магазина.",
+    "images": []
+  },
+  "mpgc_shop_visit_rhodes": {
+    "task": "Вы посетили магазин в Роудсе",
+    "solution": "Проезжаем мимо прилавка мясника или заходим внутрь любого магазина.",
+    "images": []
+  },
+  "mpgc_shop_visit_saint_denis": {
+    "task": "Вы посетили магазин в Сен-Дени",
+    "solution": "Проезжаем мимо прилавка мясника или заходим внутрь любого магазина.",
+    "images": []
+  },
+  "mpgc_shop_visit_strawberry": {
+    "task": "Вы посетили магазин в Строберри",
+    "solution": "Проезжаем мимо прилавка мясника или заходим внутрь любого магазина.",
+    "images": []
+  },
+  "mpgc_shop_visit_tumbleweed": {
+    "task": "Вы посетили магазин в Тамблвиде",
+    "solution": "Проезжаем мимо прилавка мясника или заходим внутрь любого магазина.",
+    "images": []
+  },
   "mpgc_shop_visit_valentine": {
     "task": "Вы посетили магазин в Валентайне",
     "solution": "Проезжаем мимо прилавка мясника или заходим внутрь любого магазина.",
     "images": []
   },
-  "mpgc_showdown_wins": "Placed top 3 in a Showdown",
-  "mpgc_skunks_skinned": "Striped Skunks skinned",
+  "mpgc_showdown_wins": {
+    "task": "Занято 1, 2 или 3 место в противоборстве",
+    "solution": "Заходим в любое противоборство (Меню игрока --> Быстрый вход --> Серия противоборств) и стараемся занять одно из призовых мест. Если зайти отрядом и хотя бы один из вас попадёт в тройку - засчитает всем. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
+    "images": []
+  },
+  "mpgc_skunks_skinned": {
+    "task": "Полосатых скунсов освежевано",
+    "solution": "Убиваем и свежуем.",
+    "images": ["solutions/images/skunks_skinned.jpg"]
+  },
   "mpgc_snakes_skinned": {
     "task": "Змей освежевано",
     "solution": "Обитают практически везде (кроме заснеженной части Амбарино). Убиваем и свежуем. На болотах их найти легче всего.",
     "images": ["solutions/images/snakes_skinned.jpg"]
   },
-  "mpgc_songbirds_collected": "Small bird carcasses collected",
-  "mpgc_spoonbill_skinned": "Spoonbills skinned",
+  "mpgc_songbirds_collected": {
+    "task": "Тушек мелких птиц собрано",
+    "solution": "Стреляем по воробьям, пирангам, овсянкам, красным кардиналам, дроздам и прочим мелким птицам и собираем их. Или запускаем Противостояние отрядов \"стрельба по птицам\" и собираем мелких ворон.",
+    "images": []
+  },
+  "mpgc_spoonbill_skinned": {
+    "task": "Розовых колпиц выпотрошено",
+    "solution": "Мифическое животное, никто его не видел и никто не знает о местах его обитания. Решения нет. :(",
+    "images": ["solutions/images/_0_coming_soon_placeholder.jpg"]
+  },
   "mpgc_squirrel_skinned": {
     "task": "Белок собрано",
     "solution": "Находим, убиваем, подбираем. Встретить можно практически везде (см.карту ниже).",
     "images": ["solutions/images/squirrel_skinned.jpg"]
   },
-  "mpgc_story_mission_wins": "A Land of Opportunities missions completed",
-  "mpgc_story_mission_wins_on_call": "Go On-Call and complete a Story mission",
-  "mpgc_telegram_mission_wins": "Telegram missions completed",
-  "mpgc_toads_skinned": "Western Toads collected",
-  "mpgc_travel_timed_annesburg_armadillo": "Visited Annesburg and Armadillo in an hour",
-  "mpgc_travel_timed_colter_saint_denis": "Visited Colter and Saint Denis in an hour",
-  "mpgc_travel_timed_valentine_van_horn": "Visited Valentine and Van Horn in 30 mins",
-  "mpgc_travel_visit_bolger_glade": "Visited Bolger Glade",
-  "mpgc_travel_visit_brandywine_drop": "Visited Brandywine Drop",
-  "mpgc_travel_visit_colter": "Visited Colter",
-  "mpgc_travel_visit_cotorra_springs": "Visited Cotorra springs",
-  "mpgc_travel_visit_fort_mercer": "Visited Fort Mercer",
-  "mpgc_travel_visit_fort_wallace": "Visited Fort Wallace",
-  "mpgc_travel_visit_lagras": "Visited Lagras",
-  "mpgc_travel_visit_macfarlane_ranch": "Visited MacFarlane's Ranch",
-  "mpgc_travel_visit_mount_hagen": "Visited the peak of Mount Hagen",
-  "mpgc_travel_visit_owanjila_dam": "Visited Owanjila Dam",
-  "mpgc_travel_visit_van_horn": "Visited Van Horn",
+  "mpgc_story_mission_wins": {
+    "task": "Заданий из ветки «Земля возможностей» выполнено",
+    "solution": "Прогресс -> Сюжетные задания -> Земля возможностей - > повтор любого задания.",
+    "images": []
+  },
+  "mpgc_story_mission_wins_on_call": {
+    "task": "Завершено случайное сюжетное задание",
+    "solution": "Меню игрока -> Быстрый вход -> Сюжетное задание.",
+    "images": []
+  },
+  "mpgc_telegram_mission_wins": {
+    "task": "Телеграфных заданий выполнено",
+    "solution": "Открываем сумку -> вкладка \"Документы\"-> Телеграммы -> \"Новый заработок\" или \"Суровая работа\" -> выбираем и выполняем любое задание.",
+    "images": []
+  },
+  "mpgc_toads_skinned": {
+    "task": "Западноамериканских жаб собрано",
+    "solution": "Находим, убиваем и подбираем.",
+    "images": ["solutions/images/toads_skinned.jpg"]
+  },
+  "mpgc_travel_timed_annesburg_armadillo": {
+    "task": "Вы за час посетили Аннесберг и Армадилло",
+    "solution": "Седлаем своего самого быстрого скакуна, и в путь!",
+    "images": []
+  },
+  "mpgc_travel_timed_colter_saint_denis": {
+    "task": "Вы за час посетили Колтер и Сен-Дени",
+    "solution": "Седлаем своего самого быстрого скакуна, и в путь!",
+    "images": []
+  },
+  "mpgc_travel_timed_valentine_van_horn": {
+    "task": "Вы за 30 мин. посетили Валентайн и Ван-Хорн",
+    "solution": "Седлаем своего самого быстрого скакуна, и в путь!",
+    "images": []
+  },
+  "mpgc_travel_visit_bolger_glade": {
+    "task": "Вы посетили Болджер-Глейд",
+    "solution": "Ближайшая точка перемещения - Роудс.",
+    "images": ["solutions/images/travel_visit_bolger_glade.jpg"]
+  },
+  "mpgc_travel_visit_brandywine_drop": {
+    "task": "Вы посетили Брендивайнский водопад",
+    "solution": "Очень красивое место, знаменитое тем, что за самим водопадом скрыта пещера, полная сокровищ. Там находятся рандомные уникальные предметы, которые затем можно продать за внутриигровое золото! Раскрывать локацию этого водопада мы не станем, потому что если эта информация станет всеобщим достоянием, то она сломает внутриигровой баланс. Ищите сами, и обрящете.",
+    "images": ["solutions/images/_0_coming_soon_placeholder.jpg"]
+  },
+  "mpgc_travel_visit_colter": {
+    "task": "Вы посетили Колтер",
+    "solution": "Телепортируемся через колесо.",
+    "images": []
+  },
+  "mpgc_travel_visit_cotorra_springs": {
+    "task": "Вы посетили Которра-Спрингз",
+    "solution": "Ближайший телепорт - Вапити.",
+    "images": ["solutions/images/travel_visit_cotorra_springs.jpg"]
+  },
+  "mpgc_travel_visit_fort_mercer": {
+    "task": "Вы посетили Форт-Мерсер",
+    "solution": "Перемещаемся в Армадилло/Тамблвид и посещаем данную локацию.",
+    "images": ["solutions/images/travel_visit_fort_mercer.jpg"]
+  },
+  "mpgc_travel_visit_fort_wallace": {
+    "task": "Вы посетили Форт-Уоллес",
+    "solution": "Было в сюжетке. Вспоминайте сами, тренируйте извилины",
+    "images": ["solutions/images/_0_coming_soon_placeholder.jpg"]
+  },
+  "mpgc_travel_visit_lagras": {
+    "task": "Вы посетили Лаграс",
+    "solution": "Здесь вам может откусить жопу аллигатор. Сами решайте, стоит ли выполнение дейлика того, или нет",
+    "images": ["solutions/images/_0_coming_soon_placeholder.jpg"]
+  },
+  "mpgc_travel_visit_macfarlane_ranch": {
+    "task": "Вы посетили ранчо Макфарлейнов",
+    "solution": "Телепортируемся через колесо, ничего искать не нужно",
+    "images": []
+  },
+  "mpgc_travel_visit_mount_hagen": {
+    "task": "Вы посетили вершину горы Хаген",
+    "solution": "Ближайший телепорт находится в Колтере",
+    "images": ["solutions/images/travel_visit_mount_hagen.jpg"]
+  },
+  "mpgc_travel_visit_owanjila_dam": {
+    "task": "Вы посетили Ованджильскую плотину",
+    "solution": "У любого быстрого перемещения выбираем \"Строберри\" и едем до отмеченной зоны",
+    "images": ["solutions/images/travel_visit_owanjila_dam.jpg"]
+  },
+  "mpgc_travel_visit_van_horn": {
+    "task": "Вы посетили Ван-Хорн",
+    "solution": "Телепортируемся через колесо.",
+    "images": []
+  },
   "mpgc_turkeys_skinned": {
     "task": "Индеек выпотрошено",
     "solution": "Убиваем и свежуем.",
     "images": ["solutions/images/turkeys_skinned.jpg"]
   },
-  "mpgc_turtle_skinned": "Turtles skinned",
-  "mpgc_vanilla_flower_picked": "Vanilla Flowers picked",
-  "mpgc_violet_snowdrop_picked": "Violet Snowdrop picked",
+  "mpgc_turtle_skinned": {
+    "task": "Черепах освежевано",
+    "solution": "Убиваем и свежуем.",
+    "images": ["solutions/images/turtle_skinned.jpg"]
+  },
+  "mpgc_vanilla_flower_picked": {
+    "task": "Цветков ванили собрано",
+    "solution": "Растёт на стволах деревьев.",
+    "images": ["solutions/images/vanilla_flower_picked.jpg"]
+  },
+  "mpgc_violet_snowdrop_picked": {
+    "task": "Фиолетовых подснежников собрано",
+    "solution": "Находим и собираем.",
+    "images": ["solutions/images/violet_snowdrop_picked.jpg"]
+  },
   "mpgc_vultures_skinned": {
     "task": "Стервятников ощипано",
     "solution": "Отстреливаем и свежуем.",
     "images": ["solutions/images/vultures_skinned.jpg"]
   },
-  "mpgc_wild_carrots_picked": "Wild Carrots picked",
-  "mpgc_wild_feverfew_picked": "Wild Feverfew picked",
-  "mpgc_wild_mint_picked": "Wild Mint picked",
+  "mpgc_wild_carrots_picked": {
+    "task": "Дикой моркови собрано",
+    "solution": "Собираем или съедаем.",
+    "images": ["solutions/images/wild_carrots_picked.jpg"]
+  },
+  "mpgc_wild_feverfew_picked": {
+    "task": "Дикого пиретрума собрано",
+    "solution": "Срываем или съедаем.",
+    "images": ["solutions/images/wild_feverfew_picked.jpg"]
+  },
+  "mpgc_wild_mint_picked": {
+    "task": "Мяты собрано",
+    "solution": "Срываем или съедаем",
+    "images": ["solutions/images/wild_mint_picked.jpg"]
+  },
   "mpgc_wintergreen_berry_picked": {
     "task": "Гаультерии собрано",
     "solution": "Находим и собираем.",
