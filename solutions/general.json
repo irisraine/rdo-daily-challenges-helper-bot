@@ -1164,13 +1164,41 @@
     "solution": "Зовём друга, создаём отряд, запускаем состязание: Меню игрока -> Отряд -> Противостояние отрядов -> Сбор трав. Дожидаемся завершения.",
     "images": []
   },
-  "mpgc_posse_hunt_posse_leader_attempts": "Hunt the Leader completed",
-  "mpgc_posse_infighting_completed": "Posse Infighting completed",
-  "mpgc_posse_join": "Posses joined",
-  "mpgc_posse_race_attempts": "Posse Races completed",
-  "mpgc_prairiechicken_skinned": "Prairie Chickens skinned",
-  "mpgc_prairie_poppy_picked": "Prairie Poppies picked",
-  "mpgc_pronghorns_skinned": "Pronghorns skinned",
+  "mpgc_posse_hunt_posse_leader_attempts": {
+    "task": "«Охот на командира» завершено",
+    "solution": "Зовем в отряд как минимум одного человека и запускаем \"Охоту на командира\" (Меню игрока -> Отряд -> Противостояние отрядов -> Охота на командира). Смерть командира ускорит выполнение.",
+    "images": []
+  },
+  "mpgc_posse_infighting_completed": {
+    "task": "Распря в отряде завершена",
+    "solution": "Зовём друга, создаём отряд, запускаем состязание: Меню игрока -> Отряд -> Противостояние отрядов -> Распря. Дожидаемся завершения.",
+    "images": []
+  },
+  "mpgc_posse_join": {
+    "task": "Приглашений в отряд принято",
+    "solution": "Принимаем приглашение в отряд либо заходим в любой открытый отряд в вашей сессии.",
+    "images": []
+  },
+  "mpgc_posse_race_attempts": {
+    "task": "Гонок отрядов завершено",
+    "solution": "Зовём хотя бы одного друга -> создаём отряд -> лидер ставит на карте метку на расстоянии 200-300 м. и запускает гонку отрядов (Меню игрока -> Отряд -> Противостояние отрядов -> Гонка отрядов).",
+    "images": []
+  },
+  "mpgc_prairiechicken_skinned": {
+    "task": "Луговых тетеревов выпотрошено",
+    "solution": "Находим, убиваем, свежуем. (см.карту). С 5:00 до 18:00 шанс найти чуть выше.",
+    "images": ["solutions/images/prairiechicken_skinned.jpg"]
+  },
+  "mpgc_prairie_poppy_picked": {
+    "task": "Пустынного мака собрано",
+    "solution": "Находим и собираем (его легко заметить по жёлтым цветам).",
+    "images": ["solutions/images/prairie_poppy_picked.jpg"]
+  },
+  "mpgc_pronghorns_skinned": {
+    "task": "Вилорогов освежевано",
+    "solution": "Находим, убиваем и свежуем.",
+    "images": ["solutions/images/pronghorns_skinned.jpg"]
+  },
   "mpgc_protect_waves_completed": {
     "task": "Завершено волн атак в режиме «К оружию»",
     "solution": "Для запуска режима нужно взять телеграмму с просьбой о помощи от «Дж.» в сейфе в лагере. Далее в сумке в разделе телеграмм ищем пункт `К оружию` и идем на одну волну.",
@@ -1181,16 +1209,56 @@
     "solution": "Находим, убиваем и свежуем.",
     "images": ["solutions/images/rabbits_skinned.jpg"]
   },
-  "mpgc_raccoons_skinned": "North American Raccoons skinned",
-  "mpgc_race_wins": "Placed top 3 in a Race",
-  "mpgc_rams_head_picked": "Ram's Head picked",
-  "mpgc_rams_skinned": "Rams skinned",
-  "mpgc_rats_skinned": "Rats collected",
-  "mpgc_ravens_skinned": "Western Ravens plucked",
-  "mpgc_red_raspberry_picked": "Raspberries picked",
-  "mpgc_red_sage_picked": "Red Sage picked",
-  "mpgc_role_meta": "Daily Role Challenges",
-  "mpgc_roosters_skinned": "Roosters skinned",
+  "mpgc_raccoons_skinned": {
+    "task": "Енотов-полоскунов освежевано",
+    "solution": "Находим, убиваем и свежуем. Искать лучше с 20:00 до 5:00, в это время шанс найти чуть выше.",
+    "images": ["solutions/images/raccoons_skinned.jpg"]
+  },
+  "mpgc_race_wins": {
+    "task": "Занято 1, 2 или 3 место в гонке",
+    "solution": "Меню игрока -> Быстрый вход -> Серия Гонок. Удачи!",
+    "images": []
+  },
+  "mpgc_rams_head_picked": {
+    "task": "Грибов-баранов собрано",
+    "solution": "Находим, срываем или съедаем.",
+    "images": ["solutions/images/rams_head_picked.jpg"]
+  },
+  "mpgc_rams_skinned": {
+    "task": "Баранов освежевано",
+    "solution": "Находим толсторогов, убиваем и свежуем.",
+    "images": ["solutions/images/rams_skinned.jpg"]
+  },
+  "mpgc_rats_skinned": {
+    "task": "Крыс собрано",
+    "solution": "В тёмное время суток шанс встретить чуть выше. Пинаем, собираем.",
+    "images": ["solutions/images/rats_skinned.jpg"]
+  },
+  "mpgc_ravens_skinned": {
+    "task": "Западных воронов ощипано",
+    "solution": "Убиваем и ощипываем.",
+    "images": ["solutions/images/ravens_skinned.jpg"]
+  },
+  "mpgc_red_raspberry_picked": {
+    "task": "Малины собрано",
+    "solution": "Собираем или кушаем.",
+    "images": ["solutions/images/red_raspberry_picked.jpg"]
+  },
+  "mpgc_red_sage_picked": {
+    "task": "Красного шалфея собрано",
+    "solution": "Находим, срываем или съедаем.",
+    "images": ["solutions/images/red_sage_picked.jpg"]
+  },
+  "mpgc_role_meta": {
+    "task": "Ежедневные испытания роли",
+    "solution": "Просто выполните указанное количество любых ролевых дейликов",
+    "images": []
+  },
+  "mpgc_roosters_skinned": {
+    "task": "Петухов выпотрошено",
+    "solution": "Убиваем и свежуем.",
+    "images": ["solutions/images/roosters_skinned.jpg"]
+  },
   "mpgc_seagulls_skinned": {
     "task": "Чаек ощипано",
     "solution": "Убиваем и ощипываем.",
@@ -1226,13 +1294,41 @@
     "solution": "Меню игрока -> Быстрый вход -> Серия перестрелок. Побеждать необязательно, просто отыгрываем от начала и до конца. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
     "images": []
   },
-  "mpgc_series_shootout_wins": "Placed top 3 in a Shootout Showdown",
-  "mpgc_series_takeover_attempts": "Finish Showdown in Takeover Series",
-  "mpgc_series_takeover_wins": "Placed top 3 in a Takeover Showdown",
-  "mpgc_sheep_skinned": "Sheep skinned",
-  "mpgc_shop_animal_claw_sell": "Animal claws sold",
-  "mpgc_shop_animal_meat_sell": "Animal meat sold",
-  "mpgc_shop_animal_teeth_sell": "Animal teeth sold",
+  "mpgc_series_shootout_wins": {
+    "task": "Занято 1, 2 или 3 место в перестрелке",
+    "solution": "Меню игрока -> Быстрый вход -> Серия перестрелок. Для выполнения условия нужно отыграть полную игру. Если попали в командный режим - достаточно чтобы ваша команда заняла 1-3 место (если команды всего 2 - зачёт в кармане). Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
+    "images": []
+  },
+  "mpgc_series_takeover_attempts": {
+    "task": "Завершено противоборство в серии захватов",
+    "solution": "Меню игрока -> Быстрый вход -> Серия захватов. Побеждать не обязательно, но нужно отыграть игру от общего старта до объявления победителей. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
+    "images": []
+  },
+  "mpgc_series_takeover_wins": {
+    "task": "Занято 1, 2 или 3 место в захвате",
+    "solution": "Меню игрока -> Быстрый вход -> Серия захватов. Занимаем призовые места. Дейлик иногда не засчитывается, если вас закинуло в уже идущий матч. В таком случае просто дождитесь начала следующего.",
+    "images": []
+  },
+  "mpgc_sheep_skinned": {
+    "task": "Овец освежевано",
+    "solution": "Убиваем и свежуем.",
+    "images": ["solutions/images/sheep_skinned.jpg"]
+  },
+  "mpgc_shop_animal_claw_sell": {
+    "task": "Когтей животных продано",
+    "solution": "Продаем мяснику или Гасу коготь животного (барсука, орла, гризли или чёрного медведя).",
+    "images": []
+  },
+  "mpgc_shop_animal_meat_sell": {
+    "task": "Мяса животных продано",
+    "solution": "Идём к любому мяснику или Гасу и продаём мясо. Его можно добыть с практически любой животины или купить у мясника.",
+    "images": []
+  },
+  "mpgc_shop_animal_teeth_sell": {
+    "task": "Зубов животных продано",
+    "solution": "Идём к любому мяснику (либо к Гасу) и продаем ему зуб аллигатора или клык пумы. Если в сумке таких не завалялось - легче всего добыть с аллигаторов в Лаграсе.",
+    "images": []
+  },
   "mpgc_shop_animal_whole_sell": {
     "task": "Целых туш животных продано",
     "solution": "Продаем мяснику/Гасу неосвежёванные туши любых животных, птиц или радужной форели. Легче всего набрать в карманы и держать про запас различную мелочь по типу жаб, крыс, воробьёв, белок, небольших рыб и т. д.",
