@@ -422,7 +422,7 @@
   "mpgc_dog_pat": {
     "task": "Собак поглажено",
     "solution": "Находим собаку в собственном лагере/лагере друга. Если таковой нет, то отправляемся на пост Мансанита или же в любой город - и ищем собаку там.",
-    "images": ["solutions/images/dog_pat.jpg", "solutions/images/dog_pat_1.jpg"]
+    "images": ["solutions/images/dog_pat.jpg"]
   },
   "mpgc_ducks_skinned": {
     "task": "Уток выпотрошено",
@@ -622,7 +622,7 @@
   "mpgc_fish_caught_smallmouth_bass": {
     "task": "Малоротых окуней поймано",
     "solution": "Находим и ловим. Карты у нас пока нет, нужно сделать, так что помочь не сможем",
-    "images": ["solutions/images/coming_soon_placeholder.jpg"]
+    "images": ["solutions/images/fish_caught_smallmouth_bass.jpg"]
   },
   "mpgc_fish_caught_sockeye_salmon": {
     "task": "Лососей поймано",
@@ -752,7 +752,7 @@
   "mpgc_goats_skinned": {
     "task": "Альпийских коз освежевано",
     "solution": "Очень редкое животное. Вымирающий вид. Пока еще в игре никому не попадалось, поэтому ищите сами. И десять раз подумайте, стоит ли его убивать ради дейлика. Возможно, из-за этого вы окажетесь повинны в вымирании целого вида",
-    "images": ["solutions/images/coming_soon_placeholder.jpg"]
+    "images": ["solutions/images/goats_skinned.jpg"]
   },
   "mpgc_golden_currant_picked": {
     "task": "Смородины золотистой собрано",
@@ -837,7 +837,7 @@
   "mpgc_iguanas_skinned": {
     "task": "Игуан освежевано",
     "solution": "Я счас жопу тебе освежую! Не смей трогать",
-    "images": ["solutions/images/coming_soon_placeholder.jpg"]
+    "images": ["solutions/images/iguanas_skinned.jpg"]
   },
   "mpgc_indian_tobacco_picked": {
     "task": "Индейского табака собрано",
@@ -1412,7 +1412,7 @@
   "mpgc_spoonbill_skinned": {
     "task": "Розовых колпиц выпотрошено",
     "solution": "Мифическое животное, никто его не видел и никто не знает о местах его обитания. Решения нет. :(",
-    "images": ["solutions/images/coming_soon_placeholder.jpg"]
+    "images": ["solutions/images/spoonbill_skinned.jpg"]
   },
   "mpgc_squirrel_skinned": {
     "task": "Белок собрано",
@@ -1462,7 +1462,7 @@
   "mpgc_travel_visit_brandywine_drop": {
     "task": "Вы посетили Брендивайнский водопад",
     "solution": "Очень красивое место, знаменитое тем, что за самим водопадом скрыта пещера, полная сокровищ. Там находятся рандомные уникальные предметы, которые затем можно продать за внутриигровое золото! Раскрывать локацию этого водопада мы не станем, потому что если эта информация станет всеобщим достоянием, то она сломает внутриигровой баланс. Ищите сами, и обрящете.",
-    "images": ["solutions/images/coming_soon_placeholder.jpg"]
+    "images": ["solutions/images/travel_visit_brandywine_drop.jpg"]
   },
   "mpgc_travel_visit_colter": {
     "task": "Вы посетили Колтер",
@@ -1482,12 +1482,12 @@
   "mpgc_travel_visit_fort_wallace": {
     "task": "Вы посетили Форт-Уоллес",
     "solution": "Было в сюжетке. Вспоминайте сами, тренируйте извилины",
-    "images": ["solutions/images/coming_soon_placeholder.jpg"]
+    "images": ["solutions/images/travel_visit_fort_wallace.jpg"]
   },
   "mpgc_travel_visit_lagras": {
     "task": "Вы посетили Лаграс",
     "solution": "Здесь вам может откусить жопу аллигатор. Сами решайте, стоит ли выполнение дейлика того, или нет",
-    "images": ["solutions/images/coming_soon_placeholder.jpg"]
+    "images": ["solutions/images/travel_visit_lagras.jpg"]
   },
   "mpgc_travel_visit_macfarlane_ranch": {
     "task": "Вы посетили ранчо Макфарлейнов",
