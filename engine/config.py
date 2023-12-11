@@ -8,12 +8,12 @@ CATEGORIES = [
 ]
 
 EMOJI = {
-    'bounty_hunter_emoji': '💀',
-    'naturalist_emoji': '🐱',
-    'trader_emoji': '💵',
-    'collector_emoji': '💍',
-    'moonshiner_emoji': '🍾',
-    'madam_nazar_emoji': '🧭',
+    'bounty_hunter_emoji': '<:1bnf:1133866938599211048>',
+    'naturalist_emoji': '<:1ek:1132954387589894225>',
+    'trader_emoji': '<:1bh:1129141191326310440>',
+    'collector_emoji': '<:1ao:1133012204527034418>',
+    'moonshiner_emoji': '<:1bq:1132755527479345232>',
+    'madam_nazar_emoji': '<:1bng:1133866931783475230>',
 }
 
 MONTH_LIST = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
