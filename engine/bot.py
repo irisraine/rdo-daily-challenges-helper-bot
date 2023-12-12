@@ -30,7 +30,7 @@ async def daily_challenges_guide():
     madam_nazar_location_message = messages.get_madam_nazar_location_message()
 
     if not tutorial_messages:
-        logging.error(f"Данные о дейликах за {current_date} не могут быть отображены из-за ошибки")
+        logging.error(f"Данные о дейликах за {current_date} не могут быть отображены из-за ошибки\n")
         return
     if not madam_nazar_location_message:
         logging.warning("Невозможно получить данные о местонахождении мадам Назар")
