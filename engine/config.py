@@ -21,7 +21,7 @@ MONTH_LIST = ['января', 'февраля', 'марта', 'апреля', '�
 
 DAILY_CHALLENGES_UPDATE_TIME = {
     'hour': 6,
-    'minute': 10
+    'minute': 5
 }
 
 BASIC_COLOR_CODE = (48, 213, 200)
