@@ -1,11 +1,11 @@
 import nextcord
-import requests
 import os
 import json
 import logging
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 from engine.api_handler import get_daily_challenges_api_response, get_madam_nazar_location_map_url
+from engine.network import get_response_content
 import engine.config as config
 
 role_titles = {
@@ -91,12 +91,12 @@ def get_header_messages():
 
 def get_madam_nazar_location_message():
     madam_nazar_location_map_url = get_madam_nazar_location_map_url()
-    if not madam_nazar_location_map_url:
+    madam_nazar_location_map_image = get_response_content(madam_nazar_location_map_url) if madam_nazar_location_map_url else None
+    if not madam_nazar_location_map_image:
         return None
-    response = requests.get(madam_nazar_location_map_url)
     location_filepath = os.path.join(os.getcwd(), config.MADAM_NAZAR_LOCATION_MAP)
     with open(location_filepath, 'wb') as file:
-        file.write(response.content)
+        file.write(madam_nazar_location_map_image)
     title = f"{config.EMOJI['madam_nazar_emoji']} Мадам Назар: <t:{int(datetime.now().timestamp())}:D>"
     description = "Сегодняшнее местонахождение мадам Назар вы можете увидеть на карте, приведенной ниже:"
     madam_nazar_location_message = MessageContainer(
