@@ -1,6 +1,5 @@
 import json
 import logging
-from bs4 import BeautifulSoup
 import engine.config as config
 from engine.network import get_response_content
 
@@ -32,14 +31,13 @@ def get_daily_challenges_api_response():
     return daily_challenges_api_response
 
 
-def get_madam_nazar_location_map_url():
+def get_madam_nazar_location_api_response():
     response = get_response_content(config.RDO_MADAM_NAZAR_LOCATION_URL)
-    try:
-        main_page_parsed = BeautifulSoup(response, 'html.parser')
-        madam_nazar_location_map_url = main_page_parsed.find('main').find('img')['src']
-    except (KeyError, TypeError):
+    if not response:
         return None
-    return madam_nazar_location_map_url
+    madam_nazar_location_raw = json.loads(response)
+    madam_nazar_location = madam_nazar_location_raw['location']
+    return madam_nazar_location
 
 
 def normalize(current_challenge):

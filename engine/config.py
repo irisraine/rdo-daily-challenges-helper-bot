@@ -33,11 +33,11 @@ HEADER_COVER = 'assets/daily-challenges-header-cover.jpg'
 HEADER_GENERAL = 'assets/daily-challenges-header-general.jpg'
 HEADER_ROLE = 'assets/daily-challenges-header-role.jpg'
 SEPARATOR = 'assets/separator.png'
-MADAM_NAZAR_LOCATION_MAP = 'assets/madam-nazar-location-map.jpg'
+MADAM_NAZAR_LOCATION_MAPS_DIR = 'solutions/images/madam_nazar'
 
 CUSTOM_RDO_FONT = 'assets/chineserocksboldcyrillic.otf'
 
 RDO_DAILY_CHALLENGES_API_URL = 'https://api.rdo.gg/challenges/index.json'
-RDO_MADAM_NAZAR_LOCATION_URL = 'https://rdocollector.com/madam-nazar'
+RDO_MADAM_NAZAR_LOCATION_URL = 'https://api.rdo.gg/nazar/'
 
 DUMMY_LINK = 'https://dummy.link/'
