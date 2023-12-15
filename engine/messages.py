@@ -58,6 +58,14 @@ def get_solutions(category):
         return json.load(file)
 
 
+def get_image_path(local_path):
+    image_path = os.path.join(os.getcwd(), local_path)
+    if not os.path.isfile(image_path):
+        logging.error(f'Файл с картинкой {image_path} отсутствует, проверьте правильность пути!')
+        return None
+    return image_path
+
+
 def get_description(index, solutions, current_challenge):
     task = f"{index + 1}. {solutions[current_challenge['title']]['task']}: "
     goal = f"`0/{current_challenge['goal']}`"
@@ -92,7 +100,9 @@ def get_madam_nazar_location_message():
     madam_nazar_location = get_madam_nazar_location_api_response()
     if not madam_nazar_location:
         return None
-    image_path = os.path.join(os.getcwd(), config.MADAM_NAZAR_LOCATION_MAPS_DIR, f'{madam_nazar_location}.jpg')
+    image_path = get_image_path(f'{config.MADAM_NAZAR_LOCATION_MAPS_DIR}/{madam_nazar_location}.jpg')
+    if not image_path:
+        return None
     title = f"{config.EMOJI['madam_nazar_emoji']} Мадам Назар: <t:{int(datetime.now().timestamp())}:D>"
     madam_nazar_location_message = MessageContainer(
         title=title,
@@ -117,10 +127,7 @@ def get_tutorial_messages():
                 images = solutions[current_challenge['title']]['images']
                 images_paths = []
                 for image in images:
-                    image_path = os.path.join(os.getcwd(), image)
-                    if not os.path.isfile(image_path):
-                        logging.error(f'Файл с картинкой {image_path} отсутствует, проверьте правильность пути!')
-                        return None
+                    image_path = get_image_path(image)
                     images_paths.append(image_path)
                 message = MessageContainer(description=description, images_paths=images_paths)
                 general_tutorial_messages.append(message)
