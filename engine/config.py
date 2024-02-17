@@ -26,8 +26,6 @@ DAILY_CHALLENGES_UPDATE_TIME = {
 
 BASIC_COLOR_CODE = (48, 213, 200)
 
-OVERALL_NUMBER_OF_MESSAGES = 16
-
 HEADER_COVER_BLANK = 'assets/daily-challenges-header-cover-blank.jpg'
 HEADER_COVER = 'assets/daily-challenges-header-cover.jpg'
 HEADER_GENERAL = 'assets/daily-challenges-header-general.jpg'
@@ -39,5 +37,3 @@ CUSTOM_RDO_FONT = 'assets/chineserocksboldcyrillic.otf'
 
 RDO_DAILY_CHALLENGES_API_URL = 'https://api.rdo.gg/challenges/index.json'
 RDO_MADAM_NAZAR_LOCATION_URL = 'https://api.rdo.gg/nazar/'
-
-DUMMY_LINK = 'https://dummy.link/'

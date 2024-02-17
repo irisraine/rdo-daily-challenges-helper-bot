@@ -2,81 +2,81 @@
   "mprc_collector_antique_alcohol_drunk": {
     "task": "Старинного алкоголя выпито",
     "solution": "Ищем самогон деда [по карте](https://jeanropke.github.io/RDR2CollectorsMap/) и выпиваем.",
-    "images": []
+    "image": false
   },
   "mprc_collector_antique_bottles_found": {
     "task": "Старинного алкоголя найдено",
     "solution": "Ищем самогон деда [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_arrowheads_found": {
     "task": "Наконечников стрел найдено",
     "solution": "Ищем наконечники стрел Амура [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_bird_eggs_found": {
     "task": "Птичьих яиц найдено",
     "solution": "Ищем пасхальные яйца [по карте](https://jeanropke.github.io/RDR2CollectorsMap/). Сбиваем Варминтом. В некоторых местах яйцо намертво застревает на дереве, можете попробовать подогнать тюремный фургон и собрать с него.",
-    "images": []
+    "image": false
   },
   "mprc_collector_coins_found": {
     "task": "Монет найдено",
     "solution": "Ищем шоколадные монеты [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_family_heirlooms_found": {
     "task": "Фамильных ценностей найдено",
     "solution": "Ищем семейные реликвии [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_fossils_found": {
     "task": "Окаменелостей найдено",
     "solution": "Ищем останки заскамленных мамонтов [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_items_collected": {
     "task": "Коллекционных предметов собрано",
     "solution": "Собираем любые коллекционки [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_items_looted_enemy": {
     "task": "Добыто коллекционных предметов у ИИ-врагов",
     "solution": "Выворачиваем карманы всем убитым НПС. В соло сессии шанс выпадения выше.",
-    "images": []
+    "image": false
   },
   "mprc_collector_items_sold": {
     "task": "Продано коллекционных предметов мадам Назар",
     "solution": "Разыскиваем с мигалками мадам Назар и продаем ей найденные побрякушки.",
-    "images": []
+    "image": false
   },
   "mprc_collector_lost_jewelry_found": {
     "task": "Потерянных украшений найдено",
     "solution": "Ищем золотые перстни и гранатовые браслеты [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_tarot_cards_found": {
     "task": "Карт Таро найдено",
     "solution": "Ищем гадальные карточки [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   },
   "mprc_collector_used_map": {
     "task": "Использовано карт коллекционера",
     "solution": "Покупаем карты коллекционера у мадам Назар и открываем их по очереди.",
-    "images": []
+    "image": false
   },
   "mprc_collector_used_metal_dectector": {
     "task": "Коллекционных предметов с помощью металлоискателя найдено",
     "solution": "Вооружаемся металлоискателем, лопатой и [интерактивной картой](https://jeanropke.github.io/RDR2CollectorsMap/) и идем искать закопанное добро.",
-    "images": []
+    "image": false
   },
   "mprc_collector_used_shovel": {
     "task": "Откопано коллекционных предметов с помощью лопаты",
     "solution": "Вооружаемся металлоискателем, лопатой и [интерактивной картой](https://jeanropke.github.io/RDR2CollectorsMap/) и идем искать закопанное добро.",
-    "images": []
+    "image": false
   },
   "mprc_collector_wild_flowers_found": {
     "task": "Американских диких цветов найдено",
     "solution": "Ищем розовые розы [по карте](https://jeanropke.github.io/RDR2CollectorsMap/).",
-    "images": []
+    "image": false
   }
 }

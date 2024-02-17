@@ -2,136 +2,136 @@
   "mprc_moonshiner_band_played_hard": {
     "task": "Вы музицировали в течение 2 минут",
     "solution": "Идем в бар, забираем у одного из музыкантов шарманку и играем 2 минуты.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_band_played_med": {
     "task": "Вы музицировали в течение 1 минуты",
     "solution": "Биба.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_bar_changed_decor": {
     "task": "Интерьер в баре изменен",
     "solution": "В хижине самогонщика подходим к Мэгги, меняем тему бара/картину. ",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_craft_poison_bottle": {
     "task": "Бутылок ядовитого самогона создано",
     "solution": "Создаем через ступку и пестик/у костра. Ингридиенты: самогон, олеандр, молочай.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_danced_bar_hard": {
     "task": "Вы танцевали в баре в течение 2 минут",
     "solution": "Идем в бар, просим музыкантов сыграть, после этого зажимаем кнопку \"Танцевать\" + нажимаем Home на клавиатуре. Дейлик выполнится сам.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_danced_bar_med": {
     "task": "Вы танцевали в баре в течение 1 минуты",
     "solution": "биба",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_drunk_interaction_bar": {
     "task": "Взаимодействий с игроками в пьяном виде в баре",
     "solution": "Пригласите друга, напейтесь, обнимите или дайте ему по шляпе. Перезайдите в хижину, (друг ждет вас в пьяном виде у выхода) он должен повзаимодействовать с вами. Выполнение в соло: встаём на входную ступеньку и зажимаем E+ЛКМ. Перезаходим, повторяем.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_last_round_bar": {
     "task": "Вы оставались в баре вплоть до закрытия",
     "solution": "Сидим в баре с утра до ночи, опустошаем запасы Марселя.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_marketing_mission_completed": {
     "task": "Заданий по бутлегерству выполнено",
     "solution": "Делайте соло сессию через диспетчер задач и ищите блокпосты агентов и лагеря конкурентов, также можете взять задание по бутлегерству у Мэгги.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_money_made": {
     "task": "Доход от торговли самогоном",
     "solution": "Отвозим и продаем средний/лучший самогон. Не срезайте путь - это приведет к потере бутылок и уменьшению стоимости.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_drank_easy": {
     "task": "Самогона любой крепости приготовлено и выпито",
     "solution": "Выпиваем в баре готовящийся/готовый самогон.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_drank_hard": {
     "task": "Самогона высокой крепости приготовлено и выпито",
     "solution": "Выпиваем в баре готовящийся/готовый самогон.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_drank_med": {
     "task": "Самогона средней или высокой крепости приготовлено и выпито",
     "solution": "Выпиваем в баре готовящийся/готовый самогон.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_served_bar": {
     "task": "Раз подано самогона другим игрокам в баре",
     "solution": "Приходим в бар с друзьями и разливаем им винище. Друзья должны облокотиться о стойку, чтобы задание засчиталось.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer": {
     "task": "Cамогона любого типа продано покупателю",
     "solution": "Продаем самогон покупателям.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_condition_easy": {
     "task": "Вы продали самогон, сохранив в целости не менее 10 бутылок",
     "solution": "Элементарно.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_condition_hard": {
     "task": "Вы продали самогон, сохранив в целости не менее 18 бутылок",
     "solution": "Везите товар, замедляясь на ж/д переездах и в неровной местности.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_condition_med": {
     "task": "Вы продали самогон, сохранив в целости не менее 15 бутылок",
     "solution": "биба",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_hard": {
     "task": "Самогона предпочитаемого типа продано покупателю",
     "solution": "Продаем самогон покупателям с конкретными заказами.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_timed_easy": {
     "task": "Самогона продано с запасом в 3 минуты",
     "solution": "Элементарно.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_timed_hard": {
     "task": "Самогона продано с запасом в 5 минут",
     "solution": "Продаем самогон так, чтобы на таймере осталось более 5 минут.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_moonshine_sold_buyer_timed_med": {
     "task": "Самогона продано с запасом в 4 минуты",
     "solution": "Элементарно.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_recipe_completed_easy": {
     "task": "Любой рецепт для приготовления самогона использован",
     "solution": "биба",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_recipe_completed_hard": {
     "task": "Рецепт для приготовления особого самогона использован",
     "solution": "Запускаем производство самогона на 3 звезды (исп. коллекционное растение/алкоголь).",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_recipe_completed_med": {
     "task": "Рецепт для приготовления улучшенного или особого самогона использован",
     "solution": "биба",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_story_mission_completed": {
     "task": "Сюжетных заданий для роли самогонщика пройдено",
     "solution": "Выполняем сюжетное задание через \"Прогресс>Сюжетные задания>Самогонщик\" или берем квест у Мэгги напрямую.",
-    "images": []
+    "image": false
   },
   "mprc_moonshiner_travel_wagon": {
     "task": "Расстояние, преодоленное на повозке самогонщика во время задания (в футах)",
     "solution": "Для выполнения можно ездить кругами или по протяженным дорогам, а так же попроситься к другу на его доставку. ",
-    "images": []
+    "image": false
   }
 }

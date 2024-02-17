@@ -6,6 +6,11 @@ This Discord bot is designed to help players of the game Red Dead Online by post
 the daily challenges that are updated every 24 hours. The bot uses a free RDO API from the resource [api.rdo.gg](https://rdo.gg/api) 
 to gather the latest information on the daily challenges.
 
+## Commands
+
+Bot publishes daily challenges guides automatically every 24h at 6:05 UTC.
+- `$manual_publish` command - an emergency command that immediately publishes current daily guides. Use it only when automatic scheduled publishing did not work as expected, for example due to a hosting outage.
+
 ## Usage
 
 Please make sure to specify the necessary environment variables. They should contain DISCORD_BOT_TOKEN and 

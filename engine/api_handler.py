@@ -36,8 +36,8 @@ def get_madam_nazar_location_api_response():
     if not response:
         return None
     madam_nazar_location_raw = json.loads(response)
-    madam_nazar_location = madam_nazar_location_raw['location']
-    return madam_nazar_location
+    madam_nazar_location_api_response = madam_nazar_location_raw['location']
+    return madam_nazar_location_api_response
 
 
 def normalize(current_challenge):
