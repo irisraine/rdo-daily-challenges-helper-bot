@@ -35,15 +35,15 @@ async def daily_challenges_guide():
         file=header_messages['cover'].image
     )
     for category in ('general', 'role'):
-        embeds, images = [], []
-        embeds.append(header_messages[category].embed)
-        embeds.extend([tutorial_message.embed for tutorial_message in tutorial_messages[category]])
-        images.append(header_messages[category].image)
-        images.extend([tutorial_message.image for tutorial_message in tutorial_messages[category]])
         await message_channel.send(
-            embeds=embeds,
-            files=images
+            embed=header_messages[category].embed,
+            file=header_messages[category].image
         )
+        for tutorial_message in tutorial_messages[category]:
+            await message_channel.send(
+                embed=tutorial_message.embed,
+                file=tutorial_message.image
+            )
     if madam_nazar_location_message:
         await message_channel.send(
             embed=madam_nazar_location_message.embed,
