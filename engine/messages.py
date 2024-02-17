@@ -17,7 +17,7 @@ role_titles = {
 
 
 class MessageContainer:
-    def __init__(self, title=None, description=None, image_path=None):
+    def __init__(self, title=None, description=None, image_path=None, image_index=None):
         self.__embed = nextcord.Embed(
             title=title,
             description=description,
@@ -25,8 +25,12 @@ class MessageContainer:
         )
         if not image_path:
             image_path = config.SEPARATOR
-        image_name = image_path.split('/')[-1]
-        image_attachment = f'attachment://{image_name}'
+            image_name = f"separator_{image_index}.png"
+        else:
+            image_name = image_path.split('/')[-1]
+            if image_index:
+                image_name = f"{image_name.split('.')[0]}_{image_index}.jpg"
+        image_attachment = f"attachment://{image_name}"
         self.__embed.set_image(url=image_attachment)
         self.__image = nextcord.File(image_path, filename=image_name)
 
@@ -102,7 +106,7 @@ def get_tutorial_messages():
         return None
     general_tutorial_messages = []
     role_tutorial_messages = []
-    for category in config.CATEGORIES:
+    for count, category in enumerate(config.CATEGORIES):
         if category == 'general':
             solutions = get_solutions(category)
             if not solutions:
@@ -111,7 +115,7 @@ def get_tutorial_messages():
                 description = get_description(index, solutions, current_challenge)
                 image = solutions[current_challenge['title']]['image']
                 image_path = get_image_path(image) if image else None
-                message = MessageContainer(description=description, image_path=image_path)
+                message = MessageContainer(description=description, image_path=image_path, image_index=index + 1)
                 general_tutorial_messages.append(message)
         else:
             solutions = get_solutions(category)
@@ -122,7 +126,7 @@ def get_tutorial_messages():
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
                 description_single = get_description(index, solutions, current_challenge)
                 description += f"{description_single}\n"
-            message = MessageContainer(title=title, description=description)
+            message = MessageContainer(title=title, description=description, image_index=count)
             role_tutorial_messages.append(message)
     tutorial_messages = {
         'general': general_tutorial_messages,

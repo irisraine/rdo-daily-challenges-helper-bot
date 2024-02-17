@@ -27,7 +27,7 @@ async def daily_challenges_guide():
     madam_nazar_location_message = messages.get_madam_nazar_location_message()
 
     if not tutorial_messages:
-        logging.error("Данные о дейликах не могут быть отображены из-за ошибки\n")
+        logging.error("Данные о дейликах не могут быть отображены из-за ошибки")
         return
 
     await message_channel.send(
@@ -35,15 +35,13 @@ async def daily_challenges_guide():
         file=header_messages['cover'].image
     )
     for category in ('general', 'role'):
+        embeds, images = [header_messages[category].embed], [header_messages[category].image]
+        embeds.extend([tutorial_message.embed for tutorial_message in tutorial_messages[category]])
+        images.extend([tutorial_message.image for tutorial_message in tutorial_messages[category]])
         await message_channel.send(
-            embed=header_messages[category].embed,
-            file=header_messages[category].image
+            embeds=embeds,
+            files=images
         )
-        for tutorial_message in tutorial_messages[category]:
-            await message_channel.send(
-                embed=tutorial_message.embed,
-                file=tutorial_message.image
-            )
     if madam_nazar_location_message:
         await message_channel.send(
             embed=madam_nazar_location_message.embed,

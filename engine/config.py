@@ -26,10 +26,10 @@ DAILY_CHALLENGES_UPDATE_TIME = {
 
 BASIC_COLOR_CODE = (48, 213, 200)
 
-HEADER_COVER_BLANK = 'assets/daily-challenges-header-cover-blank.jpg'
-HEADER_COVER = 'assets/daily-challenges-header-cover.jpg'
-HEADER_GENERAL = 'assets/daily-challenges-header-general.jpg'
-HEADER_ROLE = 'assets/daily-challenges-header-role.jpg'
+HEADER_COVER_BLANK = 'assets/daily_challenges_header_cover_blank.jpg'
+HEADER_COVER = 'assets/daily_challenges_header_cover.jpg'
+HEADER_GENERAL = 'assets/daily_challenges_header_general.jpg'
+HEADER_ROLE = 'assets/daily_challenges_header_role.jpg'
 SEPARATOR = 'assets/separator.png'
 MADAM_NAZAR_LOCATION_MAPS_DIR = 'solutions/images/madam_nazar'
 
