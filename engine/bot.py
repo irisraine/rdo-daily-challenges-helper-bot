@@ -27,7 +27,7 @@ async def daily_challenges_guide():
     madam_nazar_location_message = messages.get_madam_nazar_location_message()
 
     if not tutorial_messages:
-        logging.error("Данные о дейликах не могут быть отображены из-за ошибки")
+        logging.error("Данные о дейликах не могут быть отображены из-за ошибки\n")
         return
 
     await message_channel.send(
