@@ -73,4 +73,5 @@ async def manual_publish_error(ctx, error):
 @client.event
 async def on_ready():
     logging.info(f'Бот залогинен под именем: {client.user.name}')
-    scheduled_publish.start()
+    if not scheduled_publish.is_running():
+        scheduled_publish.start()
