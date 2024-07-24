@@ -9,7 +9,7 @@ to gather the latest information on the daily challenges.
 ## Commands
 
 Bot publishes daily challenges guides automatically every 24h at 6:05 UTC.
-- `$manual_publish` command - an emergency command that immediately publishes current daily guides. Use it only when automatic scheduled publishing did not work as expected, for example due to a hosting outage.
+- `/daily_challenges` command - an emergency command that immediately publishes current daily guides. Use it only when automatic scheduled publishing did not work as expected, for example due to a hosting outage.
 
 ## Usage
 

@@ -1,5 +1,5 @@
 import nextcord
-from nextcord.ext import commands, tasks
+from nextcord.ext import commands, tasks, application_checks
 import os
 import datetime
 from dotenv import load_dotenv
@@ -16,11 +16,11 @@ launch_time = datetime.time(
 intents = nextcord.Intents.all()
 client = commands.Bot(command_prefix='$', intents=intents)
 
-target_channel_id = int(os.getenv('DAILY_CHALLENGES_TUTORIALS_CHANNEL'))
+TARGET_CHANNEL_ID = int(os.getenv('DAILY_CHALLENGES_TUTORIALS_CHANNEL'))
 
 
 async def daily_challenges_guide():
-    message_channel = client.get_channel(target_channel_id)
+    message_channel = client.get_channel(TARGET_CHANNEL_ID)
 
     header_messages = messages.get_header_messages()
     tutorial_messages = messages.get_tutorial_messages()
@@ -57,17 +57,36 @@ async def scheduled_publish():
     await daily_challenges_guide()
 
 
-@client.command()
-@commands.has_permissions(administrator=True)
-async def manual_publish(ctx):
-    if ctx.channel.id == target_channel_id:
+@client.slash_command(description="Ручная публикация гайдов по дейликам")
+@application_checks.has_permissions(administrator=True)
+async def daily_challenges(interaction: nextcord.Interaction):
+    if interaction.channel.id == TARGET_CHANNEL_ID:
+        await interaction.response.send_message(
+            embed=nextcord.Embed(
+                description="Публикация начинается.",
+                colour=nextcord.Color.red()), ephemeral=True
+        )
         await daily_challenges_guide()
+    else:
+        await interaction.response.send_message(
+            embed=nextcord.Embed(
+                title="Ошибка",
+                description="Публикация гайдов на дейлики вне специального канала не допускается.",
+                colour=nextcord.Color.red()), ephemeral=True
+        )
 
 
-@manual_publish.error
-async def manual_publish_error(ctx, error):
-    if isinstance(error, commands.MissingPermissions):
-        await ctx.send("Эта опция доступна только для администраторов!")
+@client.event
+async def on_application_command_error(interaction: nextcord.Interaction, error):
+    if isinstance(error, application_checks.ApplicationMissingPermissions):
+        await interaction.response.send_message(
+            embed=nextcord.Embed(
+                title="Ошибка",
+                description="Публиковать гайды по дейликам могут только администраторы.",
+                colour=nextcord.Color.red()), ephemeral=True
+        )
+    else:
+        logging.error(f"При использовании команды произошла непредвиденная ошибка: {error}")
 
 
 @client.event
