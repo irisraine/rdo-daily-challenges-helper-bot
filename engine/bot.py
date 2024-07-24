@@ -71,7 +71,7 @@ async def daily_challenges(interaction: nextcord.Interaction):
         await interaction.response.send_message(
             embed=nextcord.Embed(
                 title="Ошибка",
-                description="Публикация гайдов на дейлики вне специального канала не допускается.",
+                description="Публикация гайдов по дейликам вне специального канала не допускается.",
                 colour=nextcord.Color.red()), ephemeral=True
         )
 
