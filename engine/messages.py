@@ -1,11 +1,10 @@
 import nextcord
-import os
 import json
-import logging
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 from engine.content import get_daily_challenges_api_response, get_madam_nazar_location_api_response
 import engine.config as config
+import engine.utils as utils
 
 
 ROLE_TITLES = {
@@ -47,20 +46,11 @@ class MessageContainer:
 
 
 def get_solutions(category):
-    filename = os.path.join(config.SOLUTIONS_DIR, f'{category}.json')
-    if not os.path.isfile(filename):
-        logging.error(f'Файл с туториалами {filename} отсутствует, проверьте правильность пути!')
-        return
-    with open(filename, 'r', encoding='utf-8') as file:
+    file_path = utils.get_file_path(config.SOLUTIONS_DIR, filename=f'{category}.json')
+    if not file_path:
+        return None
+    with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
-
-
-def get_image_path(image_filename):
-    image_path = os.path.join(config.SOLUTIONS_IMAGES_DIR, image_filename)
-    if not os.path.isfile(image_path):
-        logging.error(f'Файл с картинкой {image_path} отсутствует, проверьте правильность пути!')
-        return
-    return image_path
 
 
 def get_description(index, solutions, current_challenge):
@@ -95,9 +85,9 @@ def get_madam_nazar_location_message():
     madam_nazar_location_api_response = get_madam_nazar_location_api_response()
     if not madam_nazar_location_api_response:
         return
-    image_path = get_image_path(
-        os.path.join(config.MADAM_NAZAR_LOCATION_MAPS_DIR, f'{madam_nazar_location_api_response[4:]}.jpg')
-    )
+    image_path = utils.get_file_path(
+        config.SOLUTIONS_IMAGES_DIR, config.MADAM_NAZAR_LOCATION_MAPS_DIR,
+        filename=f'{madam_nazar_location_api_response[4:]}.jpg')
     if not image_path:
         return
     title = f"<:1bng:1133866931783475230> Мадам Назар: <t:{int(datetime.now().timestamp())}:D>"
@@ -119,7 +109,9 @@ def get_tutorial_messages():
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
                 description = get_description(index, solutions, current_challenge)
                 image_filename = solutions[current_challenge['title']]['image']
-                image_path = get_image_path(image_filename) if image_filename else None
+                image_path = utils.get_file_path(
+                    config.SOLUTIONS_IMAGES_DIR,
+                    filename=image_filename) if image_filename else None
                 message = MessageContainer(description=description, image_path=image_path, image_index=index + 1)
                 general_tutorial_messages.append(message)
         else:
