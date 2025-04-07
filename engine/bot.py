@@ -1,26 +1,14 @@
 import nextcord
 from nextcord.ext import commands, tasks, application_checks
-import os
-import datetime
-from dotenv import load_dotenv
 import logging
 import engine.config as config
 import engine.messages as messages
 
-load_dotenv()
-launch_time = datetime.time(
-    hour=config.DAILY_CHALLENGES_UPDATE_TIME['hour'],
-    minute=config.DAILY_CHALLENGES_UPDATE_TIME['minute']
-)
-
-intents = nextcord.Intents.all()
-client = commands.Bot(command_prefix='$', intents=intents)
-
-TARGET_CHANNEL_ID = int(os.getenv('DAILY_CHALLENGES_TUTORIALS_CHANNEL'))
+client = commands.Bot(command_prefix='$', intents=nextcord.Intents.all(), default_guild_ids=[config.GUILD_ID])
 
 
 async def daily_challenges_guide():
-    message_channel = client.get_channel(TARGET_CHANNEL_ID)
+    message_channel = client.get_channel(config.TARGET_CHANNEL_ID)
 
     header_messages = messages.get_header_messages()
     tutorial_messages = messages.get_tutorial_messages()
@@ -42,17 +30,14 @@ async def daily_challenges_guide():
             embeds=embeds,
             files=images
         )
-    if madam_nazar_location_message:
-        await message_channel.send(
-            embed=madam_nazar_location_message.embed,
-            file=madam_nazar_location_message.image
-        )
-    else:
-        logging.error("Невозможно получить данные о местонахождении мадам Назар")
+    await message_channel.send(
+        embed=madam_nazar_location_message.embed,
+        file=madam_nazar_location_message.image
+    )
     logging.info("Данные о дейликах успешно отображены!")
 
 
-@tasks.loop(time=launch_time)
+@tasks.loop(time=config.LAUNCH_TIME)
 async def scheduled_publish():
     await daily_challenges_guide()
 
@@ -60,18 +45,18 @@ async def scheduled_publish():
 @client.slash_command(description="Ручная публикация гайдов по дейликам")
 @application_checks.has_permissions(administrator=True)
 async def daily_challenges(interaction: nextcord.Interaction):
-    if interaction.channel.id == TARGET_CHANNEL_ID:
+    if interaction.channel.id == config.TARGET_CHANNEL_ID:
         await interaction.response.send_message(
             embed=nextcord.Embed(
-                description="Публикация начинается.",
-                colour=nextcord.Color.red()), ephemeral=True
+                description="✅ _Публикация начинается!_",
+                colour=nextcord.Color.from_rgb(*config.BASIC_COLOR_CODE)), ephemeral=True
         )
         await daily_challenges_guide()
     else:
         await interaction.response.send_message(
             embed=nextcord.Embed(
                 title="Ошибка",
-                description="Публикация гайдов по дейликам вне специального канала не допускается.",
+                description="❌ _Публикация гайдов по дейликам вне специального канала не допускается!_",
                 colour=nextcord.Color.red()), ephemeral=True
         )
 

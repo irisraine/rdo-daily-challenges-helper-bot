@@ -1,12 +1,12 @@
-import os
-from dotenv import load_dotenv
+import logging.config
+import engine.config as config
 from engine.bot import client
-from engine.logger import init_logger
-
-load_dotenv()
-DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 
 def run_discord_bot():
-    init_logger()
-    client.run(DISCORD_BOT_TOKEN)
+    logging.config.dictConfig(config.LOGGING_SETTINGS)
+    client.run(config.DISCORD_BOT_TOKEN)
+
+
+if __name__ == "__main__":
+    run_discord_bot()
