@@ -27,5 +27,5 @@ def get_file_path(*dirs, filename):
     file_path = os.path.join(*dirs, filename)
     if not os.path.isfile(file_path):
         logging.error(f'Файл {filename} отсутствует, проверьте правильность пути!')
-        return None
+        return
     return file_path

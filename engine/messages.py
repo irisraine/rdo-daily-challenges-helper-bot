@@ -47,10 +47,9 @@ class MessageContainer:
 
 def get_solutions(category):
     file_path = utils.get_file_path(config.SOLUTIONS_DIR, filename=f'{category}.json')
-    if not file_path:
-        return None
-    with open(file_path, 'r', encoding='utf-8') as file:
-        return json.load(file)
+    if file_path:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return json.load(file)
 
 
 def get_description(index, solutions, current_challenge):
