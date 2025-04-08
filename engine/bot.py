@@ -8,7 +8,7 @@ client = commands.Bot(command_prefix='$', intents=nextcord.Intents.all(), defaul
 
 
 async def daily_challenges_guide():
-    message_channel = client.get_channel(config.TARGET_CHANNEL_ID)
+    daily_challenges_tutorials_channel = client.get_channel(config.DAILY_CHALLENGES_TUTORIALS_CHANNEL_ID)
 
     header_messages = messages.get_header_messages()
     tutorial_messages = messages.get_tutorial_messages()
@@ -18,7 +18,7 @@ async def daily_challenges_guide():
         logging.error("Данные о дейликах не могут быть отображены из-за ошибки")
         return
 
-    await message_channel.send(
+    await daily_challenges_tutorials_channel.send(
         embed=header_messages['cover'].embed,
         file=header_messages['cover'].image
     )
@@ -26,11 +26,11 @@ async def daily_challenges_guide():
         embeds, images = [header_messages[category].embed], [header_messages[category].image]
         embeds.extend([tutorial_message.embed for tutorial_message in tutorial_messages[category]])
         images.extend([tutorial_message.image for tutorial_message in tutorial_messages[category]])
-        await message_channel.send(
+        await daily_challenges_tutorials_channel.send(
             embeds=embeds,
             files=images
         )
-    await message_channel.send(
+    await daily_challenges_tutorials_channel.send(
         embed=madam_nazar_location_message.embed,
         file=madam_nazar_location_message.image
     )
@@ -45,7 +45,7 @@ async def scheduled_publish():
 @client.slash_command(description="Ручная публикация гайдов по дейликам")
 @application_checks.has_permissions(administrator=True)
 async def daily_challenges(interaction: nextcord.Interaction):
-    if interaction.channel.id == config.TARGET_CHANNEL_ID:
+    if interaction.channel.id == config.DAILY_CHALLENGES_TUTORIALS_CHANNEL_ID:
         await interaction.response.send_message(
             embed=nextcord.Embed(
                 description="✅ _Публикация начинается!_",
