@@ -86,10 +86,10 @@ def get_tutorial_messages():
     general_tutorial_messages = []
     role_tutorial_messages = []
     for count, category in enumerate(config.CATEGORIES):
+        solutions = _get_solutions(category)
+        if not solutions:
+            return
         if category == 'general':
-            solutions = _get_solutions(category)
-            if not solutions:
-                return
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
                 description = _get_description(index, solutions, current_challenge)
                 image_filename = solutions[current_challenge['title']]['image']
@@ -99,9 +99,6 @@ def get_tutorial_messages():
                 message = MessageContainer(description=description, image_path=image_path, image_index=index + 1)
                 general_tutorial_messages.append(message)
         else:
-            solutions = _get_solutions(category)
-            if not solutions:
-                return
             title = f"**{ROLE_TITLES[category]}**"
             description = ""
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
