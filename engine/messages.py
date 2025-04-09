@@ -45,21 +45,6 @@ class MessageContainer:
         return self.__image
 
 
-def get_solutions(category):
-    file_path = utils.get_file_path(config.SOLUTIONS_DIR, filename=f'{category}.json')
-    if file_path:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            return json.load(file)
-
-
-def get_description(index, solutions, current_challenge):
-    task = f"{index + 1}. {solutions[current_challenge['title']]['task']}: "
-    goal = f"`0/{current_challenge['goal']}`"
-    solution = f"{solutions[current_challenge['title']]['solution']}"
-    description = f'***{task}{goal}***{solution}'
-    return description
-
-
 def get_header_messages():
     today = datetime.today()
     current_date_formatted = f"{today.day} {MONTH_LIST[today.month - 1]} {today.year}"
@@ -102,11 +87,11 @@ def get_tutorial_messages():
     role_tutorial_messages = []
     for count, category in enumerate(config.CATEGORIES):
         if category == 'general':
-            solutions = get_solutions(category)
+            solutions = _get_solutions(category)
             if not solutions:
                 return
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
-                description = get_description(index, solutions, current_challenge)
+                description = _get_description(index, solutions, current_challenge)
                 image_filename = solutions[current_challenge['title']]['image']
                 image_path = utils.get_file_path(
                     config.SOLUTIONS_IMAGES_DIR,
@@ -114,13 +99,13 @@ def get_tutorial_messages():
                 message = MessageContainer(description=description, image_path=image_path, image_index=index + 1)
                 general_tutorial_messages.append(message)
         else:
-            solutions = get_solutions(category)
+            solutions = _get_solutions(category)
             if not solutions:
                 return
             title = f"**{ROLE_TITLES[category]}**"
             description = ""
             for index, current_challenge in enumerate(daily_challenges_api_response[category]):
-                description_single = get_description(index, solutions, current_challenge)
+                description_single = _get_description(index, solutions, current_challenge)
                 description += f"{description_single}\n"
             message = MessageContainer(title=title, description=description, image_index=count)
             role_tutorial_messages.append(message)
@@ -129,3 +114,18 @@ def get_tutorial_messages():
         'role': role_tutorial_messages
     }
     return tutorial_messages
+
+
+def _get_solutions(category):
+    file_path = utils.get_file_path(config.SOLUTIONS_DIR, filename=f'{category}.json')
+    if file_path:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return json.load(file)
+
+
+def _get_description(index, solutions, current_challenge):
+    task = f"{index + 1}. {solutions[current_challenge['title']]['task']}: "
+    goal = f"`0/{current_challenge['goal']}`"
+    solution = f"{solutions[current_challenge['title']]['solution']}"
+    description = f'***{task}{goal}***{solution}'
+    return description
