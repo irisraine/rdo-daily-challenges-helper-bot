@@ -19,11 +19,9 @@ class MainMenuView(nextcord.ui.View):
         self.add_item(select)
 
     async def select_group_callback(self, interaction: nextcord.Interaction):
-        selected_group = interaction.data["values"][0]
+        group = interaction.data["values"][0]
         await interaction.response.defer()
-        await interaction.followup.send(**messages.group_menu(selected_group),
-                                        view=GroupMenuView(selected_group),
-                                        ephemeral=True)
+        await interaction.followup.send(**messages.group_menu(group), view=GroupMenuView(group), ephemeral=True)
         await interaction.message.edit(view=MainMenuView())
 
 
@@ -48,10 +46,10 @@ class GroupMenuView(nextcord.ui.View):
         self.add_item(select)
 
     async def select_category_callback(self, interaction: nextcord.Interaction):
-        selected_category = interaction.data["values"][0]
+        category = interaction.data["values"][0]
         await interaction.response.defer()
-        await interaction.edit_original_message(**messages.category_menu(self.group, selected_category),
-                                                view=CategoryMenuView(self.group, selected_category))
+        await interaction.edit_original_message(**messages.category_menu(self.group, category),
+                                                view=CategoryMenuView(self.group, category))
 
 
 class CategoryMenuView(nextcord.ui.View):
@@ -80,12 +78,11 @@ class CategoryMenuView(nextcord.ui.View):
         self.add_item(button)
 
     async def select_solution_callback(self, interaction: nextcord.Interaction):
-        selected_solution = interaction.data["values"][0]
+        solution = interaction.data["values"][0]
         await interaction.response.defer()
-        await interaction.edit_original_message(**messages.solution_guide(self.group, self.category, selected_solution),
+        await interaction.edit_original_message(**messages.solution_guide(self.group, self.category, solution),
                                                 view=None)
 
     async def button_back_callback(self, interaction: nextcord.Interaction):
         await interaction.response.defer()
-        await interaction.edit_original_message(**messages.group_menu(self.group),
-                                                view=GroupMenuView(self.group))
+        await interaction.edit_original_message(**messages.group_menu(self.group), view=GroupMenuView(self.group))
