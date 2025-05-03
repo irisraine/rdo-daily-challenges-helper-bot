@@ -77,8 +77,8 @@
                 },
                 "unable_to_set_screen_resolution": {
                     "name": "Не применяется/слетает разрешение монитора",
-                    "title": "НЕ ПРИМЕНЯЕТСЯ/СЛЕТАЕТ РАЗРЕШЕНИЕ МОНИТОРА",
-                    "description": "1. Переходим по пути:\nC:\\Users\\[имя пользователя]\\Documents\\Rockstar Games\\Red Dead Redemption 2\\Settings\n2. Открываем файл System.xml\nВ строчках ниже выставляем разрешение своего монитора:\n<screenWidth value=\"1680\"/>\n<screenHeight value=\"1050\"/>\nСохраняем файл настроек."
+                    "title": "Не применяется/слетает разрешение монитора",
+                    "description": "1. Переходим по пути:\nC:\\Users\\\\[имя пользователя]\\Documents\\Rockstar Games\\Red Dead Redemption 2\\Settings\n2. Открываем файл System.xml\nВ строчках ниже выставляем разрешение своего монитора:\n<screenWidth value=\"1680\"/>\n<screenHeight value=\"1050\"/>\nСохраняем файл настроек."
                 }
             }
         },
