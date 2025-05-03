@@ -12,7 +12,7 @@ class Troubleshooting(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(description="Размещение решения проблем")
+    @nextcord.slash_command(description="Размещение гайдов с решениями проблем")
     @application_checks.has_permissions(administrator=True)
     async def troubleshooting(self, interaction: nextcord.Interaction):
         troubleshooting_guides_channel = self.client.get_channel(global_config.TROUBLESHOOTING_GUIDES_CHANNEL_ID)
@@ -74,6 +74,30 @@ class Troubleshooting(commands.Cog):
                             "Внимательно проверьте содержимое файла, и в особенности удостоверьтесь, "
                             "что число решений в одной категории не превышает 25 штук.",
                 error=True))
+
+    @nextcord.slash_command(description="Скачать JSON-файл с существующими решениями проблем")
+    @application_checks.has_permissions(administrator=True)
+    async def current(
+            self,
+            interaction: nextcord.Interaction,
+            action: str = nextcord.SlashOption(
+                name="group",
+                description="Выбрать, какой именно файл с гайдами по решению проблем вы хотите скачать",
+                choices={
+                    "Баги игры": "bugs",
+                    "Ошибки": "errors",
+                    "Проблемы с ролями": "role_problems",
+                    "Общие технические вопросы и полезности": "tech_advices"
+                }
+            )
+    ):
+        await interaction.response.defer()
+        file = nextcord.File(fp=config.TROUBLESHOOTING_GROUPS[action]["json"], filename=f"{action}.json")
+        await interaction.followup.send(file=file)
+        await interaction.followup.send(**messages.update_info(
+            description=f"📄 Вам отправлен файл **{action}.json**, "
+                        f"содержащий гайды из категории *«{config.TROUBLESHOOTING_GROUPS[action]['name']}»*.\n"
+                        f"Можно использовать его для редактирования имеющихся вопросов и добавления новых."))
 
 
 def setup(client):

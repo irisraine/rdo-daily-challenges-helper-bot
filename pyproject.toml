@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rdo-helper"
 version = "0.3.0"
-description = "A Discord bot for Red Dead Online that provides daily challenge guides and troubleshooting help."
+description = "A Discord bot for Red Dead Online that provides daily challenges guides and troubleshooting help."
 authors = ["Iris-Raine <iris.raine.darkest.star@gmail.com>"]
 readme = "README.md"
 packages = [

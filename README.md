@@ -19,6 +19,7 @@ Offers a collection of authored guides containing solutions to a variety of issu
 * `/daily_challenges` - Immediately publishes the current daily challenge guides. Use this as a fallback when scheduled posting fails (e.g., due to a hosting issue).
 * `/troubleshooting` - Posts the troubleshooting guides interface into the specified channel, allowing users to explore available help topics interactively.
 * `/update <filename.json>` - Allows uploading and updating of the troubleshooting guides via a JSON file containing the updated guide data.
+* `/current <group>` - Get JSON file with current troubleshooting guides of selected group.
 
 ## Usage
 
