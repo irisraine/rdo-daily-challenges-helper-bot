@@ -44,8 +44,8 @@ class Troubleshooting(commands.Cog):
             return await interaction.followup.send(**messages.info(
                 description="❌ Пожалуйста, загрузите файл с решениями проблем одной из имеющихся групп!\n"
                             "Файл должен иметь одно из четырех соответствующих имен: "
-                            "bugs.json, errors.json, role_problems.json, tech_advices.json. Внимательно проверьте имя "
-                            "загружаемого файла.",
+                            "*bugs.json*, *errors.json*, *role_problems.json*, *tech_advices.json*. "
+                            "Внимательно проверьте имя загружаемого файла.",
                 error=True))
         try:
             data = json.loads(content.decode("utf-8"))
@@ -61,12 +61,12 @@ class Troubleshooting(commands.Cog):
             if is_correct_writing:
                 config.TROUBLESHOOTING_GROUPS[group]["content"] = utils.json_safeload(group_json)
                 return await interaction.followup.send(**messages.info(
-                    description="✅ Файл **{filename}** успешно загружен, "
-                                "и решения в соответствующей группе вопросов обновлены!"))
+                    description=f"✅ Файл **{filename}** успешно загружен, "
+                                f"и гайды в соответствующей категории обновлены!"))
             else:
                 return await interaction.followup.send(**messages.info(
-                    description=f"❌ При попытке записи переданного файла JSON произошла непредвиденная ошибка."
-                                f"Обновление не было завершено, пожалуйста, повторите попытку.",
+                    description="❌ При попытке записи переданного файла JSON произошла непредвиденная ошибка."
+                                "Обновление не было завершено, пожалуйста, повторите попытку.",
                     error=True))
         else:
             return await interaction.followup.send(**messages.info(
