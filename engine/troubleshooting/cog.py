@@ -72,17 +72,17 @@ class Troubleshooting(commands.Cog):
             return await interaction.followup.send(**messages.update_info(
                 description="❌ Структура файла некорректна. Обновление невозможно!\n"
                             "Внимательно проверьте содержимое файла, и в особенности удостоверьтесь, "
-                            "что число решений в одной категории не превышает 25 штук.",
+                            "что число решений в одном разделе не превышает 25 штук.",
                 error=True))
 
     @nextcord.slash_command(description="Скачать JSON-файл с существующими решениями проблем")
     @application_checks.has_permissions(administrator=True)
-    async def current(
+    async def extract(
             self,
             interaction: nextcord.Interaction,
             action: str = nextcord.SlashOption(
                 name="group",
-                description="Выбрать, какой именно файл с гайдами по решению проблем вы хотите скачать",
+                description="Категория гайда",
                 choices={
                     "Баги игры": "bugs",
                     "Ошибки": "errors",
