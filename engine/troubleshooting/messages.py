@@ -111,7 +111,7 @@ def solution_guide(group, category, solution):
     return {'embed': embed_message.embed} if image_url else {'embed': embed_message.embed, 'file': embed_message.image}
 
 
-def update_info(description, error=False):
+def info(description, error=False):
     title = "Успешно" if not error else "Ошибка"
 
     embed_message = MessageContainer(

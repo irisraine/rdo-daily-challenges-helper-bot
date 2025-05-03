@@ -36,23 +36,23 @@ class Troubleshooting(commands.Cog):
         content = await file.read()
         filename = file.filename
         if not filename.endswith(".json"):
-            return await interaction.followup.send(**messages.update_info(
+            return await interaction.followup.send(**messages.info(
                 description="Пожалуйста, загрузите файл с расширением .json.",
                 error=True))
         group = filename.split(".")[0]
         if group not in config.TROUBLESHOOTING_GROUPS.keys():
-            return await interaction.followup.send(**messages.update_info(
+            return await interaction.followup.send(**messages.info(
                 description="❌ Пожалуйста, загрузите файл с решениями проблем одной из имеющихся групп!\n"
                             "Файл должен иметь одно из четырех соответствующих имен: "
                             "bugs.json, errors.json, role_problems.json, tech_advices.json. Внимательно проверьте имя "
-                            "загружаемого файла",
+                            "загружаемого файла.",
                 error=True))
         try:
             data = json.loads(content.decode("utf-8"))
         except json.JSONDecodeError as error:
-            return await interaction.followup.send(**messages.update_info(
+            return await interaction.followup.send(**messages.info(
                 description=f"❌ При попытке чтения переданного файла JSON произошла следующая ошибка: {error}. "
-                            f"Обновление не было завершено, пожалуйста, повторите попытку",
+                            f"Обновление не было завершено, пожалуйста, повторите попытку.",
                 error=True))
         is_correct_structure = utils.validate_json_structure(data)
         if is_correct_structure:
@@ -60,16 +60,16 @@ class Troubleshooting(commands.Cog):
             is_correct_writing = utils.json_safewrite(group_json, data)
             if is_correct_writing:
                 config.TROUBLESHOOTING_GROUPS[group]["content"] = utils.json_safeload(group_json)
-                return await interaction.followup.send(**messages.update_info(
+                return await interaction.followup.send(**messages.info(
                     description="✅ Файл **{filename}** успешно загружен, "
                                 "и решения в соответствующей группе вопросов обновлены!"))
             else:
-                return await interaction.followup.send(**messages.update_info(
+                return await interaction.followup.send(**messages.info(
                     description=f"❌ При попытке записи переданного файла JSON произошла непредвиденная ошибка."
-                                f"Обновление не было завершено, пожалуйста, повторите попытку",
+                                f"Обновление не было завершено, пожалуйста, повторите попытку.",
                     error=True))
         else:
-            return await interaction.followup.send(**messages.update_info(
+            return await interaction.followup.send(**messages.info(
                 description="❌ Структура файла некорректна. Обновление невозможно!\n"
                             "Внимательно проверьте содержимое файла, и в особенности удостоверьтесь, "
                             "что число решений в одном разделе не превышает 25 штук.",
@@ -94,7 +94,7 @@ class Troubleshooting(commands.Cog):
         await interaction.response.defer()
         file = nextcord.File(fp=config.TROUBLESHOOTING_GROUPS[action]["json"], filename=f"{action}.json")
         await interaction.followup.send(file=file)
-        await interaction.followup.send(**messages.update_info(
+        await interaction.followup.send(**messages.info(
             description=f"📄 Вам отправлен файл **{action}.json**, "
                         f"содержащий гайды из категории *«{config.TROUBLESHOOTING_GROUPS[action]['name']}»*.\n"
                         f"Можно использовать его для редактирования имеющихся вопросов и добавления новых."))
