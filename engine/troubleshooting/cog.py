@@ -42,7 +42,7 @@ class Troubleshooting(commands.Cog):
         group = filename.split(".")[0]
         if group not in config.TROUBLESHOOTING_GROUPS.keys():
             return await interaction.followup.send(**messages.info(
-                description="❌ Пожалуйста, загрузите файл с решениями проблем одной из имеющихся групп!\n"
+                description="❌ Пожалуйста, загрузите файл с решениями проблем одной из имеющихся категорий!\n"
                             "Файл должен иметь одно из четырех соответствующих имен: "
                             "*bugs.json*, *errors.json*, *role_problems.json*, *tech_advices.json*. "
                             "Внимательно проверьте имя загружаемого файла.",
