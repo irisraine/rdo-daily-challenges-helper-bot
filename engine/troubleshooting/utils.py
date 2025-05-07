@@ -30,20 +30,20 @@ def json_safewrite(filepath, data):
         return False
 
 
-def validate_json_structure(new_json_data):
+def validate_json_structure(json_data):
     try:
         required_top_keys = {'title', 'description_header', 'select_menu_placeholder', 'emoji', 'categories'}
-        if not all(key in new_json_data for key in required_top_keys):
+        if not all(key in json_data for key in required_top_keys):
             return False
 
-        if not all(isinstance(new_json_data[key], str) for key in
+        if not all(isinstance(json_data[key], str) for key in
                    ['title', 'description_header', 'select_menu_placeholder', 'emoji']):
             return False
 
-        if not isinstance(new_json_data['categories'], dict) or not new_json_data['categories']:
+        if not isinstance(json_data['categories'], dict) or not json_data['categories']:
             return False
 
-        for category, category_data in new_json_data['categories'].items():
+        for category, category_data in json_data['categories'].items():
             required_category_keys = {'title', 'description_header', 'category_emoji', 'solutions'}
             if not all(key in category_data for key in required_category_keys):
                 return False
