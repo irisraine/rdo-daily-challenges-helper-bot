@@ -80,7 +80,7 @@ class Troubleshooting(commands.Cog):
     async def extract(
             self,
             interaction: nextcord.Interaction,
-            action: str = nextcord.SlashOption(
+            group: str = nextcord.SlashOption(
                 name="group",
                 description="Категория гайда",
                 choices={
@@ -92,11 +92,11 @@ class Troubleshooting(commands.Cog):
             )
     ):
         await interaction.response.defer()
-        file = nextcord.File(fp=config.TROUBLESHOOTING_GROUPS[action]["json"], filename=f"{action}.json")
+        file = nextcord.File(fp=config.TROUBLESHOOTING_GROUPS[group]["json"], filename=f"{group}.json")
         await interaction.followup.send(file=file)
         await interaction.followup.send(**messages.info(
-            description=f"📄 Вам отправлен файл **{action}.json**, "
-                        f"содержащий гайды из категории *«{config.TROUBLESHOOTING_GROUPS[action]['name']}»*.\n"
+            description=f"📄 Вам отправлен файл **{group}.json**, "
+                        f"содержащий гайды из категории *«{config.TROUBLESHOOTING_GROUPS[group]['name']}»*.\n"
                         f"Можно использовать его для редактирования имеющихся вопросов и добавления новых."))
 
 
