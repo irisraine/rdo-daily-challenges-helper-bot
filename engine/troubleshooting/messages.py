@@ -62,7 +62,10 @@ def group_menu(group):
         else:
             for solution in category["solutions"].values():
                 if solution['name'][1]:
-                    description += f"- *{solution['name'][0]}: {solution['name'][1]}*\n"
+                    if solution['name'][1][0] == "+":
+                        description += f"- *{solution['name'][0]} {solution['name'][1]}*\n"
+                    else:
+                        description += f"- *{solution['name'][0]}: {solution['name'][1]}*\n"
                 else:
                     description += f"- *{solution['name'][0]}*\n"
         description += "\n"
@@ -87,7 +90,10 @@ def category_menu(group, category):
     else:
         for solution in solutions:
             if solution['name'][1]:
-                description += f"{category_data['category_emoji']} *{solution['name'][0]}: {solution['name'][1]}*\n"
+                if solution['name'][1][0] == "+":
+                    description += f"{category_data['category_emoji']} *{solution['name'][0]} {solution['name'][1]}*\n"
+                else:
+                    description += f"{category_data['category_emoji']} *{solution['name'][0]}: {solution['name'][1]}*\n"
             else:
                 description += f"{category_data['category_emoji']} *{solution['name'][0]}*\n"
     embed_message = MessageContainer(
