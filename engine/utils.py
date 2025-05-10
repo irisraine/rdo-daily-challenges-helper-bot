@@ -2,11 +2,11 @@ import logging
 
 
 def load_cogs(client):
-    cogs = ['engine.daily_challenges.cog', 'engine.troubleshooting.cog']
+    cogs = ['daily_challenges', 'troubleshooting']
     for cog in cogs:
         try:
-            client.load_extension(cog)
-            logging.info(f"Модуль {cog.split('.')[1]} успешно загружен.")
+            client.load_extension(f"engine.{cog}.cog")
+            logging.info(f"Модуль {cog} успешно загружен.")
         except Exception as error:
-            logging.error(f"Ошибка при попытке загрузки модуля '{cog.split('.')[-1]}'. "
+            logging.error(f"Ошибка при попытке загрузки модуля '{cog}'. "
                           f"Дополнительная информация: {error}")
