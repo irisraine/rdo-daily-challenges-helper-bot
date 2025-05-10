@@ -70,6 +70,9 @@ def validate_json_structure(json_data):
 
                 if not 0 < len(solution_data['name']) < 100:
                     return 1, "Длина заголовка вопроса превысила лимит в 100 символов, либо заголовок пуст."
+
+                if len(solution_data['description']) > 4096:
+                    return 1, "Длина текста с решением превышает лимит в 4096 символов."
         return 0, "Данные имеют корректный формат и содержимое."
 
     except Exception as error:
