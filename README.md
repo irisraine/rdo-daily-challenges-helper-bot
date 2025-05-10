@@ -23,7 +23,7 @@ Offers a collection of authored guides containing solutions to a variety of issu
 
 ## Usage
 
-Please make sure to specify the necessary environment variables. They should contain DISCORD_BOT_TOKEN, 
+Please make sure to specify the necessary environment variables. They should contain DISCORD_BOT_TOKEN, GUILD_ID,
 DAILY_CHALLENGES_TUTORIALS_CHANNEL and TROUBLESHOOTING_GUIDES_CHANNEL environment variables and their corresponding values.
 Here is an example:
 ```
@@ -31,7 +31,7 @@ Here is an example:
 DISCORD_BOT_TOKEN='your-discord-bot-token-here'
 # ID of your server
 GUILD_ID = 0000000000000000000
-# Allowed channel
+# Allowed channels
 DAILY_CHALLENGES_TUTORIALS_CHANNEL=0000000000000000000
 TROUBLESHOOTING_GUIDES_CHANNEL=0000000000000000000
 ```
