@@ -1,5 +1,6 @@
 import nextcord
 import json
+import logging
 from nextcord.ext import commands, application_checks
 import engine.troubleshooting.messages as messages
 import engine.troubleshooting.views as views
@@ -47,32 +48,50 @@ class Troubleshooting(commands.Cog):
                             "*bugs.json*, *errors.json*, *role_problems.json*, *tech_advices.json*. "
                             "Внимательно проверьте имя загружаемого файла.",
                 error=True))
+        group_name = config.TROUBLESHOOTING_GROUPS[group]["name"]
         try:
             data = json.loads(content.decode("utf-8"))
         except json.JSONDecodeError as error:
+            logging.warning(f"Попытка обновления содержимого раздела \"{group_name}\" отклонена из-за ошибки при "
+                            f"раскодировке переданного файла с с данными.")
             return await interaction.followup.send(**messages.info(
-                description=f"❌ При попытке чтения переданного файла JSON произошла следующая ошибка: {error}. "
+                description=f"❌ При попытке чтения переданного файла JSON произошла следующая ошибка: **{error}**. "
                             f"Обновление не было завершено, пожалуйста, повторите попытку.",
                 error=True))
-        is_correct_structure = utils.validate_json_structure(data)
-        if is_correct_structure:
+
+        validation_json_structure_status = utils.validate_json_structure(data)
+        if validation_json_structure_status[0] == 0:
             group_json = config.TROUBLESHOOTING_GROUPS[group]["json"]
             is_correct_writing = utils.json_safewrite(group_json, data)
             if is_correct_writing:
                 config.TROUBLESHOOTING_GROUPS[group]["content"] = utils.json_safeload(group_json)
+                logging.info(f"Содержимое раздела \"{group_name}\" успешно обновлено.")
                 return await interaction.followup.send(**messages.info(
-                    description=f"✅ Файл **{filename}** успешно загружен, "
-                                f"и гайды в соответствующей категории обновлены!"))
+                    description=f"✅ Файл **{filename}** успешно загружен, и гайды "
+                                f"в категории \"{group_name}\" обновлены!"))
             else:
+                logging.error(f"Попытка обновления содержимого раздела \"{group_name}\" отклонена из-за непредвиденной "
+                              f"ошибки при записи обновленного файла с данными.")
                 return await interaction.followup.send(**messages.info(
                     description="❌ При попытке записи переданного файла JSON произошла непредвиденная ошибка."
                                 "Обновление не было завершено, пожалуйста, повторите попытку.",
                     error=True))
-        else:
+        elif validation_json_structure_status[0] == 1:
+            logging.warning(f"Попытка обновления содержимого раздела \"{group_name}\" отклонена из-за некорректной "
+                            f"структуры переданного файла с данными.")
             return await interaction.followup.send(**messages.info(
-                description="❌ Структура файла некорректна. Обновление невозможно!\n"
-                            "Внимательно проверьте содержимое файла, и в особенности удостоверьтесь, "
-                            "что число решений в одном разделе не превышает 25 штук.",
+                description=f"❌ Содержимое файла некорректно. Обновление невозможно!\n\n"
+                            f"При валидации файла обнаружилась следующая проблема: \n"
+                            f"__**{validation_json_structure_status[1]}**__\n Внимательно проверьте содержимое файла, "
+                            f"и исправьте найденную ошибку в соответствии с полученной рекомендацией, после чего "
+                            f"повторите попытку обновления, заново загрузив исправленный файл.",
+                error=True))
+        else:
+            logging.error(f"Попытка обновления содержимого раздела \"{group_name}\" отклонена из-за непредвиденной "
+                          f"ошибки при чтении переданного файла с данными.")
+            return await interaction.followup.send(**messages.info(
+                description="❌ При попытке чтения переданного файла JSON произошла непредвиденная ошибка. "
+                            "Обновление не было завершено, пожалуйста, повторите попытку.",
                 error=True))
 
     @nextcord.slash_command(description="Скачать JSON-файл с существующими решениями проблем")
